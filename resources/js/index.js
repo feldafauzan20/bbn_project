@@ -123,4 +123,83 @@ gsap.from("#big-hero-content-4", {
         toggleActions: "play none none none",
     },
 });
+
+gsap.from("#middle-section", {
+    y: 60,
+    opacity: 0,
+    duration: 1,
+    scrollTrigger: {
+        trigger: "#middle-section",
+        start: "top 80%",
+        toggleActions: "play none none none",
+    },
+});
+
+gsap.from("#about-us", {
+    y: 60,
+    opacity: 0,
+    duration: 1,
+    scrollTrigger: {
+        trigger: "#about-us",
+        start: "top 80%",
+        toggleActions: "play none none none",
+    },
+});
+
+gsap.from("#big-hero-content-projects", {
+    y: 60,
+    opacity: 0,
+    duration: 1,
+    scrollTrigger: {
+        trigger: "#big-hero-content-projects",
+        start: "top 80%",
+        toggleActions: "play none none none",
+    },
+});
+
+gsap.from("#big-hero-content-projects-h2", {
+    y: 60,
+    opacity: 0,
+    duration: 1,
+    scrollTrigger: {
+        trigger: "#big-hero-content-projects-h2",
+        start: "top 80%",
+        toggleActions: "play none none none",
+    },
+});
+
+gsap.from("#big-hero-content-projects-p", {
+    y: 60,
+    opacity: 0,
+    duration: 1,
+    scrollTrigger: {
+        trigger: "#big-hero-content-projects-p",
+        start: "top 80%",
+        toggleActions: "play none none none",
+    },
+});
+
+gsap.from("#big-hero-content-projects-grid-clients", {
+    opacity: 0,
+    delay: 0.5,
+    duration: 3,
+    ease: "power2.out",
+    scrollTrigger: {
+        trigger: "#big-hero-content-projects-grid-clients",
+        start: "top 80%",
+        toggleActions: "play none none none",
+    },
+});
+
+gsap.from("#big-hero-content-contact-us", {
+    y: 60,
+    opacity: 0,
+    duration: 1,
+    scrollTrigger: {
+        trigger: "#big-hero-content-contact-us",
+        start: "top 80%",
+        toggleActions: "play none none none",
+    },
+});
+
 // gsap end
