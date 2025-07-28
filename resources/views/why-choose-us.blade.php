@@ -219,15 +219,15 @@
                     <p class="text-white text-lg font-medium text-center tracking-tightest">Kami berkomitmen
                         menghadirkan hasil konstruksi berkualitas melalui material terbaik dan tim yang kompeten.</p>
                 </div>
-                <div class="relative md:mb-7.5 lg:mb-18.5 grid md:grid-cols-2 lg:grid-cols-3 gap-4 mt-19.5 lg:mt-18.5"
-                    id="big-hero-content-4">
+                <div class="relative flex flex-wrap justify-center items-stretch gap-4 mt-8" id="big-hero-content-4">
                     <!-- Card 1 -->
-                    <div class="bg-black/80 p-8 md:p-7 rounded-lg shadow-md  w-full  flex flex-col">
+                    <div
+                        class="bg-black/80 p-8 md:p-7 rounded-lg shadow-md  w-full md:w-[calc(50%-0.5rem)] lg:w-[calc(33.333%-0.667rem)] flex flex-col">
                         <div>
                             <img src="{{ asset('images/welcome/img-building-welcome.webp') }}" loading="lazy"
-                                class="md:h-14 lg:h-10" alt="">
+                                class="md:h-7 lg:h-10" alt="">
                         </div>
-                        <h3 class="text-white text-3xl mt-24 md:mt-25 font-semibold tracking-tightest">Bangunan
+                        <h3 class="text-white text-3xl mt-24 md:mt-11 font-semibold tracking-tightest">Bangunan
                             Gedung</h3>
                         <p class="text-lg md:text-base w-[90%] text-white mt-3 tracking-tightest">Bangunan gedung
                             menciptakan ruang fungsional
@@ -235,12 +235,13 @@
                     </div>
 
                     <!-- Card 2 -->
-                    <div class="bg-black/80 p-8 md:p-7 rounded-lg shadow-md w-full  flex flex-col">
+                    <div
+                        class="bg-black/80 p-8 md:p-7 rounded-lg shadow-md w-full md:w-[calc(50%-0.5rem)] lg:w-[calc(33.333%-0.667rem)] flex flex-col">
                         <div>
                             <img src="{{ asset('images/welcome/img-bridge-welcome.webp') }}" loading="lazy"
-                                class="md:h-14 lg:h-10" alt="">
+                                class="md:h-7 lg:h-10" alt="">
                         </div>
-                        <h3 class="text-white text-3xl mt-24 md:mt-25 font-semibold tracking-tightest">Jembatan
+                        <h3 class="text-white text-3xl mt-24 md:mt-11 font-semibold tracking-tightest">Jembatan
                             dan Jalanan</h3>
                         <p class="text-lg md:text-base w-[90%] text-white mt-3 tracking-tightest">Jembatan dan jalanan
                             menghubungkan ruang
@@ -249,35 +250,34 @@
 
                     <!-- Card 3 -->
                     <div
-                        class="bg-black/80 hidden p-8 md:p-7 rounded-lg shadow-md w-full  md:flex md:flex-col lg:hidden">
-                        <div>
-                            <img src="{{ asset('images/welcome/img-square-welcome.webp') }}" loading="lazy"
-                                class="md:h-14 lg:h-10" alt="">
-                        </div>
-                        <h3 class="text-white text-3xl mt-24 md:mt-25 font-semibold tracking-tightest">Design
-                            Architectural</h3>
-                        <p class="text-lg md:text-base w-[90%] text-white mt-3 tracking-tightest">Menunjang
-                            konektivitas,
-                            kelancaran
-                            transportasi, serta mendukung pertumbuhan infrastruktur wilayah secara menyeluruh.</p>
-                    </div>
-
-                    <!-- Card 4 -->
-                    <div class="bg-black/80 p-8 md:p-7 rounded-lg shadow-md w-full  flex flex-col">
+                        class="bg-black/80 p-8 md:p-7 rounded-lg shadow-md w-full md:w-[calc(50%-0.5rem)] lg:w-[calc(33.333%-0.667rem)] flex flex-col">
                         <div>
                             <img src="{{ asset('images/welcome/img-water-welcome.webp') }}" loading="lazy"
-                                class="md:h-14 lg:h-10" alt="">
+                                class="md:h-7 lg:h-10" alt="">
                         </div>
-                        <h3 class="text-white text-3xl mt-24 md:mt-25 font-semibold tracking-tightest">Bangunan
+                        <h3 class="text-white text-3xl mt-24 md:mt-11 font-semibold tracking-tightest">Bangunan
                             Air</h3>
                         <p class="text-lg md:text-base w-[90%] text-white mt-3 tracking-tightest">Bangunan air membantu
                             pengelolaan sumber
                             daya air untuk memenuhi kebutuhan manusia dan lingkungan secara berkelanjutan.</p>
                     </div>
 
-
+                    <!-- Card 4 -->
+                    <div
+                        class="bg-black/80 p-8 md:p-7 rounded-lg shadow-md w-full md:w-[calc(50%-0.5rem)] lg:w-[calc(33.333%-0.667rem)] flex flex-col">
+                        <div>
+                            <img src="{{ asset('images/welcome/img-square-welcome.webp') }}" loading="lazy"
+                                class="md:h-7 lg:h-10" alt="">
+                        </div>
+                        <h3 class="text-white text-3xl mt-24 md:mt-11 font-semibold tracking-tightest">Design
+                            Architectural</h3>
+                        <p class="text-lg md:text-base w-[90%] text-white mt-3 tracking-tightest">Menunjang
+                            konektivitas,
+                            kelancaran
+                            transportasi, serta mendukung pertumbuhan infrastruktur wilayah secara menyeluruh.</p>
+                    </div>
                 </div>
-                <div class="hidden md:flex md:justify-center">
+                <div class="hidden md:flex md:justify-center md:mt-7.5 lg:mt-18.5">
                     <a href=""
                         class="text-center text-lg box-border font-semibold block w-fit rounded-full bg-white hover:bg-blue-600 transition duration-500 hover:text-white text-black py-7.5 px-15 md:px-17 whitespace-nowrap tracking-tightest">
                         Hubungi Kami
