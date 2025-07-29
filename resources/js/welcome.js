@@ -28,7 +28,7 @@ menuButton.addEventListener("click", () => {
         toggleWhatsapp(true); // Logo biru
     } else {
         // Jika menu tertutup, cek posisi scroll
-        if (window.scrollY > 10) {
+        if (window.scrollY > 50) {
             navbar.classList.add("bg-white");
             navbar.classList.remove("bg-transparent");
             iconOpen.classList.remove("text-white");
@@ -73,7 +73,7 @@ window.addEventListener("scroll", () => {
     // Jika menu terbuka, jangan ubah bg (biarkan putih)
     if (!mobileMenu.classList.contains("hidden")) return;
 
-    if (window.scrollY > 10) {
+    if (window.scrollY > 50) {
         navbar.classList.add("bg-white");
         navbar.classList.remove("bg-transparent");
         iconOpen.classList.remove("text-white");

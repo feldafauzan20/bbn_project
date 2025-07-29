@@ -17,3 +17,7 @@ Route::get('/why-choose-us', function () {
 Route::get('/clients', function () {
     return view('clients');
 });
+
+Route::get('/works', function () {
+    return view('works');
+});
