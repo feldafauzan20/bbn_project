@@ -13,3 +13,7 @@ Route::get('/about', function () {
 Route::get('/why-choose-us', function () {
     return view('why-choose-us');
 });
+
+Route::get('/clients', function () {
+    return view('clients');
+});

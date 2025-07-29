@@ -200,7 +200,7 @@
 
     {{-- SERVICES START --}}
     <section>
-        <div class="relative h-full mb-5 md:mb-29.5">
+        <div class="relative h-full mb-5.5 md:mb-29.5">
             <!-- Background image -->
             <div class="absolute inset-0 bg-cover bg-bottom"
                 style="background-image: url('/images/why-choose-us/img-building-why-choose-us.webp');">
@@ -307,7 +307,7 @@
                             <h2 class="text-white text-3xl lg:text-4xl font-semibold">Solusi Konstruksi Inovatif</h2>
                         </div>
                         <div
-                            class="flex border-y-2 border-white/20 h-full items-center tracking-tightest box-border py-7">
+                            class="flex border-b-2 border-white/20 h-full items-center tracking-tightest box-border py-7">
                             <h3 class="mr-9 text-neutral-400 text-2xl lg:text-2xl font-semibold">03.</h3>
                             <h2 class="text-white text-3xl lg:text-4xl font-semibold">Material Berkualitas Tinggi</h2>
                         </div>

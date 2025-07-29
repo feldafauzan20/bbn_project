@@ -206,7 +206,7 @@
             </div>
             <!-- Overlay gradient -->
             <div class="absolute inset-0 bg-slate-950/90"></div>
-            <div class="relative h-full mx-5 md:mx-9 pt-8 lg:mx-36 2xl:mx-61 lg:py-21">
+            <div class="relative h-full mx-5 md:mx-9 pt-8  lg:mx-36 2xl:mx-61 lg:py-21">
                 <div class="tracking-tightest w-full  lg:flex lg:flex-row-reverse" id="big-hero-content-projects">
                     <div class="lg:w-1/2 lg:flex lg:items-center lg:ml-14">
                         <div>
@@ -240,7 +240,7 @@
                 </div>
             </div>
             <hr class="relative outline-1 text-white/80 mb-16">
-            <div class="mx-5 md:mx-9 lg:mx-36 2xl:mx-61 relative">
+            <div class="mx-5 md:mx-9  mb-13 md:mb-8 lg:mb-25 md:bg-red-400 lg:mx-36 2xl:mx-61 relative">
                 <div
                     class="hidden lg:text-center lg:tracking-tightest lg:text-white lg:flex lg:flex-col lg:items-center lg:mb-20">
                     <div class="lg:w-[1040px]" id="big-hero-content-projects-h2">
@@ -320,7 +320,9 @@
     {{-- CONTACT US COMPONENT END --}}
 
     {{-- FOOTER COMPONENT START --}}
-    <x-footer-component />
+    <section class="mt-20.5 md:mt-8 lg:mt-20.5">
+        <x-footer-component />
+    </section>
     {{-- FOOTER COMPONENT END --}}
 
     {{-- MY JS START --}}
