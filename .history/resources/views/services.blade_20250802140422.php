@@ -1,0 +1,141 @@
+<x-layouts.main-layout>
+    <x-slot:title>
+        Pelayanan Kami | BIMA BAHAMA NUSANTARA
+    </x-slot:title>
+
+    {{-- NAVBAR START --}}
+    <x-navbar-bg-white />
+    {{-- NAVBAR END --}}
+
+    {{-- HERO START --}}
+    <section>
+        <div class="mx-5 pt-22 pb-20">
+            <div class="mx-auto w-96 mb-8.5">
+                <h2 class="text-center text-black text-5xl font-semibold leading-[49.92px] tracking-tightest">
+                    Layan Konstruksi dan Struktur Menyeluruh
+                </h2>
+            </div>
+            <div class="w-90 mx-auto">
+                <p class="text-center text-neutral-400 text-lg font-normal leading-relaxed tracking-tightest">Jelajahi
+                    berbagai layanan
+                    kami yang dirancang untuk memenuhi kebutuhan konstruksi dan perkuatan
+                    struktur secara menyeluruh. Mulai dari perencanaan awal hingga pelaksanaan akhir, tim ahli kami
+                    memastikan kualitas dan ketepatan di setiap proyek.</p>
+            </div>
+        </div>
+    </section>
+    {{-- HERO END --}}
+
+    {{-- SERVICES START --}}
+    <section>
+        <div class="mx-5 bg-red-400">
+            <div class="flex flex-wrap gap-y-12.5 px-5">
+
+                {{-- CARD 1 --}}
+                <div class=" bg-stone-50 w-full rounded-[20px] shadow-sm">
+                    <div>
+                        <img class="rounded-t-[20px] object-cover w-full h-80"
+                            src="{{ asset('images/services/img-building-services.webp') }}" alt="" />
+                    </div>
+                    <div class="py-5 px-3">
+                        <div class="mb-1.5">
+                            <h5 class=" text-3xl font-semibold tracking-tightest leading-10 text-black">
+                                Bangunan Gedung</h5>
+                        </div>
+                        <div class="w-70 mb-25">
+                            <p class="text-neutral-400 text-lg tracking-tightest font-normal leading-relaxed">Bangunan
+                                gedung menciptakan
+                                ruang fungsional yang menunjang aktivitas manusia secara efisien dan berkelanjutan.</p>
+                        </div>
+                        <div>
+                            <a href=""
+                                class="self-stretch justify-start text-black text-lg font-semibold tracking-tightest underline leading-relaxed">View
+                                more</a>
+                        </div>
+                    </div>
+                </div>
+
+                {{-- CARD 2 --}}
+                <div class=" bg-stone-50 w-full rounded-[20px] shadow-sm">
+                    <div>
+                        <img class="rounded-t-[20px] object-cover w-full h-80"
+                            src="{{ asset('images/services/img-water-dam-services.webp') }}" alt="" />
+                    </div>
+                    <div class="py-5 px-3">
+                        <div class="mb-1.5">
+                            <h5 class=" text-3xl font-semibold tracking-tightest leading-10 text-black">
+                                Bangunan Air</h5>
+                        </div>
+                        <div class="w-70 mb-25">
+                            <p class="text-neutral-400 text-lg tracking-tightest font-normal leading-relaxed">
+                                Menyediakan layanan pembangunan bangunan air yang berfungsi untuk mendistribusikan
+                                sumber daya air secara efektif dan berkelanjutan.</p>
+                        </div>
+                        <div>
+                            <a href=""
+                                class="self-stretch justify-start text-black text-lg font-semibold tracking-tightest underline leading-relaxed">View
+                                more</a>
+                        </div>
+                    </div>
+                </div>
+
+                {{-- CARD 3 --}}
+                <div class=" bg-stone-50 w-full rounded-[20px] shadow-sm">
+                    <div>
+                        <img class="rounded-t-[20px] object-cover w-full h-80"
+                            src="{{ asset('images/services/img-bridge-services.webp') }}" alt="" />
+                    </div>
+                    <div class="py-5 px-3">
+                        <div class="mb-1.5">
+                            <h5 class=" text-3xl font-semibold tracking-tightest leading-10 text-black">
+                                Jembatan & Jalanan</h5>
+                        </div>
+                        <div class="w-70 mb-25">
+                            <p class="text-neutral-400 text-lg tracking-tightest font-normal leading-relaxed">Menunjang
+                                konektivitas, kelancaran transportasi, serta mendukung pertumbuhan infrastruktur wilayah
+                                secara menyeluruh.</p>
+                        </div>
+                        <div>
+                            <a href=""
+                                class="self-stretch justify-start text-black text-lg font-semibold tracking-tightest underline leading-relaxed">View
+                                more</a>
+                        </div>
+                    </div>
+                </div>
+
+                {{-- CARD 4 --}}
+                <div class=" bg-stone-50 w-full rounded-[20px] shadow-sm">
+                    <div>
+                        <img class="rounded-t-[20px] object-cover w-full h-80"
+                            src="{{ asset('images/services/img-design-architectural-services.webp') }}"
+                            alt="" />
+                    </div>
+                    <div class="py-5 px-3">
+                        <div class="mb-1.5">
+                            <h5 class=" text-3xl font-semibold tracking-tightest leading-10 text-black">
+                                Design Architectural</h5>
+                        </div>
+                        <div class="w-70 mb-25">
+                            <p class="text-neutral-400 text-lg tracking-tightest font-normal leading-relaxed">
+                                Menghadirkan rancangan arsitektur yang visioner dan presisi, menggabungkan nilai
+                                estetika, fungsi, dan karakter ruang secara harmonis.</p>
+                        </div>
+                        <div>
+                            <a href=""
+                                class="self-stretch justify-start text-black text-lg font-semibold tracking-tightest underline leading-relaxed">View
+                                more</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    {{-- SERVICES END --}}
+
+    {{-- MY JS START --}}
+    @push('scripts')
+        @vite(['resources/js/projects.js'])
+    @endpush
+    {{-- MY JS END --}}
+</x-layouts.main-layout>
