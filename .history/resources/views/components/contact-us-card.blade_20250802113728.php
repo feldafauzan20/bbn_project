@@ -1,6 +1,6 @@
 <section>
     <div>
-        <div class="rounded-3xl overflow-hidden p-6 lg:py-16 lg:px-14 h-full bg-cover bg-center flex flex-col lg:flex-row justify-between"
+        <div class="rounded-3xl overflow-hidden p-6 lg:py-16 lg:px-14 h-full mx-5 md:mx-9 lg:mx-36 2xl:mx-61 bg-cover bg-center flex flex-col lg:flex-row justify-between"
             id="big-hero-content-contact-us"
             style="background-image: url('{{ asset('images/welcome/img-building-from-bottom-welcome.webp') }}');">
             <div class="tracking-tightest w-5/6 md:w-3/5">

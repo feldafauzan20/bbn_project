@@ -323,7 +323,7 @@
     {{-- CONTACT US COMPONENT END --}}
 
     {{-- FOOTER COMPONENT START --}}
-    <section class="mx-5 md:mx-9 lg:mx-36  2xl:mx-61 mt-20.5 md:mt-8 lg:mt-20.5">
+    <section class="mx-5 md:mx-9 lg:mx-36 mt-20.5 md:mt-8 lg:mt-20.5">
         <x-footer-component />
     </section>
     {{-- FOOTER COMPONENT END --}}

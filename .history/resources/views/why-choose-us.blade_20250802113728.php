@@ -323,10 +323,7 @@
     {{-- SERVICES END --}}
 
     {{-- FOOTER START --}}
-    <section class="lg:mx-36 2xl:mx-61 mx-5 ">
-
-        <x-footer-component />
-    </section>
+    <x-footer-component />
     {{-- FOOTER END --}}
 
     {{-- MY JS START --}}

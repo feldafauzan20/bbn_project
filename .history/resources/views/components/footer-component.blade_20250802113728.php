@@ -1,6 +1,6 @@
 <footer>
     <div>
-        <div class=" lg:flex lg:justify-between tracking-tightest h-full">
+        <div class="mx-5 md:mx-9 lg:mx-36 lg:flex lg:justify-between 2xl:mx-61 tracking-tightest h-full">
             <div class="mb-5 lg:mb-0 lg:mr-72 lg:w-[250px]">
                 <p class="text-neutral-400 text-lg font-medium">(Let’s collaborate)</p>
             </div>

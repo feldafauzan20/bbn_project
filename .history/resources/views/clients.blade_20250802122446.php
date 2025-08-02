@@ -100,9 +100,7 @@
     {{-- CLIENTS END --}}
 
     {{-- CONTACT COMPONENT START --}}
-    <section class="mx-5 md:mx-10 lg:mx-36 2xl:mx-61">
-        <x-contact-us-card />
-    </section>
+    <x-contact-us-card />
     {{-- CONTACT COMPONENT END --}}
 
     {{-- FOOTER COMPONENT START --}}

@@ -21,7 +21,3 @@ Route::get('/clients', function () {
 Route::get('/works', function () {
     return view('works');
 });
-
-Route::get('/projects', function () {
-    return view('projects');
-});

@@ -369,8 +369,15 @@
     </div>
     {{-- CONTACT US END --}}
 
+    {{-- CONTACT COMPONENT START --}}
+    <div class="md:hidden">
+
+        <x-contact-us-card />
+    </div>
+    {{-- CONTACT COMPONENT END --}}
+
     {{-- FOOTER COMPONENT START --}}
-    <section class="mx-5 lg:mx-36 2xl:mx-61 mt-20.5 md:mt-20 lg:mt-26">
+    <section class="mt-20.5 md:mt-20 lg:mt-26">
         <x-footer-component />
     </section>
     {{-- FOOTER COMPONENT END --}}

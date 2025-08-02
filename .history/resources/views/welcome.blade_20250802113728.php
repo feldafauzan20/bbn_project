@@ -316,14 +316,11 @@
     {{-- PROJECT AND CLIENT END --}}
 
     {{-- CONTACT US COMPONENT START --}}
-    <section class="mx-5 md:mx-9 lg:mx-36 2xl:mx-61">
-
-        <x-contact-us-card />
-    </section>
+    <x-contact-us-card />
     {{-- CONTACT US COMPONENT END --}}
 
     {{-- FOOTER COMPONENT START --}}
-    <section class="mx-5 md:mx-9 lg:mx-36  2xl:mx-61 mt-20.5 md:mt-8 lg:mt-20.5">
+    <section class="mt-20.5 md:mt-8 lg:mt-20.5">
         <x-footer-component />
     </section>
     {{-- FOOTER COMPONENT END --}}
