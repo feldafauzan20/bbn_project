@@ -28,8 +28,8 @@
     {{-- HERO END --}}
 
     {{-- SERVICES START --}}
-    <section>
-        <div class="mx-5 lg:mx-36 2xl:mx-61 mb-12 max-w-[1500px]" id="services-section">
+    <section class="maw-w-[1500px]">
+        <div class="mx-5 lg:mx-36 2xl:mx-61 mb-12" id="services-section">
             <div class="flex md:w-full lg:justify-center flex-wrap gap-y-12.5 px-5 md:px-0 md:gap-x-7.5">
 
                 {{-- CARD 1 --}}

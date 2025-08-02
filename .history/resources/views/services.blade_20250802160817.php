@@ -9,7 +9,7 @@
 
     {{-- HERO START --}}
     <section>
-        <div class="mx-5 lg:mx-36 2xl:mx-61 pt-22 md:pt-34 pb-20 lg:pb-42 max-w-[1500px]" id="hero-section">
+        <div class="mx-5 lg:mx-36 2xl:mx-61 pt-22 md:pt-34 pb-20 lg:pb-42 maw-w-[1500px]" id="hero-section">
             <div class="mx-auto w-96 md:w-[530px] lg:w-[736px] mb-8.5 lg:mb-6">
                 <h2
                     class="text-center text-black text-5xl lg:text-8xl font-semibold leading-[49.92px] lg:leading-[89.44px] tracking-tightest">
@@ -29,7 +29,7 @@
 
     {{-- SERVICES START --}}
     <section>
-        <div class="mx-5 lg:mx-36 2xl:mx-61 mb-12 max-w-[1500px]" id="services-section">
+        <div class="mx-5 lg:mx-36 2xl:mx-61 mb-12 maw-w-[1500px]" id="services-section">
             <div class="flex md:w-full lg:justify-center flex-wrap gap-y-12.5 px-5 md:px-0 md:gap-x-7.5">
 
                 {{-- CARD 1 --}}
