@@ -36,3 +36,19 @@ Route::get('/clients', function () {
 Route::get('/works', function () {
     return view('works');
 });
+
+Route::get('/projects', function () {
+    return view('projects');
+});
+
+Route::get('/services
+', function () {
+    return view('services
+    ');
+});
+
+Route::get('/contact-form
+', function () {
+    return view('contact-form
+    ');
+});
