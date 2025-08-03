@@ -189,9 +189,11 @@
                         choose us</a>
                 </div>
             </div>
+            <!-- Image Section -->
             <div class="md:bg-blue-500 lg:w-2/5">
-                <img src="{{ asset('images/welcome/img-building-from-bottom-welcome.webp') }}"
-                    class="md:w-full md:h-113 md:object-cover lg:h-full lg:w-full" alt="img building from bottom">
+                <img src="{{ Storage::url($landingPage->foto_1) }}"
+                    class="md:w-full md:h-113 md:object-cover lg:h-full lg:w-full" 
+                    alt="{{ $landingPage->judul }}">
             </div>
         </div>
     </section>
@@ -212,17 +214,16 @@
                         <div>
 
                             <p class="text-sky-700 text-lg font-semibold pb-3.5">Projects</p>
-                            <div class=" w-11/12 lg:w-[560px] pb-3.5 ">
-                                <h2 class="text-white text-4xl lg:text-6xl font-semibold">Building Beyond Structures
-                                </h2>
-                            </div>
-                            <div class=" w-10/12 ">
-                                <p class="text-white text-lg font-normal">Dengan Mengkombinasikan Material
-                                    Berkualitas
-                                    terbaik, Engineer yang kompeten dan Tim Project yang Efektif, kami berkomitmen
-                                    untuk
-                                    selalu memberikan solusi perkutan struktur yang efisien, dan inovatif</p>
-                            </div>
+                                <div class="w-11/12 lg:w-[560px] pb-3.5">
+                                    <h2 class="text-white text-4xl lg:text-6xl font-semibold">
+                                        {{ $landingPage->judul ?? '' }}
+                                    </h2>
+                                </div>
+                                <div class="w-10/12">
+                                    <p class="text-white text-lg font-normal">
+                                        {{ $landingPage->desc ?? '' }}
+                                    </p>
+                                </div>
                             <div class="box-border mt-7">
                                 <a href=""
                                     class="text-center text-lg box-border font-semibold block md:text-start w-fit rounded-full bg-white hover:bg-blue-600 transition duration-500 hover:text-white text-black py-7.5 px-15 md:px-14 whitespace-nowrap">
@@ -231,16 +232,18 @@
                             </div>
                         </div>
                     </div>
+                    <!-- Image Section -->
                     <div class="lg:w-1/2 mt-14 lg:mt-0 mb-16 lg:mb-0">
                         <div class="h-full rounded-3xl overflow-hidden ">
-                            <img src="{{ asset('images/welcome/img-room-project-welcome.webp') }}" alt="img room"
+                            <img src="{{ Storage::url($landingPage->foto_2) }}"
+                                alt="{{ $landingPage->judul }}"
                                 class="h-96 lg:h-120 object-cover w-full">
                         </div>
                     </div>
                 </div>
             </div>
             <hr class="relative outline-1 text-white/80 mb-16">
-            <div class="mx-5 md:mx-9  mb-13 md:mb-8 lg:mb-25 md:bg-red-400 lg:mx-36 2xl:mx-61 relative">
+            <div class="mx-5 md:mx-9  mb-13 md:mb-8 lg:mb-25 lg:mx-36 2xl:mx-61 relative">
                 <div
                     class="hidden lg:text-center lg:tracking-tightest lg:text-white lg:flex lg:flex-col lg:items-center lg:mb-20">
                     <div class="lg:w-[1040px]" id="big-hero-content-projects-h2">

@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Api\ContentController;
+use App\Models\LandingPage;
 
 Route::prefix('api/content')->group(function () {
     Route::get('landing-page', [ContentController::class, 'getLandingPage']);
@@ -16,7 +17,8 @@ Route::prefix('api/content')->group(function () {
 });
 
 Route::get('/', function () {
-    return view('welcome');
+    $landingPage = LandingPage::first();
+    return view('welcome', compact('landingPage'));
 });
 
 Route::get('/about', function () {
