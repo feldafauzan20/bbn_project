@@ -27,8 +27,8 @@
             <!-- Logo dan menu desktop -->
             <div class="flex items-center justify-between w-full">
                 <div class="flex pl-3 items-center">
-                    <img id="logo-white" class="h-8 md:h-10" src="{{ asset('images/logo/logo-bbn-white.webp') }}"
-                        alt="Logo">
+                    {{-- <img id="logo-white" class="h-8 md:h-10" src="{{ asset('images/logo/logo-bbn-white.webp') }}"
+                        alt="Logo"> --}}
                     <img id="logo-blue" class="h-8 md:h-10 hidden" src="{{ asset('images/logo/logo-bbn-biru.webp') }}"
                         alt="Logo">
                 </div>

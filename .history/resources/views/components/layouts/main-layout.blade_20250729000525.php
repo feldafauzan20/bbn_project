@@ -9,7 +9,6 @@
     <link rel="icon" href="{{ asset('images/logo/logo-bbn.webp') }}" type="image/x-icon">
     <title>{{ $title ?? 'BIMA BAHAMA NUSANTARA' }}</title>
     <script src="https://kit.fontawesome.com/d8c46daaeb.js" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 
 <body class="font-bbn ">

@@ -1,4 +1,4 @@
-<nav id="navbar" class="fixed top-0 left-0 w-full z-50 ">
+<nav id="navbar" class="fixed bg-white top-0 left-0 w-full z-50 ">
     <div class="max-w-[1500px] lg:mx-36 2xl:mx-61">
         <div class="relative flex py-6 items-center justify-between md:px-3 lg:px-0">
 
