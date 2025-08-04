@@ -3,6 +3,9 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Api\ContentController;
 use App\Models\LandingPage;
+use App\Http\Controllers\ContactController;
+
+Route::post('/contact', [ContactController::class, 'sendEmail'])->name('contact.send');
 
 Route::prefix('api/content')->group(function () {
     Route::get('landing-page', [ContentController::class, 'getLandingPage']);
@@ -43,12 +46,13 @@ Route::get('/projects', function () {
 
 Route::get('/services
 ', function () {
-    return view('services
-    ');
+    return view('services');
 });
 
 Route::get('/contact-form
 ', function () {
-    return view('contact-form
-    ');
+    return view('contact-form');
 });
+
+
+

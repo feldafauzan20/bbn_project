@@ -137,19 +137,20 @@
                     <div class="md:px-3 lg:px-0 xl:w-[703px]">
                         <div
                             class="p-5 md:p-12 bg-neutral-900/80 rounded-[20px] outline-1 outline-offset-[-1px] outline-black">
-                            <form action="" method="">
+                           <form action="{{ route('contact.send') }}" method="POST">
+                                @csrf
                                 <div class="md:flex md:gap-x-5">
                                     <div class="mb-2.5 md:w-full">
                                         <label for="name"
                                             class="block mb-2.5 tracking-tightest text-white text-lg font-medium">Nama</label>
-                                        <input type="name" id="name"
+                                        <input type="text" id="name" name="name"
                                             class="bg-neutral-800 tracking-tighter text-white/50 text-lg rounded-md block w-full px-3.5 py-3"
                                             required />
                                     </div>
                                     <div class="mb-2.5 md:w-full">
                                         <label for="email"
                                             class="block mb-2.5 tracking-tightest text-white text-lg font-medium">Email</label>
-                                        <input type="email" id="email"
+                                        <input type="email" id="email" name="email"
                                             class="bg-neutral-800 tracking-tighter text-white/50 text-lg rounded-md block w-full px-3.5 py-3"
                                             placeholder="contoh@gmail.com" required />
                                     </div>
@@ -157,17 +158,16 @@
                                 <div class="mb-10">
                                     <label for="phone"
                                         class="block mb-2.5 tracking-tightest text-white text-lg font-medium">Phone
-                                        <span
-                                            class="text-white/60 text-lg font-medium tracking-tighter">(Opsional)</span></label>
-                                    <input type="number" id="phone"
+                                        <span class="text-white/60 text-lg font-medium tracking-tighter">(Opsional)</span></label>
+                                    <input type="number" id="phone" name="phone"
                                         class="bg-neutral-800 tracking-tighter text-white/50 text-lg rounded-md block w-full px-3.5 py-3" />
                                 </div>
                                 <div class="mb-6">
                                     <label for="message"
                                         class="block mb-2.5 tracking-tightest text-white text-lg font-medium">Message</label>
-                                    <textarea type="text" id="message"
+                                    <textarea id="message" name="message"
                                         class="bg-neutral-800 tracking-tighter text-white/50 text-lg rounded-md block w-full px-3.5 py-3"
-                                        placeholder="Masukkan pesan"></textarea>
+                                        placeholder="Masukkan pesan" required></textarea>
                                 </div>
                                 <div>
                                     <button type="submit"
