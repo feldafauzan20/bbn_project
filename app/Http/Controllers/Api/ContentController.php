@@ -102,7 +102,6 @@ class ContentController extends Controller
                 'id' => $project->id,
                 'foto_head' => $project->foto_head,
                 'judul' => $project->judul,
-                'lokasi_tahun' => $project->lokasi_tahun,
                 'desc_lengkap' => $project->desc_lengkap,
             ];
         });

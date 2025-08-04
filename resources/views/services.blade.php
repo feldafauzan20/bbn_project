@@ -152,55 +152,8 @@
                 </p>
             </div>
             <div id="my-carousel" class="relative w-full">
-                <div class="my-8 md:my-13 relative h-75 md:h-44 lg:h-64 overflow-hidden">
-                    <div class="hidden duration-700 ease-in-out" id="carousel-item-1">
-                        <h2
-                            class="text-black text-4xl lg:text-6xl lg:leading-16 font-semibold tracking-tightest leading-10">
-                            “Lorem
-                            ipsum dolor
-                            sit amet
-                            consectetur
-                            adipiscing elit. Amet consectetur adipiscing elit quisque faucibus ex sapien. Quisque
-                            faucibus
-                            ex
-                            sapien vitae pellentesque sem placerat.”</h2>
-                    </div>
-                    <div class="hidden duration-700 ease-in-out" id="carousel-item-2">
-                        <h2
-                            class="text-black text-4xl lg:text-6xl lg:leading-16 font-semibold tracking-tightest leading-10">
-                            “Lorem
-                            ipsum dolor
-                            sit amet
-                            consectetur
-                            adipiscing elit. Amet consectetur adipiscing elit quisque faucibus ex sapien. Quisque
-                            faucibus test 2 jan
-                            ex
-                            sapien vitae pellentesque sem placerat.”</h2>
-                    </div>
-                    <div class="hidden duration-700 ease-in-out" id="carousel-item-3">
-                        <h2
-                            class="text-black text-4xl lg:text-6xl lg:leading-16 font-semibold tracking-tightest leading-10">
-                            “Lorem
-                            ipsum dolor
-                            sit amet
-                            consectetur
-                            adipiscing elit. Amet consectetur adipiscing elit quisque faucibus ex sapien. Quisque
-                            faucibus test 3 jan
-                            ex
-                            sapien vitae pellentesque sem placerat.”</h2>
-                    </div>
-                    <div class="hidden duration-700 ease-in-out" id="carousel-item-4">
-                        <h2
-                            class="text-black text-4xl lg:text-6xl lg:leading-16 font-semibold tracking-tightest leading-10">
-                            “Lorem
-                            ipsum dolor
-                            sit amet
-                            consectetur
-                            adipiscing elit. Amet consectetur adipiscing elit quisque faucibus ex sapien. Quisque
-                            faucibus test 4 jan
-                            ex
-                            sapien vitae pellentesque sem placerat.”</h2>
-                    </div>
+                
+            <div id="testimonial-carousel-container" class="my-8 md:my-13 relative h-75 md:h-44 lg:h-64 overflow-hidden">
                 </div>
 
                 {{-- Indicators --}}

@@ -28,230 +28,175 @@
     </section>
     {{-- HERO END --}}
 
-    {{-- PROJECTS START --}}
-    <section>
-        <div class="mx-5 lg:mx-24 2xl:mx-61 mb-12.5 max-w-[1500px]">
-            <div
-                class="grid grid-cols-1  md:grid-cols-2 px-5 md:px-0 gap-y-13 lg:gap-y-0 md:gap-x-12.5 lg:gap-x-0 2xl:gap-x-34">
-                <div class="gap-y-13 lg:gap-y-0 grid grid-cols-1">
-                    {{-- CARD 1 --}}
-                    <div class="w-full bg-white flex flex-col lg:flex-row h-full lg:gap-x-7 md:h-[600px] lg:h-fit"
-                        id="card-1-projects">
-
-                        <div class="rounded-2xl overflow-hidden">
-                            <img class="w-full lg:w-56 xl:w-72 lg h-80 md:h-64 lg:h-80 lg:rounded-2xl object-cover"
-                                src="{{ asset('images/projects/img-room-projects.webp') }}" alt="" />
-                        </div>
-
-                        <div
-                            class="px-3 lg:px-0 pt-10 md:pt-6 lg:pt-0 pb-5 lg:pb-0 flex flex-col flex-1 justify-between lg:justify-start">
-                            <!-- Bagian atas -->
-                            <div class="">
-                                <h5
-                                    class="text-3xl font-semibold tracking-tightest text-black leading-10 2xl:leading-[48px]">
-                                    Modern Urban Loft Transformation
-                                </h5>
-                                <div class="w-80 lg:w-full mt-1.5 lg:mt-4 mb-19 lg:my-4">
-                                    <p class="text-neutral-400 text-lg font-normal tracking-tightest ">
-                                        Bangunan gedung menciptakan ruang fungsional yang menunjang aktivitas manusia
-                                        secara
-                                        efisien dan berkelanjutan.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <!-- Tombol tetap di bawah -->
-                            <div class="">
-                                <a href="#"
-                                    class="block text-lg text-black w-fit font-semibold underline tracking-tightest leading-relaxed hover:text-blue-500 transition duration-500">
-                                    Lihat proyek
-                                </a>
-                            </div>
-                        </div>
+{{-- PROJECTS START --}}
+<section>
+    <div class="mx-5 lg:mx-24 2xl:mx-61 mb-12.5 max-w-[1500px]">
+        <div class="grid grid-cols-1 md:grid-cols-2 px-5 md:px-0 gap-y-13 lg:gap-y-0 md:gap-x-12.5 lg:gap-x-0 2xl:gap-x-34">
+            {{-- Kolom Pertama --}}
+            <div id="projects-column-1" class="gap-y-13 lg:gap-y-0 grid grid-cols-1">
+                {{-- CARD 1 --}}
+                <div class="w-full bg-white flex flex-col lg:flex-row h-full lg:gap-x-7 md:h-[600px] lg:h-fit" id="card-1-projects">
+                    <div class="rounded-2xl overflow-hidden">
+                        <img class="w-full lg:w-56 xl:w-72 lg h-80 md:h-64 lg:h-80 lg:rounded-2xl object-cover"
+                             src="{{ asset('images/projects/placeholder.webp') }}" alt="" />
                     </div>
-
-                    {{-- CARD 2 --}}
-                    <div class="w-full bg-white  flex flex-col h-full md:h-[600px]" id="card-2-projects">
-
-                        <div class="rounded-2xl overflow-hidden">
-                            <img class="w-full h-80 md:h-64 lg:h-96 object-cover"
-                                src="{{ asset('images/projects/img-landmark-projects.webp') }}" alt="" />
-                        </div>
-
-                        <div class="px-3 pt-10 md:pt-6 lg:pt-15 pb-5 flex flex-col flex-1 justify-between ">
-                            <!-- Bagian atas -->
-                            <div class="">
-                                <h5 class="text-3xl font-semibold tracking-tightest text-black leading-10">
-                                    Revitalizing Historical Landmarks
-                                </h5>
-                                <div class="w-75 lg:w-full 2xl:w-140  mt-1.5 mb-19 lg:mb-12 lg:mt-4 lg:my-4">
-                                    <p class="text-neutral-400 text-lg font-normal tracking-tightest ">
-                                        We revamped a dated urban loft, blending industrial and contemporary design for
-                                        a
-                                        unique, stylish space.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <!-- Tombol tetap di bawah -->
-                            <div class="flex-1  md:flex md:items-end">
-                                <a href="#"
-                                    class="block text-lg text-black w-fit font-semibold underline tracking-tightest leading-relaxed hover:text-blue-500 transition duration-500">
-                                    Lihat proyek
-                                </a>
+                    <div class="px-3 lg:px-0 pt-10 md:pt-6 lg:pt-0 pb-5 lg:pb-0 flex flex-col flex-1 justify-between lg:justify-start">
+                        <div>
+                            <h5 class="text-3xl font-semibold tracking-tightest text-black leading-10 2xl:leading-[48px]">
+                                Judul Proyek 1
+                            </h5>
+                            <div class="w-80 lg:w-full mt-1.5 lg:mt-4 mb-19 lg:my-4">
+                                <p class="text-neutral-400 text-lg font-normal tracking-tightest ">
+                                    Deskripsi Singkat Proyek 1
+                                </p>
                             </div>
                         </div>
-                    </div>
-
-                    {{-- CARD 3 --}}
-                    <div class="w-full bg-white flex flex-col h-full md:h-[600px] lg:h-fit lg:flex-row" id="card-below">
-
-                        <div class="rounded-2xl overflow-hidden ">
-                            <img class="w-full lg:w-64 2xl:w-72 h-80 lg:h-80 lg:rounded-2xl md:h-64 object-cover"
-                                src="{{ asset('images/projects/img-tree-and-building-projects.webp') }}"
-                                alt="" />
-                        </div>
-
-                        <div class="px-3 pt-10 md:pt-6 pb-5 flex flex-col flex-1 justify-between lg:justify-start">
-                            <!-- Bagian atas -->
-                            <div class="">
-                                <div class="lg:w-full 2xl:w-64">
-                                    <h5 class="text-3xl font-semibold tracking-tightest text-black leading-10">
-                                        Luxury Waterfront Villa
-                                    </h5>
-                                </div>
-                                <div class="w-75 lg:w-full 2xl:w-72 mt-1.5 mb-19 md:mb-28 lg:mb-12">
-                                    <p class="text-neutral-400 text-lg font-normal tracking-tightest ">
-                                        We revamped a dated urban loft, blending industrial and contemporary design for
-                                        a
-                                        unique, stylish space.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <!-- Tombol tetap di bawah -->
-                            <div class="flex-1 lg:flex-none md:flex md:items-end lg:items-start">
-                                <a href="#"
-                                    class="block text-lg text-black w-fit font-semibold underline tracking-tightest leading-relaxed hover:text-blue-500 transition duration-500">
-                                    Lihat proyek
-                                </a>
-                            </div>
+                        <div class="">
+                            <a href="#" class="block text-lg text-black w-fit font-semibold underline tracking-tightest leading-relaxed hover:text-blue-500 transition duration-500">
+                                Lihat proyek
+                            </a>
                         </div>
                     </div>
                 </div>
 
-                <div class="gap-y-13 lg:gap-y-32 grid grid-cols-1 lg:pl-12 lg:w-full">
-                    {{-- CARD 4 --}}
-                    <div class="w-full bg-white flex flex-col h-full md:h-[600px]" id="card-1-projects">
-
-                        <div class="rounded-2xl overflow-hidden">
-                            <img class="w-full h-80 md:h-64 lg:h-96 object-cover "
-                                src="{{ asset('images/projects/img-chair-and-swimpool-projects.webp') }}"
-                                alt="" />
-                        </div>
-
-                        <div class="px-3 pt-10 md:pt-6 lg:pt-15 pb-5 flex flex-col flex-1 justify-between ">
-                            <!-- Bagian atas -->
-                            <div>
-                                <h5 class="text-3xl font-semibold tracking-tightest text-black leading-10">
-                                    Eco-Friendly Residential Development
-                                </h5>
-                                <div class="w-80 lg:w-full mt-1.5 lg:mt-4 mb-19 lg:mb-12">
-                                    <p class="text-neutral-400 text-lg font-normal tracking-tightest ">
-                                        We revamped a dated urban loft, blending industrial and contemporary design for
-                                        a
-                                        unique, stylish space.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <!-- Tombol tetap di bawah -->
-                            <div class="flex-1 md:flex md:items-end">
-                                <a href="#"
-                                    class="block text-lg text-black w-fit font-semibold underline tracking-tightest leading-relaxed hover:text-blue-500 transition duration-500">
-                                    Lihat proyek
-                                </a>
-                            </div>
-                        </div>
+                {{-- CARD 2 --}}
+                <div class="w-full bg-white flex flex-col h-full md:h-[600px]" id="card-2-projects">
+                    <div class="rounded-2xl overflow-hidden">
+                        <img class="w-full h-80 md:h-64 lg:h-96 object-cover"
+                             src="{{ asset('images/projects/placeholder.webp') }}" alt="" />
                     </div>
-
-                    {{-- CARD 5 --}}
-                    <div class="w-full bg-white flex flex-col lg:flex-row-reverse h-full lg:gap-x-7 md:h-[600px] lg:h-[350px]"
-                        id="card-5-projects">
-
-                        <div class="rounded-2xl overflow-hidden">
-                            <img class="w-full lg:w-72 h-80 md:h-64 lg:h-full lg:rounded-2xl object-cover"
-                                src="{{ asset('images/projects/img-office-projects.webp') }}" alt="" />
-                        </div>
-
-                        <div
-                            class="px-3 lg:px-0 pt-10 md:pt-6 lg:pt-0 pb-5 lg:pb-0 flex flex-col flex-1 justify-between lg:justify-start">
-                            <!-- Bagian atas -->
-                            <div class="">
-                                <div class="2xl:w-64">
-                                    <h5
-                                        class="text-3xl font-semibold tracking-tightest text-black leading-10 lg:leading-[48px]">
-                                        High-Tech Office Space Design
-                                    </h5>
-                                </div>
-                                <div class="w-80 lg:w-full mt-1.5 lg:mt-4 mb-19 lg:mb-12">
-                                    <p class="text-neutral-400 text-lg font-normal tracking-tightest ">
-                                        We revamped a dated urban loft, blending industrial and contemporary design for
-                                        a unique, stylish space.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <!-- Tombol tetap di bawah -->
-                            <div class="">
-                                <a href="#"
-                                    class="block text-lg text-black w-fit font-semibold underline tracking-tightest leading-relaxed hover:text-blue-500 transition duration-500">
-                                    Lihat proyek
-                                </a>
+                    <div class="px-3 pt-10 md:pt-6 lg:pt-15 pb-5 flex flex-col flex-1 justify-between ">
+                        <div>
+                            <h5 class="text-3xl font-semibold tracking-tightest text-black leading-10">
+                                Judul Proyek 2
+                            </h5>
+                            <div class="w-75 lg:w-full 2xl:w-140 mt-1.5 mb-19 lg:mb-12 lg:mt-4 lg:my-4">
+                                <p class="text-neutral-400 text-lg font-normal tracking-tightest ">
+                                    Deskripsi Singkat Proyek 2
+                                </p>
                             </div>
                         </div>
-                    </div>
-
-                    {{-- CARD 6 --}}
-                    <div class="w-full bg-white flex flex-col h-full md:h-[600px] lg:h-[623px]" id="card-below">
-
-                        <div class="rounded-2xl overflow-hidden">
-                            <img class="w-full h-80 md:h-64 lg:h-96 object-cover"
-                                src="{{ asset('images/projects/img-park-projects.webp') }}" alt="" />
-                        </div>
-
-                        <div class="px-3 pt-10 md:pt-6 lg:pt-15 pb-5 flex flex-col flex-1 justify-between ">
-                            <!-- Bagian atas -->
-                            <div class="">
-                                <div class="w-80 lg:w-96">
-                                    <h5 class="text-3xl font-semibold tracking-tightest text-black leading-10">
-                                        Sustainable Urban Park Design
-                                    </h5>
-                                </div>
-                                <div class="w-75 lg:w-full mt-1.5 lg:mt-4 mb-19 lg:mb-12">
-                                    <p class="text-neutral-400 text-lg font-normal tracking-tightest ">
-                                        We revamped a dated urban loft, blending industrial and contemporary design for
-                                        a
-                                        unique, stylish space.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <!-- Tombol tetap di bawah -->
-                            <div class="flex-1 md:flex md:items-end">
-                                <a href="#"
-                                    class="block text-lg text-black w-fit font-semibold underline tracking-tightest leading-relaxed hover:text-blue-500 transition duration-500">
-                                    Lihat proyek
-                                </a>
-                            </div>
+                        <div class="flex-1 md:flex md:items-end">
+                            <a href="#" class="block text-lg text-black w-fit font-semibold underline tracking-tightest leading-relaxed hover:text-blue-500 transition duration-500">
+                                Lihat proyek
+                            </a>
                         </div>
                     </div>
                 </div>
 
+                {{-- CARD 3 --}}
+                <div class="w-full bg-white flex flex-col h-full md:h-[600px] lg:h-fit lg:flex-row" id="card-3-projects">
+                    <div class="rounded-2xl overflow-hidden ">
+                        <img class="w-full lg:w-64 2xl:w-72 h-80 lg:h-80 lg:rounded-2xl md:h-64 object-cover"
+                             src="{{ asset('images/projects/placeholder.webp') }}" alt="" />
+                    </div>
+                    <div class="px-3 pt-10 md:pt-6 pb-5 flex flex-col flex-1 justify-between lg:justify-start">
+                        <div>
+                            <div class="lg:w-full 2xl:w-64">
+                                <h5 class="text-3xl font-semibold tracking-tightest text-black leading-10">
+                                    Judul Proyek 3
+                                </h5>
+                            </div>
+                            <div class="w-75 lg:w-full 2xl:w-72 mt-1.5 mb-19 md:mb-28 lg:mb-12">
+                                <p class="text-neutral-400 text-lg font-normal tracking-tightest ">
+                                    Deskripsi Singkat Proyek 3
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex-1 lg:flex-none md:flex md:items-end lg:items-start">
+                            <a href="#" class="block text-lg text-black w-fit font-semibold underline tracking-tightest leading-relaxed hover:text-blue-500 transition duration-500">
+                                Lihat proyek
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {{-- Kolom Kedua --}}
+            <div id="projects-column-2" class="gap-y-13 lg:gap-y-32 grid grid-cols-1 lg:pl-12 lg:w-full">
+                {{-- CARD 4 --}}
+                <div class="w-full bg-white flex flex-col h-full md:h-[600px]" id="card-4-projects">
+                    <div class="rounded-2xl overflow-hidden">
+                        <img class="w-full h-80 md:h-64 lg:h-96 object-cover "
+                             src="{{ asset('images/projects/placeholder.webp') }}" alt="" />
+                    </div>
+                    <div class="px-3 pt-10 md:pt-6 lg:pt-15 pb-5 flex flex-col flex-1 justify-between ">
+                        <div>
+                            <h5 class="text-3xl font-semibold tracking-tightest text-black leading-10">
+                                Judul Proyek 4
+                            </h5>
+                            <div class="w-80 lg:w-full mt-1.5 lg:mt-4 mb-19 lg:mb-12">
+                                <p class="text-neutral-400 text-lg font-normal tracking-tightest ">
+                                    Deskripsi Singkat Proyek 4
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex-1 md:flex md:items-end">
+                            <a href="#" class="block text-lg text-black w-fit font-semibold underline tracking-tightest leading-relaxed hover:text-blue-500 transition duration-500">
+                                Lihat proyek
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                {{-- CARD 5 --}}
+                <div class="w-full bg-white flex flex-col lg:flex-row-reverse h-full lg:gap-x-7 md:h-[600px] lg:h-[350px]" id="card-5-projects">
+                    <div class="rounded-2xl overflow-hidden">
+                        <img class="w-full lg:w-72 h-80 md:h-64 lg:h-full lg:rounded-2xl object-cover"
+                             src="{{ asset('images/projects/placeholder.webp') }}" alt="" />
+                    </div>
+                    <div class="px-3 lg:px-0 pt-10 md:pt-6 lg:pt-0 pb-5 lg:pb-0 flex flex-col flex-1 justify-between lg:justify-start">
+                        <div>
+                            <div class="2xl:w-64">
+                                <h5 class="text-3xl font-semibold tracking-tightest text-black leading-10 lg:leading-[48px]">
+                                    Judul Proyek 5
+                                </h5>
+                            </div>
+                            <div class="w-80 lg:w-full mt-1.5 lg:mt-4 mb-19 lg:mb-12">
+                                <p class="text-neutral-400 text-lg font-normal tracking-tightest ">
+                                    Deskripsi Singkat Proyek 5
+                                </p>
+                            </div>
+                        </div>
+                        <div class="">
+                            <a href="#" class="block text-lg text-black w-fit font-semibold underline tracking-tightest leading-relaxed hover:text-blue-500 transition duration-500">
+                                Lihat proyek
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                {{-- CARD 6 --}}
+                <div class="w-full bg-white flex flex-col h-full md:h-[600px] lg:h-[623px]" id="card-6-projects">
+                    <div class="rounded-2xl overflow-hidden">
+                        <img class="w-full h-80 md:h-64 lg:h-96 object-cover"
+                             src="{{ asset('images/projects/placeholder.webp') }}" alt="" />
+                    </div>
+                    <div class="px-3 pt-10 md:pt-6 lg:pt-15 pb-5 flex flex-col flex-1 justify-between ">
+                        <div>
+                            <div class="w-80 lg:w-96">
+                                <h5 class="text-3xl font-semibold tracking-tightest text-black leading-10">
+                                    Judul Proyek 6
+                                </h5>
+                            </div>
+                            <div class="w-75 lg:w-full mt-1.5 lg:mt-4 mb-19 lg:mb-12">
+                                <p class="text-neutral-400 text-lg font-normal tracking-tightest ">
+                                    Deskripsi Singkat Proyek 6
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex-1 md:flex md:items-end">
+                            <a href="#" class="block text-lg text-black w-fit font-semibold underline tracking-tightest leading-relaxed hover:text-blue-500 transition duration-500">
+                                Lihat proyek
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </section>
-    {{-- PROJECTS END --}}
+    </div>
+</section>
+{{-- PROJECTS END --}}
 
     {{-- TESTIMONIAL START --}}
     <section>
@@ -262,55 +207,8 @@
                 </p>
             </div>
             <div id="my-carousel" class="relative w-full">
-                <div class="my-8 md:my-13 relative h-75 md:h-44 lg:h-64 overflow-hidden">
-                    <div class="hidden duration-700 ease-in-out" id="carousel-item-1">
-                        <h2
-                            class="text-black text-4xl lg:text-6xl lg:leading-16 font-semibold tracking-tightest leading-10">
-                            “Lorem
-                            ipsum dolor
-                            sit amet
-                            consectetur
-                            adipiscing elit. Amet consectetur adipiscing elit quisque faucibus ex sapien. Quisque
-                            faucibus
-                            ex
-                            sapien vitae pellentesque sem placerat.”</h2>
-                    </div>
-                    <div class="hidden duration-700 ease-in-out" id="carousel-item-2">
-                        <h2
-                            class="text-black text-4xl lg:text-6xl lg:leading-16 font-semibold tracking-tightest leading-10">
-                            “Lorem
-                            ipsum dolor
-                            sit amet
-                            consectetur
-                            adipiscing elit. Amet consectetur adipiscing elit quisque faucibus ex sapien. Quisque
-                            faucibus test 2 jan
-                            ex
-                            sapien vitae pellentesque sem placerat.”</h2>
-                    </div>
-                    <div class="hidden duration-700 ease-in-out" id="carousel-item-3">
-                        <h2
-                            class="text-black text-4xl lg:text-6xl lg:leading-16 font-semibold tracking-tightest leading-10">
-                            “Lorem
-                            ipsum dolor
-                            sit amet
-                            consectetur
-                            adipiscing elit. Amet consectetur adipiscing elit quisque faucibus ex sapien. Quisque
-                            faucibus test 3 jan
-                            ex
-                            sapien vitae pellentesque sem placerat.”</h2>
-                    </div>
-                    <div class="hidden duration-700 ease-in-out" id="carousel-item-4">
-                        <h2
-                            class="text-black text-4xl lg:text-6xl lg:leading-16 font-semibold tracking-tightest leading-10">
-                            “Lorem
-                            ipsum dolor
-                            sit amet
-                            consectetur
-                            adipiscing elit. Amet consectetur adipiscing elit quisque faucibus ex sapien. Quisque
-                            faucibus test 4 jan
-                            ex
-                            sapien vitae pellentesque sem placerat.”</h2>
-                    </div>
+                
+            <div id="testimonial-carousel-container" class="my-8 md:my-13 relative h-75 md:h-44 lg:h-64 overflow-hidden">
                 </div>
 
                 {{-- Indicators --}}

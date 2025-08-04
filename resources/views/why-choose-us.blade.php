@@ -119,82 +119,9 @@
                     </a>
                 </div>
             </div>
-
-            <div
-                class="flex flex-col gap-y-7 md:flex-row md:flex-wrap md:justify-center md:gap-x-7 lg:flex-nowrap lg:gap-x-7">
-
-                <!-- CARD 1 -->
-                <div class="rounded-[20px] overflow-hidden w-full md:w-[45%] lg:w-[32%]">
-                    <div class="relative h-96 bg-cover bg-center rounded-xl overflow-hidden"
-                        style="background-image: url('/images/about/img-building-card1-section5-about.webp');">
-                        <div class="absolute inset-0 bg-black/60"></div>
-                        <div class="relative h-full flex items-end px-6 py-8">
-                            <div class="tracking-tightest">
-                                <div class="w-64 mb-2.5">
-                                    <h2 class="text-white text-2xl font-medium leading-9">The Future of Sustainable
-                                        Interior Design</h2>
-                                </div>
-                                <div
-                                    class="border-b border-b-white w-fit transition duration-500 hover:border-b-blue-500">
-                                    <a href=""
-                                        class="text-white text-lg hover:text-blue-500 transition duration-500 font-medium leading-relaxed tracking-tight">
-                                        Read more
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- CARD 2 -->
-                <div class="rounded-[20px] overflow-hidden w-full md:w-[45%] lg:w-[32%]">
-                    <div class="relative h-96 bg-cover bg-center rounded-xl overflow-hidden"
-                        style="background-image: url('/images/about/img-building-card2-section5-about.webp');">
-                        <div class="absolute inset-0 bg-black/60"></div>
-                        <div class="relative h-full flex items-end px-6 py-8">
-                            <div class="tracking-tightest">
-                                <div class="w-64 mb-2.5">
-                                    <h2 class="text-white text-2xl font-medium leading-9">The Future of Sustainable
-                                        Interior Design</h2>
-                                </div>
-                                <div
-                                    class="border-b border-b-white w-fit transition duration-500 hover:border-b-blue-500">
-                                    <a href=""
-                                        class="text-white text-lg hover:text-blue-500 transition duration-500 font-medium leading-relaxed tracking-tight">
-                                        Read more
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- CARD 3 -->
-                <div class="rounded-[20px] overflow-hidden w-full md:w-[45%] lg:w-[32%]">
-                    <div class="relative h-96 bg-cover bg-center rounded-xl overflow-hidden"
-                        style="background-image: url('/images/welcome/img-room-project-welcome.webp');">
-                        <div class="absolute inset-0 bg-black/60"></div>
-                        <div class="relative h-full flex items-end px-6 py-8">
-                            <div class="tracking-tightest">
-                                <div class="w-64 mb-2.5">
-                                    <h2 class="text-white text-2xl font-medium leading-9">The Future of Sustainable
-                                        Interior Design</h2>
-                                </div>
-                                <div
-                                    class="border-b border-b-white w-fit transition duration-500 hover:border-b-blue-500">
-                                    <a href=""
-                                        class="text-white text-lg hover:text-blue-500 transition duration-500 font-medium leading-relaxed tracking-tight">
-                                        Read more
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
+            <div id="featured-projects-container"
+                class="flex flex-wrap space-y-7 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-x-7 md:gap-y-5 md:space-y-0">
             </div>
-
-        </div>
     </section>
     {{-- BEST FROM US END --}}
 
