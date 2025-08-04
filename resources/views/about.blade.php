@@ -226,8 +226,7 @@
             </h2>
         </div>
         
-        <div id="featured-projects-container"
-            class="flex flex-wrap space-y-7 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-x-7 md:gap-y-5 md:space-y-0">
+        <div id="featured-projects-container" class="flex flex-wrap space-y-7 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-x-7 md:gap-y-5 md:space-y-0">
             {{-- Kartu besar yang tidak diubah --}}
             <div class="hidden md:block lg:hidden md:col-span-2">
                 <div class="pt-14 md:pt-0 lg:pt-25 pb-20 md:pb-0 lg:pb-20" id="big-hero-content-contact-us">

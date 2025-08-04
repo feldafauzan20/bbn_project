@@ -86,16 +86,17 @@
     <section>
         <div class="relative">
             <!-- Background image -->
-            <div class="absolute inset-0 bg-cover bg-top lg:bg-center"
-                style="background-image: url('/images/welcome/img-building-from-bottom-welcome.webp');">
+            <div id="project-bg-image"
+                class="absolute inset-0 bg-cover bg-top lg:bg-center"
+                style="background-image: url('/images/placeholder.webp');">
             </div>
             <!-- Konten lain di sini jika perlu -->
             <div class="relative h-fit w-full">
                 <div class="pt-32 pb-31 md:pb-26.5 lg:pb-45 mx-5 lg:mx-36 2xl:mx-61 max-w-[1500px]  lg:h-full lg:flex lg:items-center"
                     id="hero-section">
                     <div class="w-96 md:w-120 lg:w-200">
-                        <h2 class="text-white text-6xl lg:text-8xl font-semibold tracking-tightest lg:leading-[104px]">
-                            Modern Urban Loft Transformation
+                        <h2 id="project-title" class="text-white text-6xl lg:text-8xl font-semibold tracking-tightest lg:leading-[104px]">
+                            ...
                         </h2>
                     </div>
                 </div>
@@ -109,8 +110,8 @@
         <div class="mx-5 lg:mx-36 2xl:mx-61 mt-18 md:mt-7 lg:mt-29.5 mb-12.5 md:mb-8 lg:mb-31 max-w-[1500px]"
             id="description-section">
             <div class="w-96 mb-12.5 md:mb-30 md:w-100">
-                <h2 class="text-black tracking-tightest text-4xl font-normal leading-9">
-                    Industrial House In The Middle Of The Tropical Island
+                <h2 id="project-desc-singkat-1" class="text-black tracking-tightest text-4xl font-normal leading-9">
+                    ...
                 </h2>
             </div>
             <div class="md:flex md:justify-between">
@@ -121,24 +122,22 @@
                 </div>
                 <div class="mt-10 md:mt-0">
                     <div class="">
-                        <h3 class="text-black text-lg font-normal tracking-tightest leading-tight">Bali, Indonesia -
-                            2024</h3>
+                        <h3 id="project-lokasi-tahun" class="text-black text-lg font-normal tracking-tightest leading-tight">...</h3>
                     </div>
                     <div class="w-90 mt-10">
-                        <p class="text-black font-normal tracking-tightest leading-tight">Sanur House is a
-                            luxury beach retreat in Bali designed by Found + Formed. Completed in 2020, it offers a
-                            harmonious blend of traditional Japanese aesthetics and modern sustainability practices. The
-                            home is designed to feel like a natural extension of its environment, with high-performance
-                            insulation and geothermal systems ensuring year-round comfort.</p>
+                        <p id="project-desc-lengkap" class="text-black font-normal tracking-tightest leading-tight">
+                            ...
                     </div>
                 </div>
             </div>
         </div>
-        <div class="md:h-80 lg:mx-36 2xl:mx-61 lg:h-130 2xl:h-[740px] lg:rounded-2xl lg:overflow-hidden max-w-[1500px]"
-            id="img-description-section">
-            <img src="{{ asset('images/single-product/img-house-single-product.webp') }}"
-                class="md:object-cover md:h-full md:w-full" alt="">
-        </div>
+            <div class="md:h-80 lg:mx-36 2xl:mx-61 lg:h-130 2xl:h-[740px] lg:rounded-2xl lg:overflow-hidden max-w-[1500px]"
+                id="img-description-section">
+                <img id="project-foto-1"
+                    src=""
+                    class="md:object-cover md:h-full md:w-full"
+                    alt="">
+            </div>
     </section>
     {{-- DESCRIPTION END --}}
 
@@ -146,19 +145,22 @@
     <section>
         <div class="mx-5 lg:mx-36 2xl:mx-61 my-12.5 md:my-12.5 lg:my-25 max-w-[1500px]">
             <div class="w-96 md:w-110 lg:w-100 mb-12.5 lg:mb-25">
-                <h2 class="text-black text-2xl font-normal tracking-tightest lg:leading-10"
-                    id="another-projects-h2-section">
-                    Harmonious blend of traditional Balinese aesthetics and modern sustainability practices.
+                <h2 id="project-desc-singkat-2" class="text-black text-2xl font-normal tracking-tightest lg:leading-10">
+                    ...
                 </h2>
             </div>
             <div class="grid place-items-center md:place-items-stretch grid-cols-1 md:grid-cols-2 gap-y-12.5 md:gap-x-7.5"
                 id="another-projects-grid-section">
+                
                 <div class="w-80 md:w-full h-96 lg:h-130 2xl:h-[588px] rounded-2xl overflow-hidden">
-                    <img src="{{ asset('images/single-product/img-family-room.webp') }}"
+                    <img id="project-foto-2"
+                        src=""
                         class="w-full h-full object-cover" alt="">
                 </div>
+                
                 <div class="w-80 md:w-full h-96 lg:h-130 2xl:h-[588px] rounded-2xl overflow-hidden">
-                    <img src="{{ asset('images/single-product/img-villa-single-product.webp') }}"
+                    <img id="project-foto-3"
+                        src=""
                         class="w-full h-full object-cover" alt="">
                 </div>
             </div>
@@ -170,14 +172,15 @@
     <section>
         <div class="mx-5 lg:mx-36 2xl:mx-61 md:flex md:justify-end mb-12.5 lg:mb-25 max-w-[1500px]">
             <div class="w-96 md:w-110 lg:w-100" id="another-projects-2-h2-section">
-                <h2 class="text-black text-2xl font-normal tracking-tightest lg:leading-10">
-                    Harmonious blend of traditional Balinese aesthetics and modern sustainability practices.
+                <h2 id="project-desc-singkat-3" class="text-black text-2xl font-normal tracking-tightest lg:leading-10">
+                    ...
                 </h2>
             </div>
         </div>
         <div class="md:h-80 lg:mx-36 2xl:mx-61 lg:h-130 2xl:h-[740px] lg:rounded-2xl lg:overflow-hidden max-w-[1500px]"
             id="another-projects-2-img-section">
-            <img src="{{ asset('images/single-product/img-house-single-product.webp') }}"
+            <img id="project-foto-4"
+                src=""
                 class="md:object-cover md:h-full md:w-full" alt="">
         </div>
     </section>
@@ -210,105 +213,7 @@
                     </a>
                 </div>
             </div>
-
-            <div
-                class="flex flex-wrap space-y-7 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-x-7 md:gap-y-5 md:space-y-0">
-                <div class="rounded-[20px] overflow-hidden">
-                    <div class="relative w-90 lg:w-full h-96 lg:h-full rounded-xl overflow-hidden bg-cover bg-center"
-                        style="background-image: url('/images/about/img-building-card1-section5-about.webp');">
-
-                        <!-- Overlay hitam -->
-                        <div class="absolute inset-0 bg-black/60"></div>
-
-                        <!-- Konten -->
-                        <div class="relative h-full flex items-end px-6 py-8">
-                            <div class="tracking-tightest">
-                                <div class="w-64 mb-2.5">
-                                    <h2 class="text-white text-2xl font-medium leading-9">The Future of Sustainable
-                                        Interior
-                                        Design</h2>
-                                </div>
-                                <div
-                                    class="border-b border-b-white w-fit  transition duration-500 hover:border-b-blue-500 ">
-                                    <a href=""
-                                        class="text-white text-lg hover:text-blue-500 transition duration-500 font-medium leading-relaxed tracking-tight">Read
-                                        more</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="rounded-[20px] overflow-hidden">
-                    <div class="relative w-90 lg:w-full h-96 rounded-xl overflow-hidden bg-cover bg-center"
-                        style="background-image: url('/images/about/img-building-card2-section5-about.webp');">
-
-                        <!-- Overlay hitam -->
-                        <div class="absolute inset-0 bg-black/60"></div>
-
-                        <!-- Konten -->
-                        <div class="relative h-full flex items-end px-6 py-8">
-                            <div class="tracking-tightest">
-                                <div class="w-64 mb-2.5">
-                                    <h2 class="text-white text-2xl font-medium leading-9">The Future of Sustainable
-                                        Interior
-                                        Design</h2>
-                                </div>
-                                <div
-                                    class="border-b border-b-white w-fit  transition duration-500 hover:border-b-blue-500 ">
-                                    <a href=""
-                                        class="text-white text-lg hover:text-blue-500 transition duration-500 font-medium leading-relaxed tracking-tight">Read
-                                        more</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="hidden md:block lg:hidden md:col-span-2">
-                    <div class="pt-14 md:pt-0 lg:pt-25 pb-20 md:pb-0 lg:pb-20" id="big-hero-content-contact-us">
-                        <div class="rounded-3xl overflow-hidden p-6 lg:py-16 lg:px-14 h-full mx-5 md:mx-0 lg:mx-36 2xl:mx-61 bg-cover bg-center flex flex-col lg:flex-row justify-between"
-                            style="background-image: url('{{ asset('images/welcome/img-building-from-bottom-welcome.webp') }}');">
-                            <div class="tracking-tightest w-5/6 md:w-3/5">
-                                <h2 class="text-white text-4xl lg:text-6xl font-semibold">Contact us if you have
-                                    additional
-                                    question.</h2>
-                            </div>
-                            <div class="tracking-tightest mt-17 md:mt-12 lg:mt-0">
-                                <a href=""
-                                    class="text-center text-lg box-border font-semibold block md:text-start w-fit rounded-full bg-white hover:bg-blue-600 transition duration-500 hover:text-white text-black py-7.5 px-15 md:px-17 whitespace-nowrap">
-                                    Let's get in touch
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="rounded-[20px] overflow-hidden md:hidden lg:block">
-                    <div class="relative w-90 lg:w-full h-96 rounded-xl overflow-hidden bg-cover bg-center"
-                        style="background-image: url('/images/welcome/img-room-project-welcome.webp');">
-
-                        <!-- Overlay hitam -->
-                        <div class="absolute inset-0 bg-black/60"></div>
-
-                        <!-- Konten -->
-                        <div class="relative h-full flex items-end px-6 py-8">
-                            <div class="tracking-tightest">
-                                <div class="w-64 mb-2.5">
-                                    <h2 class="text-white text-2xl font-medium leading-9">The Future of Sustainable
-                                        Interior
-                                        Design</h2>
-                                </div>
-                                <div
-                                    class="border-b border-b-white w-fit  transition duration-500 hover:border-b-blue-500 ">
-                                    <a href=""
-                                        class="text-white text-lg hover:text-blue-500 transition duration-500 font-medium leading-relaxed tracking-tight">Read
-                                        more</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
+            <div id="featured-projects-container" class="flex flex-wrap space-y-7 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-x-7 md:gap-y-5 md:space-y-0">
         </div>
     </section>
     {{-- NEXT PROJECTS END --}}

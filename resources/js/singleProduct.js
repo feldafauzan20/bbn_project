@@ -1,3 +1,5 @@
+console.log()
+
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
@@ -191,3 +193,127 @@ gsap.from("#contact-us-section", {
 // });
 
 // gsap end
+
+document.addEventListener('DOMContentLoaded', function() {
+    const projectId = window.location.pathname.split('/').pop();
+    const apiUrl = `http://127.0.0.1:8000/api/content/projects/${projectId}`;
+    
+    // Elemen HTML yang akan diisi
+    const bgImageElement = document.getElementById('project-bg-image');
+    const titleElement = document.getElementById('project-title');
+    const lokasiTahunElement = document.getElementById('project-lokasi-tahun');
+    const descLengkapElement = document.getElementById('project-desc-lengkap');
+    const descSingkat1Element = document.getElementById('project-desc-singkat-1');
+    const descSingkat2Element = document.getElementById('project-desc-singkat-2');
+    const descSingkat3Element = document.getElementById('project-desc-singkat-3');
+    const foto1Element = document.getElementById('project-foto-1');
+    const foto2Element = document.getElementById('project-foto-2');
+    const foto3Element = document.getElementById('project-foto-3');
+    const foto4Element = document.getElementById('project-foto-4'); // Tambahkan ini
+    
+    if (!bgImageElement || !titleElement || !lokasiTahunElement || !descLengkapElement ||
+        !descSingkat1Element || !descSingkat2Element || !descSingkat3Element ||
+        !foto1Element || !foto2Element || !foto3Element || !foto4Element) {
+        console.error('Satu atau lebih elemen HTML tidak ditemukan.');
+        return;
+    }
+
+    fetch(apiUrl)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Proyek tidak ditemukan.');
+            }
+            return response.json();
+        })
+        .then(project => {
+            if (project) {
+                // Isi gambar latar belakang
+                bgImageElement.style.backgroundImage = `url('/storage/${project.foto_head}')`;
+                
+                // Isi teks
+                titleElement.textContent = project.judul;
+                lokasiTahunElement.textContent = project.lokasi_tahun;
+                descLengkapElement.textContent = project.desc_lengkap;
+                descSingkat1Element.textContent = project.desc_singkat_1;
+                descSingkat2Element.textContent = project.desc_singkat_2;
+                descSingkat3Element.textContent = project.desc_singkat_3;
+                
+                // Isi gambar foto 1
+                if (foto1Element && project.foto_1) {
+                    foto1Element.src = `/storage/${project.foto_1}`;
+                }
+
+                // Isi gambar foto 2
+                if (foto2Element && project.foto_2) {
+                    foto2Element.src = `/storage/${project.foto_2}`;
+                }
+
+                // Isi gambar foto 3
+                if (foto3Element && project.foto_3) {
+                    foto3Element.src = `/storage/${project.foto_3}`;
+                }
+
+                // Isi gambar foto 4
+                if (foto4Element && project.foto_4) {
+                    foto4Element.src = `/storage/${project.foto_4}`;
+                }
+            } else {
+                console.warn('Data proyek tidak tersedia.');
+            }
+        })
+        .catch(error => {
+            console.error('Gagal memuat detail proyek:', error);
+        });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    const apiUrl = 'http://127.0.0.1:8000/api/content/featured-projects';
+    const container = document.getElementById('featured-projects-container');
+
+    fetch(apiUrl)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.json();
+        })
+        .then(projects => {
+            if (projects.length > 0) {
+                projects.forEach(project => {
+                    const cardHtml = `
+                        <div class="rounded-[20px] overflow-hidden">
+                            <div class="relative w-90 lg:w-full h-96 rounded-xl overflow-hidden bg-cover bg-center"
+                                style="background-image: url('/storage/${project.foto_head}');">
+
+                                <div class="absolute inset-0 bg-black/60"></div>
+
+                                <div class="relative h-full flex items-end px-6 py-8">
+                                    <div class="tracking-tightest">
+                                        <div class="w-64 mb-2.5">
+                                            <h2 class="text-white text-2xl font-medium leading-9">
+                                                ${project.judul}
+                                            </h2>
+                                        </div>
+                                        <div
+                                            class="border-b border-b-white w-fit transition duration-500 hover:border-b-blue-500">
+                                            <a href="/projects/${project.id}"
+                                                class="text-white text-lg hover:text-blue-500 transition duration-500 font-medium leading-relaxed tracking-tight">
+                                                Read more
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                    container.innerHTML += cardHtml;
+                });
+            } else {
+                container.innerHTML = '<p class="text-gray-500 text-center col-span-full">Tidak ada proyek unggulan.</p>';
+            }
+        })
+        .catch(error => {
+            console.error('Error fetching featured projects:', error);
+            container.innerHTML = '<p class="text-red-500 text-center col-span-full">Gagal memuat proyek.</p>';
+        });
+});

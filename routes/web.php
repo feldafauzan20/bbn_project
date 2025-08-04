@@ -56,18 +56,14 @@ Route::get('/contact-form
 
 Route::get('/single-product
 ', function () {
-    return view('single-product
-    ');
+    return view('single-product');
 });
 
-Route::get('/single-services
-', function () {
-    return view('single-services
-    ');
-});
+Route::get('/projects/{id}', function ($id) {
+    return view('single-product', compact('id'));
+})->name('project.detail');
 
 Route::get('/certificate
 ', function () {
-    return view('certificate
-    ');
+    return view('certificate');
 });

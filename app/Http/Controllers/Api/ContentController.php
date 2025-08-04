@@ -82,11 +82,11 @@ class ContentController extends Controller
     /**
      * Mengambil 3 proyek untuk ditampilkan di footer.
      */
-    public function getFeaturedProjects()
+ public function getFeaturedProjects()
     {
         $data = Project::where('is_featured', true)
-                       ->select('foto_head', 'judul')
-                       ->take(3) 
+                       ->select('id', 'foto_head', 'judul') 
+                       ->take(3)
                        ->get();
 
         return response()->json($data);
