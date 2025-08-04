@@ -54,5 +54,20 @@ Route::get('/contact-form
     return view('contact-form');
 });
 
+Route::get('/single-product
+', function () {
+    return view('single-product
+    ');
+});
 
+Route::get('/single-services
+', function () {
+    return view('single-services
+    ');
+});
 
+Route::get('/certificate
+', function () {
+    return view('certificate
+    ');
+});

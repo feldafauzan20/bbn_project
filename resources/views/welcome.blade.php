@@ -320,7 +320,6 @@
 
     {{-- CONTACT US COMPONENT START --}}
     <section class="mx-5 md:mx-9 lg:mx-36 2xl:mx-61">
-
         <x-contact-us-card />
     </section>
     {{-- CONTACT US COMPONENT END --}}
