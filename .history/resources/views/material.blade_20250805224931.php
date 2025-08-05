@@ -937,8 +937,8 @@
                         <div
                             class="h-96 lg:h-96 flex justify-center items-center rounded-t-[20px] px-5 lg:px-15 py-7.5 overflow-hidden">
 
-                            <div class="">
-                                <div class="w-60 h-56">
+                            <div class="bg-red-400 flex justify-center">
+                                <div class="w-full h-full bg-blue-400">
                                     <img src="{{ asset('images/material/komowrap/img-cfr-200-material.webp') }}"
                                         class="object-cover w-full h-full " alt="CFR - 200 Material">
                                 </div>

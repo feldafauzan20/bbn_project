@@ -874,11 +874,12 @@
                 </div> --}}
 
                 {{-- Komowrap --}}
-                <div class="grid grid-cols-1 lg:grid-cols-3 md:place-items-center gap-y-11.5 md:gap-y-7 lg:gap-x-7">
+                <div
+                    class="lg:bg-red-500 grid grid-cols-1 lg:grid-cols-3 md:place-items-center gap-y-11.5 md:gap-y-7 lg:gap-x-7">
                     <div
                         class="bg-stone-50 w-full md:w-96 lg:w-full md:flex-1 rounded-[20px] shadow-sm overflow-hidden">
                         <div
-                            class="h-96 lg:h-96 flex justify-center items-center rounded-t-[20px] px-5 lg:px-15 py-7.5 overflow-hidden">
+                            class="h-96  bg-red-700 lg:h-96 flex justify-center items-center rounded-t-[20px] px-5 lg:px-15 py-7.5 overflow-hidden">
 
                             <div class="">
                                 <div class="w-60 h-56">
@@ -935,11 +936,11 @@
                     <div
                         class="bg-stone-50 w-full md:w-96 lg:w-full md:flex-1 rounded-[20px] shadow-sm overflow-hidden">
                         <div
-                            class="h-96 lg:h-96 flex justify-center items-center rounded-t-[20px] px-5 lg:px-15 py-7.5 overflow-hidden">
+                            class="h-96  bg-red-700 lg:h-96 flex justify-center items-center 2xl:h-56 rounded-t-[20px] px-5 lg:px-15 py-7.5 overflow-hidden">
 
                             <div class="">
-                                <div class="w-60 h-56">
-                                    <img src="{{ asset('images/material/komowrap/img-cfr-200-material.webp') }}"
+                                <div class="w-60  2xl:w-36 h-56  2xl:h-36">
+                                    <img src="{{ asset('images/material/komowrap/img-content-cfp-100-material.webp') }}"
                                         class="object-cover w-full h-full " alt="CFR - 200 Material">
                                 </div>
                             </div>

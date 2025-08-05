@@ -47,7 +47,7 @@
             <div>
                 {{-- Komofloor --}}
                 {{-- <div
-                    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-x-3 lg:gap-x-6.5 gap-y-4 md:gap-y-5 lg:gap-y-6.5" id="komofloor">
+                    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-x-3 lg:gap-x-6.5 gap-y-4 md:gap-y-5 lg:gap-y-6.5">
                     <div class="bg-stone-50 w-full md:flex-1 rounded-[20px] shadow-sm overflow-hidden">
                         <!-- Gambar sebagai background -->
                         <div class="relative h-40 2xl:h-56 rounded-t-[20px] px-5 py-7.5 overflow-hidden">
@@ -460,8 +460,8 @@
                 </div> --}}
 
                 {{-- Komoproof --}}
-                {{-- <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-x-3 lg:gap-x-6.5 gap-y-4 md:gap-y-5 lg:gap-y-6.5"
-                    id="komoproof">
+                <div
+                    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-x-3 lg:gap-x-6.5 gap-y-4 md:gap-y-5 lg:gap-y-6.5">
                     <div class="bg-stone-50 w-full md:flex-1 rounded-[20px] shadow-sm overflow-hidden">
                         <!-- Gambar sebagai background -->
                         <div class="relative h-40 2xl:h-56 rounded-t-[20px] px-5 py-7.5 overflow-hidden">
@@ -517,7 +517,7 @@
                         <div class="relative h-40 2xl:h-56 rounded-t-[20px] px-5 py-7.5 overflow-hidden">
                             <!-- Background image -->
                             <div class="absolute inset-0 bg-cover bg-center"
-                                style="background-image: url('{{ asset('images/material/komoproof/img-up-100-material.webp') }}');">
+                                style="background-image: url('{{ asset('images/material/komoproof/img-up-100-material.webp.webp') }}');">
                             </div>
                             <!-- Overlay hitam 50% -->
                             <div class="absolute inset-0 bg-black/50"></div>
@@ -525,7 +525,7 @@
                             <!-- another content -->
                             <div class="relative">
                                 <div class="w-28 2xl:w-36 h-28 2xl:h-36">
-                                    <img src="{{ asset('images/material/komoproof/img-content-up-100-material.webp') }}"
+                                    <img src="{{ asset('images/material/komoproof/img-content-up-100-material.webp.webp') }}"
                                         class="object-cover w-full h-full" alt="">
                                 </div>
                             </div>
@@ -678,7 +678,7 @@
                             <!-- another content -->
                             <div class="relative">
                                 <div class="w-28 2xl:w-36 h-28 2xl:h-36">
-                                    <img src="{{ asset('images/material/komoproof/img-content-up-100-material.webp') }}"
+                                    <img src="{{ asset('images/material/komoproof/img-content-up-100-material.webp.webp') }}"
                                         class="object-cover w-full h-full" alt="">
                                 </div>
                             </div>
@@ -871,95 +871,6 @@
                         </div>
                     </div>
 
-                </div> --}}
-
-                {{-- Komowrap --}}
-                <div class="grid grid-cols-1 lg:grid-cols-3 md:place-items-center gap-y-11.5 md:gap-y-7 lg:gap-x-7">
-                    <div
-                        class="bg-stone-50 w-full md:w-96 lg:w-full md:flex-1 rounded-[20px] shadow-sm overflow-hidden">
-                        <div
-                            class="h-96 lg:h-96 flex justify-center items-center rounded-t-[20px] px-5 lg:px-15 py-7.5 overflow-hidden">
-
-                            <div class="">
-                                <div class="w-60 h-56">
-                                    <img src="{{ asset('images/material/komowrap/img-content-cfp-100-material.webp') }}"
-                                        class="object-cover w-full h-full " alt="CFP-100 Material">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="py-4 px-5 h-24 md:h-28">
-                            <div class="">
-                                <p
-                                    class="text-lg md:text-xl font-normal tracking-tight leading-relaxed md:leading-loose text-black">
-                                    CARBON FIBER PRIMER CFP-100
-                                </p>
-                            </div>
-                            <div class="">
-                                <p
-                                    class="text-2xl md:text-3xl font-semibold tracking-tighter leading-9 md:leading-10 text-black">
-                                    CFP - 100
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div
-                        class="bg-stone-50 w-full md:w-96 lg:w-full md:flex-1 rounded-[20px] shadow-sm overflow-hidden">
-                        <div class="h-96 flex justify-center items-center rounded-t-[20px] overflow-hidden">
-
-                            <div class="">
-                                <div class="w-full h-full">
-                                    <img src="{{ asset('images/material/komowrap/img-n-300-material.webp') }}"
-                                        class="object-cover w-full h-full " alt="N-300 Material">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="py-4 px-5 h-24 md:h-28">
-                            <div class="">
-                                <p
-                                    class="text-lg md:text-xl font-normal tracking-tight leading-relaxed md:leading-loose text-black">
-                                    CARBON FIBER
-                                </p>
-                            </div>
-                            <div class="">
-                                <p
-                                    class="text-2xl md:text-3xl font-semibold tracking-tighter leading-9 md:leading-10 text-black">
-                                    N - 300
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div
-                        class="bg-stone-50 w-full md:w-96 lg:w-full md:flex-1 rounded-[20px] shadow-sm overflow-hidden">
-                        <div
-                            class="h-96 lg:h-96 flex justify-center items-center rounded-t-[20px] px-5 lg:px-15 py-7.5 overflow-hidden">
-
-                            <div class="">
-                                <div class="w-60 h-56">
-                                    <img src="{{ asset('images/material/komowrap/img-cfr-200-material.webp') }}"
-                                        class="object-cover w-full h-full " alt="CFR - 200 Material">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="py-4 px-5 h-24 md:h-28">
-                            <div class="">
-                                <p
-                                    class="text-lg md:text-xl font-normal tracking-tight leading-relaxed md:leading-loose text-black">
-                                    CARBON FIBER RESIN
-                                </p>
-                            </div>
-                            <div class="">
-                                <p
-                                    class="text-2xl md:text-3xl font-semibold tracking-tighter leading-9 md:leading-10 text-black">
-                                    CFR - 200
-                                </p>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>

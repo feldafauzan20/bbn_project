@@ -874,89 +874,46 @@
                 </div> --}}
 
                 {{-- Komowrap --}}
-                <div class="grid grid-cols-1 lg:grid-cols-3 md:place-items-center gap-y-11.5 md:gap-y-7 lg:gap-x-7">
-                    <div
-                        class="bg-stone-50 w-full md:w-96 lg:w-full md:flex-1 rounded-[20px] shadow-sm overflow-hidden">
+                <div class="bg-red-500 grid grid-cols-1 lg:grid-cols-3">
+                    <div class="bg-stone-50 w-full md:flex-1 rounded-[20px] shadow-sm overflow-hidden">
                         <div
-                            class="h-96 lg:h-96 flex justify-center items-center rounded-t-[20px] px-5 lg:px-15 py-7.5 overflow-hidden">
+                            class="h-96 flex justify-center items-center 2xl:h-56 rounded-t-[20px] px-5 py-7.5 overflow-hidden">
 
                             <div class="">
-                                <div class="w-60 h-56">
+                                <div class="w-60 2xl:w-36 h-56 2xl:h-36">
                                     <img src="{{ asset('images/material/komowrap/img-content-cfp-100-material.webp') }}"
-                                        class="object-cover w-full h-full " alt="CFP-100 Material">
+                                        class="object-cover w-full h-full " alt="">
                                 </div>
                             </div>
                         </div>
 
-                        <div class="py-4 px-5 h-24 md:h-28">
+                        <!-- Konten -->
+                        <div class="py-4 px-5 h-[471px]">
                             <div class="">
-                                <p
-                                    class="text-lg md:text-xl font-normal tracking-tight leading-relaxed md:leading-loose text-black">
-                                    CARBON FIBER PRIMER CFP-100
+                                <h5 class="text-xl font-bold tracking-tight leading-loose text-black">
+                                    EPOXY PRIMER
+                                </h5>
+                            </div>
+                            <div class="mb-1.5">
+                                <p class="text-lg font-normal tracking-tightest leading-relaxed text-black">
+                                    Kemasan : 16 Kg
                                 </p>
                             </div>
-                            <div class="">
-                                <p
-                                    class="text-2xl md:text-3xl font-semibold tracking-tighter leading-9 md:leading-10 text-black">
-                                    CFP - 100
-                                </p>
+                            <div class="mb-1.5">
+                                <h2 class="text-3xl font-semibold tracking-tightest leading-10 text-black">
+                                    EP - 1000
+                                </h2>
                             </div>
-                        </div>
-                    </div>
-
-                    <div
-                        class="bg-stone-50 w-full md:w-96 lg:w-full md:flex-1 rounded-[20px] shadow-sm overflow-hidden">
-                        <div class="h-96 flex justify-center items-center rounded-t-[20px] overflow-hidden">
-
-                            <div class="">
-                                <div class="w-full h-full">
-                                    <img src="{{ asset('images/material/komowrap/img-n-300-material.webp') }}"
-                                        class="object-cover w-full h-full " alt="N-300 Material">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="py-4 px-5 h-24 md:h-28">
-                            <div class="">
-                                <p
-                                    class="text-lg md:text-xl font-normal tracking-tight leading-relaxed md:leading-loose text-black">
-                                    CARBON FIBER
-                                </p>
-                            </div>
-                            <div class="">
-                                <p
-                                    class="text-2xl md:text-3xl font-semibold tracking-tighter leading-9 md:leading-10 text-black">
-                                    N - 300
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div
-                        class="bg-stone-50 w-full md:w-96 lg:w-full md:flex-1 rounded-[20px] shadow-sm overflow-hidden">
-                        <div
-                            class="h-96 lg:h-96 flex justify-center items-center rounded-t-[20px] px-5 lg:px-15 py-7.5 overflow-hidden">
-
-                            <div class="">
-                                <div class="w-60 h-56">
-                                    <img src="{{ asset('images/material/komowrap/img-cfr-200-material.webp') }}"
-                                        class="object-cover w-full h-full " alt="CFR - 200 Material">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="py-4 px-5 h-24 md:h-28">
-                            <div class="">
-                                <p
-                                    class="text-lg md:text-xl font-normal tracking-tight leading-relaxed md:leading-loose text-black">
-                                    CARBON FIBER RESIN
-                                </p>
-                            </div>
-                            <div class="">
-                                <p
-                                    class="text-2xl md:text-3xl font-semibold tracking-tighter leading-9 md:leading-10 text-black">
-                                    CFR - 200
-                                </p>
+                            <div>
+                                <ul class="list-disc pl-5 text-zinc-500 text-lg font-normal leading-7 tracking-tighter">
+                                    <li>Material dasar sistem lantai epoxy</li>
+                                    <li>Meningkatkan daya rekat permukaan dasar dengan lapisan epoxy di atasnya</li>
+                                    <li>Warna - Transparant</li>
+                                    <li>Rasio Mixing - 3 : 1</li>
+                                    <li>Potlife - 2 jam</li>
+                                    <li>Kering sentuh (30°) - 2 jam</li>
+                                    <li>Jumlah Teoritis - 0.2kg/m²</li>
+                                </ul>
                             </div>
                         </div>
                     </div>

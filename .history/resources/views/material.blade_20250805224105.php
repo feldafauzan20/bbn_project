@@ -874,7 +874,8 @@
                 </div> --}}
 
                 {{-- Komowrap --}}
-                <div class="grid grid-cols-1 lg:grid-cols-3 md:place-items-center gap-y-11.5 md:gap-y-7 lg:gap-x-7">
+                <div
+                    class="lg:bg-red-500 grid grid-cols-1 lg:grid-cols-3 md:place-items-center gap-y-11.5 md:gap-y-7 lg:gap-x-7">
                     <div
                         class="bg-stone-50 w-full md:w-96 lg:w-full md:flex-1 rounded-[20px] shadow-sm overflow-hidden">
                         <div
@@ -939,7 +940,7 @@
 
                             <div class="">
                                 <div class="w-60 h-56">
-                                    <img src="{{ asset('images/material/komowrap/img-cfr-200-material.webp') }}"
+                                    <img src="{{ asset('images/material/komowrap/img-content-cfp-100-material.webp') }}"
                                         class="object-cover w-full h-full " alt="CFR - 200 Material">
                                 </div>
                             </div>
