@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Api\ContentController;
 use App\Models\LandingPage;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\Api\ProductsController;
 
 Route::post('/contact', [ContactController::class, 'sendEmail'])->name('contact.send');
 
@@ -17,6 +18,11 @@ Route::prefix('api/content')->group(function () {
     Route::get('projects/{id}', [ContentController::class, 'getProjectDetail']);
     Route::get('featured-projects', [ContentController::class, 'getFeaturedProjects']);
     Route::get('projects-gallery', [ContentController::class, 'getProjectGallery']);
+
+Route::prefix('products')->group(function () {
+        Route::get('/', [ProductsController::class, 'getProducts']);
+        Route::get('/filters', [ProductsController::class, 'getFilters']);
+    });
 });
 
 Route::get('/', function () {
