@@ -73,3 +73,9 @@ Route::get('/certificate
 ', function () {
     return view('certificate');
 });
+
+Route::get('/material
+', function () {
+    return view('material
+    ');
+});
