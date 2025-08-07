@@ -76,6 +76,5 @@ Route::get('/certificate
 
 Route::get('/material
 ', function () {
-    return view('material
-    ');
+    return view('material');
 });
