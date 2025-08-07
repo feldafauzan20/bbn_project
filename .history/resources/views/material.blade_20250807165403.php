@@ -1420,10 +1420,9 @@
 
 
                 {{-- Perkuatan Beton --}}
-                <div
-                    class="grid grid-cols-1 gap-y-12 md:gap-y-7 lg:gap-y-9.5 md:grid-cols-2 md:gap-x-9.5 lg:grid-cols-4">
-                    <div class="h-[424px] lg:h-[323px]">
-                        <div class="bg-stone-50 h-96 md:h-72 flex items-center justify-center">
+                <div class="grid grid-cols-1 gap-y-12 md:grid-cols-2 lg:grid-cols-4">
+                    <div class="h-[424px]">
+                        <div class="bg-stone-50 h-96 flex items-center justify-center">
                             <div class="w-60 h-24">
                                 <img src="{{ asset('images/material/mesin-dan-perlengkapan/img-hammer-test-material.webp') }}"
                                     class="w-full h-full object-cover" alt="Gambar Hammer test">
@@ -1435,8 +1434,8 @@
                             </p>
                         </div>
                     </div>
-                    <div class="h-[424px] lg:h-[323px]">
-                        <div class="bg-stone-50 h-96 md:h-72 flex items-center justify-center">
+                    <div class="h-[424px]">
+                        <div class="bg-stone-50 h-96 flex items-center justify-center">
                             <div class="w-36 h-36">
                                 <img src="{{ asset('images/material/mesin-dan-perlengkapan/img-profometer-material.webp') }}"
                                     class="w-full h-full object-cover" alt="Gambar Profometer">
@@ -1448,8 +1447,8 @@
                             </p>
                         </div>
                     </div>
-                    <div class="h-[424px] lg:h-[323px]">
-                        <div class="bg-stone-50 h-96 md:h-72 flex items-center justify-center">
+                    <div class="h-[424px]">
+                        <div class="bg-stone-50 h-96 flex items-center justify-center">
                             <div class="w-36 h-36">
                                 <img src="{{ asset('images/material/mesin-dan-perlengkapan/img-thickness-gauge-material.webp') }}"
                                     class="w-full h-full object-cover" alt="Gambar thickness gauge">
@@ -1461,55 +1460,16 @@
                             </p>
                         </div>
                     </div>
-                    <div class="h-[424px] lg:h-[323px]">
-                        <div class="bg-stone-50 h-96 md:h-72 flex items-center justify-center">
+                    <div class="h-[424px]">
+                        <div class="bg-stone-50 h-96 flex items-center justify-center">
                             <div class="w-44 h-36">
                                 <img src="{{ asset('images/material/mesin-dan-perlengkapan/img-upv-undit-material.webp') }}"
-                                    class="w-full h-full object-cover" alt="Gambar UPV Undit">
+                                    class="w-full h-full object-cover" alt="Gambar thickness gauge">
                             </div>
                         </div>
                         <div>
                             <p class="text-black text-lg font-medium leading-relaxed tracking-tighter">
-                                UPV Undit
-                            </p>
-                        </div>
-                    </div>
-                    <div class="h-[424px] lg:h-[323px]">
-                        <div class="bg-stone-50 h-96 md:h-72 flex items-center justify-center">
-                            <div class="w-16 h-36">
-                                <img src="{{ asset('images/material/mesin-dan-perlengkapan/img-core-drill-material.webp') }}"
-                                    class="w-full h-full object-cover" alt="Gambar UPV Undit">
-                            </div>
-                        </div>
-                        <div>
-                            <p class="text-black text-lg font-medium leading-relaxed tracking-tighter">
-                                Core Drill
-                            </p>
-                        </div>
-                    </div>
-                    <div class="h-[424px] lg:h-[323px]">
-                        <div class="bg-stone-50 h-96 md:h-72 flex items-center justify-center">
-                            <div class="w-20 h-36">
-                                <img src="{{ asset('images/material/perkuatan-beton/img-tensile-strength-tester-material.webp') }}"
-                                    class="w-full h-full object-cover" alt="Gambar  Tensile Strength Tester">
-                            </div>
-                        </div>
-                        <div>
-                            <p class="text-black text-lg font-medium leading-relaxed tracking-tighter">
-                                Tensile Strength Tester
-                            </p>
-                        </div>
-                    </div>
-                    <div class="h-[424px] lg:h-[323px]">
-                        <div class="bg-stone-50 h-96 md:h-72 flex items-center justify-center">
-                            <div class="w-40 h-36">
-                                <img src="{{ asset('images/material/perkuatan-beton/img-pull-of-testing-material.webp') }}"
-                                    class="w-full h-full object-cover" alt="Gambar Pull Of Testing">
-                            </div>
-                        </div>
-                        <div>
-                            <p class="text-black text-lg font-medium leading-relaxed tracking-tighter">
-                                Pull Of Testing
+                                Thickness Gauge
                             </p>
                         </div>
                     </div>

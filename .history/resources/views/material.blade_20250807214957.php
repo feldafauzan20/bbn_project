@@ -1421,8 +1421,8 @@
 
                 {{-- Perkuatan Beton --}}
                 <div
-                    class="grid grid-cols-1 gap-y-12 md:gap-y-7 lg:gap-y-9.5 md:grid-cols-2 md:gap-x-9.5 lg:grid-cols-4">
-                    <div class="h-[424px] lg:h-[323px]">
+                    class="grid grid-cols-1 md:bg-red-400 gap-y-12 md:gap-y-7 lg:gap-y-9.5 md:grid-cols-2 md:gap-x-9.5 lg:grid-cols-4">
+                    <div class="h-[424px]">
                         <div class="bg-stone-50 h-96 md:h-72 flex items-center justify-center">
                             <div class="w-60 h-24">
                                 <img src="{{ asset('images/material/mesin-dan-perlengkapan/img-hammer-test-material.webp') }}"
@@ -1435,7 +1435,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="h-[424px] lg:h-[323px]">
+                    <div class="h-[424px]">
                         <div class="bg-stone-50 h-96 md:h-72 flex items-center justify-center">
                             <div class="w-36 h-36">
                                 <img src="{{ asset('images/material/mesin-dan-perlengkapan/img-profometer-material.webp') }}"
@@ -1448,7 +1448,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="h-[424px] lg:h-[323px]">
+                    <div class="h-[424px]">
                         <div class="bg-stone-50 h-96 md:h-72 flex items-center justify-center">
                             <div class="w-36 h-36">
                                 <img src="{{ asset('images/material/mesin-dan-perlengkapan/img-thickness-gauge-material.webp') }}"
@@ -1461,7 +1461,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="h-[424px] lg:h-[323px]">
+                    <div class="h-[424px]">
                         <div class="bg-stone-50 h-96 md:h-72 flex items-center justify-center">
                             <div class="w-44 h-36">
                                 <img src="{{ asset('images/material/mesin-dan-perlengkapan/img-upv-undit-material.webp') }}"
@@ -1474,7 +1474,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="h-[424px] lg:h-[323px]">
+                    <div class="h-[424px]">
                         <div class="bg-stone-50 h-96 md:h-72 flex items-center justify-center">
                             <div class="w-16 h-36">
                                 <img src="{{ asset('images/material/mesin-dan-perlengkapan/img-core-drill-material.webp') }}"
@@ -1487,7 +1487,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="h-[424px] lg:h-[323px]">
+                    <div class="h-[424px]">
                         <div class="bg-stone-50 h-96 md:h-72 flex items-center justify-center">
                             <div class="w-20 h-36">
                                 <img src="{{ asset('images/material/perkuatan-beton/img-tensile-strength-tester-material.webp') }}"
@@ -1500,7 +1500,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="h-[424px] lg:h-[323px]">
+                    <div class="h-[424px]">
                         <div class="bg-stone-50 h-96 md:h-72 flex items-center justify-center">
                             <div class="w-40 h-36">
                                 <img src="{{ asset('images/material/perkuatan-beton/img-pull-of-testing-material.webp') }}"

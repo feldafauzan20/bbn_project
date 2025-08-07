@@ -1421,7 +1421,7 @@
 
                 {{-- Perkuatan Beton --}}
                 <div
-                    class="grid grid-cols-1 gap-y-12 md:gap-y-7 lg:gap-y-9.5 md:grid-cols-2 md:gap-x-9.5 lg:grid-cols-4">
+                    class="grid grid-cols-1 md:bg-red-400 gap-y-12 md:gap-y-7 lg:gap-y-9.5 md:grid-cols-2 md:gap-x-9.5 lg:grid-cols-4">
                     <div class="h-[424px] lg:h-[323px]">
                         <div class="bg-stone-50 h-96 md:h-72 flex items-center justify-center">
                             <div class="w-60 h-24">
