@@ -963,8 +963,7 @@
                 </div> --}}
 
                 {{-- Mesin dan Perlengkapan --}}
-                <div
-                    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-11.5 md:gap-y-10 lg:gap-y-7 md:gap-x-3.5 lg:gap-x-7 md:bg-red-400">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-11.5 bg-red-400">
 
                     <div id="carousel-ch600" class="relative w-full" data-carousel="static">
                         <!-- Carousel wrapper -->

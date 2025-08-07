@@ -963,10 +963,9 @@
                 </div> --}}
 
                 {{-- Mesin dan Perlengkapan --}}
-                <div
-                    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-11.5 md:gap-y-10 lg:gap-y-7 md:gap-x-3.5 lg:gap-x-7 md:bg-red-400">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
 
-                    <div id="carousel-ch600" class="relative w-full" data-carousel="static">
+                    {{-- <div id="default-carousel" class="relative w-full" data-carousel="slide">
                         <!-- Carousel wrapper -->
                         <div class="relative h-[714px] overflow-hidden rounded-lg">
                             <!-- Item 1 -->
@@ -1072,9 +1071,9 @@
                             <button type="button" class="w-3 h-3 rounded-full" aria-current="false"
                                 aria-label="Slide 3" data-carousel-slide-to="2"></button>
                         </div>
-                    </div>
+                    </div> --}}
 
-                    <div id="carousel-ch100" class="relative w-full" data-carousel="static">
+                    {{-- <div id="default-carousel" class="relative w-full" data-carousel="slide">
                         <!-- Carousel wrapper -->
                         <div class="relative h-[714px] overflow-hidden rounded-lg">
                             <!-- Item 1 -->
@@ -1150,15 +1149,15 @@
                         <!-- Slider indicators -->
                         <div
                             class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
-                            <button type="button" class="w-3 h-3 rounded-full" aria-current="true"
-                                aria-label="Slide 1" data-carousel-slide-to="0"></button>
+                            <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1"
+                                data-carousel-slide-to="0"></button>
                             <button type="button" class="w-3 h-3 rounded-full" aria-current="false"
                                 aria-label="Slide 2" data-carousel-slide-to="1"></button>
 
                         </div>
-                    </div>
+                    </div> --}}
 
-                    <div id="carousel-mpg24g" class="relative w-full" data-carousel="static">
+                    {{-- <div id="default-carousel" class="relative w-full" data-carousel="slide">
                         <!-- Carousel wrapper -->
                         <div class="relative h-[714px] overflow-hidden rounded-lg">
                             <!-- Item 1 -->
@@ -1306,8 +1305,8 @@
                         <!-- Slider indicators -->
                         <div
                             class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
-                            <button type="button" class="w-3 h-3 rounded-full" aria-current="true"
-                                aria-label="Slide 1" data-carousel-slide-to="0"></button>
+                            <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1"
+                                data-carousel-slide-to="0"></button>
                             <button type="button" class="w-3 h-3 rounded-full" aria-current="false"
                                 aria-label="Slide 2" data-carousel-slide-to="1"></button>
                             <button type="button" class="w-3 h-3 rounded-full" aria-current="false"
@@ -1317,111 +1316,64 @@
                             <button type="button" class="w-3 h-3 rounded-full" aria-current="false"
                                 aria-label="Slide 3" data-carousel-slide-to="4"></button>
                         </div>
+                    </div> --}}
+
+                </div>
+
+                {{-- <div class="h-[714px] bg-stone-50 rounded-2xl">
+                    <div class="h-100 bg-white flex justify-center overflow-hidden px-5 py-4">
+                        <div>
+                            <img src="{{ asset('images/material/mesin-dan-perlengkapan/img-mpg-350-1-material.webp') }}"
+                                class="w-85 h-96 object-cover" alt="Gambar Penyedot Debu">
+                        </div>
+                    </div>
+                    <div class="px-5 py-4">
+                        <div class="mt-4">
+                            <p class="text-black text-xl font-normal leading-loose tracking-tightest">
+                                Gerinda Lantai Multi Fungsi
+                            </p>
+                        </div>
+                        <div>
+                            <h2 class="text-black text-3xl font-semibold leading-10 tracking-tightest">
+                                MPG - 350
+                            </h2>
+                        </div>
+                        <div>
+                            <ul class="list-disc pl-5 text-zinc-500 text-lg font-normal leading-7 tracking-tighter">
+                                <li>Mesin gerinda ringan MPG-350 mudah untuk dipindah-pindah dan cocok untuk area
+                                    pengasahan di atap atau area kecil</li>
+                            </ul>
+                        </div>
                     </div>
 
-                    <div id="carousel-mpg350" class="relative w-full" data-carousel="static">
-                        <!-- Carousel wrapper -->
-                        <div class="relative h-[714px] overflow-hidden rounded-lg">
-                            <!-- Item 1 -->
-                            <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                                <div class="h-[714px] bg-stone-50 rounded-2xl">
-                                    <div class="h-100 bg-white flex justify-center overflow-hidden px-5 py-4">
-                                        <div>
-                                            <img src="{{ asset('images/material/mesin-dan-perlengkapan/img-mpg-350-1-material.webp') }}"
-                                                class="w-85 h-96 object-cover" alt="Gambar Penyedot Debu">
-                                        </div>
-                                    </div>
-                                    <div class="px-5 py-4">
-                                        <div class="mt-4">
-                                            <p class="text-black text-xl font-normal leading-loose tracking-tightest">
-                                                Gerinda Lantai Multi Fungsi
-                                            </p>
-                                        </div>
-                                        <div>
-                                            <h2 class="text-black text-3xl font-semibold leading-10 tracking-tightest">
-                                                MPG - 350
-                                            </h2>
-                                        </div>
-                                        <div>
-                                            <ul
-                                                class="list-disc pl-5 text-zinc-500 text-lg font-normal leading-7 tracking-tighter">
-                                                <li>Mesin gerinda ringan MPG-350 mudah untuk dipindah-pindah dan cocok
-                                                    untuk area
-                                                    pengasahan di atap atau area kecil</li>
-                                            </ul>
-                                        </div>
-                                    </div>
+                </div> --}}
 
-                                </div>
-
-                            </div>
-                            <!-- Item 2 -->
-                            <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                                <div class="h-[714px] bg-stone-50  rounded-2xl">
-                                    <div class="h-96 bg-white overflow-hidden px-5 py-4">
-                                        <div class="flex justify-center items-center h-full">
-                                            <img src="{{ asset('images/material/mesin-dan-perlengkapan/img-mpg-350-2-material.webp') }}"
-                                                class="w-72 h-52 object-cover" alt="Gambar Penyedot Debu">
-                                        </div>
-                                    </div>
-                                    <div class="px-5 py-4">
-                                        <div class="mt-4">
-                                            <p class="text-black text-xl font-normal leading-loose tracking-tightest">
-                                                Gerinda Lantai Multi Fungsi
-                                            </p>
-                                        </div>
-                                        <div>
-                                            <h2 class="text-black text-3xl font-semibold leading-10 tracking-tightest">
-                                                MPG - 350
-                                            </h2>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <!-- Item 3 -->
-                            <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                                <div class="h-[714px] bg-stone-50  rounded-2xl">
-                                    <div class="h-96 bg-white overflow-hidden px-5 py-4">
-                                        <div class="flex justify-center items-center h-full">
-                                            <img src="{{ asset('images/material/mesin-dan-perlengkapan/img-mpg-350-3-material.webp') }}"
-                                                class="w-60 h-52 object-cover" alt="Gambar Penyedot Debu">
-                                        </div>
-                                    </div>
-                                    <div class="px-5 py-4">
-                                        <div class="mt-4">
-                                            <p class="text-black text-xl font-normal leading-loose tracking-tightest">
-                                                Gerinda Lantai Multi Fungsi
-                                            </p>
-                                        </div>
-                                        <div>
-                                            <h2 class="text-black text-3xl font-semibold leading-10 tracking-tightest">
-                                                MPG - 350
-                                            </h2>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
+                <div class="h-[714px] bg-stone-50  rounded-2xl">
+                    <div class="h-96 bg-white overflow-hidden px-5 py-4">
+                        <div class="flex justify-center items-center h-full">
+                            <img src="{{ asset('images/material/mesin-dan-perlengkapan/img-mpg-350-2-material.webp') }}"
+                                class="w-52 h-52 object-cover" alt="Gambar Penyedot Debu">
                         </div>
-                        <!-- Slider indicators -->
-                        <div
-                            class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
-                            <button type="button" class="w-3 h-3 rounded-full" aria-current="true"
-                                aria-label="Slide 1" data-carousel-slide-to="0"></button>
-                            <button type="button" class="w-3 h-3 rounded-full" aria-current="false"
-                                aria-label="Slide 2" data-carousel-slide-to="1"></button>
-                            <button type="button" class="w-3 h-3 rounded-full" aria-current="false"
-                                aria-label="Slide 3" data-carousel-slide-to="2"></button>
+                    </div>
+                    <div class="px-5 py-4">
+                        <div class="mt-4">
+                            <p class="text-black text-xl font-normal leading-loose tracking-tightest">
+                                Penyedot debu dengan 3 motor
+                            </p>
+                        </div>
+                        <div>
+                            <h2 class="text-black text-3xl font-semibold leading-10 tracking-tightest">
+                                CH - 600 AUTO
+                            </h2>
+                        </div>
+                        <div>
+                            <ul class="list-disc pl-5 text-zinc-500 text-lg font-normal leading-7 tracking-tighter">
+                                <li>FILTER PTFE</li>
+                            </ul>
                         </div>
                     </div>
 
                 </div>
-
-
-
-
-
 
 
 
