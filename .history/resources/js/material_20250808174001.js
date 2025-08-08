@@ -39,13 +39,6 @@ const swiper5 = new Swiper(".swiper5", {
     grabCursor: true,
     freeMode: true,
 });
-
-const swiper6 = new Swiper(".swiper6", {
-    slidesPerView: "auto",
-    spaceBetween: 30,
-    grabCursor: true,
-    freeMode: true,
-});
 // Swiper end
 
 // Navbar start

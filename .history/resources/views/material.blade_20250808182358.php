@@ -1786,30 +1786,27 @@
                     <div class="swiper swiper6">
                         <div class="swiper-wrapper">
 
-
-
                             {{-- card 1 --}}
                             <div class="swiper-slide bg-white w-[289px] sm:w-[250px] md:w-[289px] flex-shrink-0">
                                 <div class="bg-stone-50 flex justify-center items-center h-72">
-                                    <img src="{{ asset('images/material/mata-gerinda/img-content-cover-debu-7-4-material.webp') }}"
-                                        alt="" class="object-cover w-64 h-32">
+                                    <img src="{{ asset('images/material/mata-gerinda/img-content-grinding-plates-hitam-material.webp') }}"
+                                        alt="" class="object-cover w-28 h-20">
                                 </div>
                                 <div class="flex justify-between">
-                                    <p class="text-black text-lg font-medium tracking-tightest">Cover Debu</p>
-                                    <p class="text-neutral-400 text-lg font-medium tracking-tightest">7” & 4”</p>
+                                    <p class="text-black text-lg font-medium tracking-tightest">Grinding plates</p>
+                                    <p class="text-neutral-400 text-lg font-medium tracking-tightest">Hitam</p>
                                 </div>
                             </div>
 
                             {{-- card 2 --}}
                             <div class="swiper-slide bg-white w-[289px] sm:w-[250px] md:w-[289px] flex-shrink-0">
                                 <div class="bg-stone-50 flex justify-center items-center h-72">
-                                    <img src="{{ asset('images/material/mata-gerinda/img-content-cover-debu-alat-pemotong-4-8-material.webp') }}"
-                                        alt="" class="object-cover w-52 h-20">
+                                    <img src="{{ asset('images/material/mata-gerinda/img-content-grinding-plates-hitam-material.webp') }}"
+                                        alt="" class="object-cover w-28 h-20">
                                 </div>
                                 <div class="flex justify-between">
-                                    <p class="text-black text-lg font-medium tracking-tightest">Cover Debu Alat
-                                        Pemotong</p>
-                                    <p class="text-neutral-400 text-lg font-medium tracking-tightest">4” & 8”</p>
+                                    <p class="text-black text-lg font-medium tracking-tightest">Grinding plates</p>
+                                    <p class="text-neutral-400 text-lg font-medium tracking-tightest">Hitam</p>
                                 </div>
                             </div>
 

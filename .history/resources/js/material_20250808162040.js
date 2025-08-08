@@ -5,42 +5,7 @@ import "swiper/css";
 gsap.registerPlugin(ScrollTrigger);
 
 // Swiper start
-const swiper1 = new Swiper(".swiper1", {
-    slidesPerView: "auto",
-    spaceBetween: 30,
-    grabCursor: true,
-    freeMode: true,
-});
-
-const swiper2 = new Swiper(".swiper2", {
-    slidesPerView: "auto",
-    spaceBetween: 30,
-    grabCursor: true,
-    freeMode: true,
-});
-
-const swiper3 = new Swiper(".swiper3", {
-    slidesPerView: "auto",
-    spaceBetween: 30,
-    grabCursor: true,
-    freeMode: true,
-});
-
-const swiper4 = new Swiper(".swiper4", {
-    slidesPerView: "auto",
-    spaceBetween: 30,
-    grabCursor: true,
-    freeMode: true,
-});
-
-const swiper5 = new Swiper(".swiper5", {
-    slidesPerView: "auto",
-    spaceBetween: 30,
-    grabCursor: true,
-    freeMode: true,
-});
-
-const swiper6 = new Swiper(".swiper6", {
+const swiper = new Swiper(".mySwiper", {
     slidesPerView: "auto",
     spaceBetween: 30,
     grabCursor: true,

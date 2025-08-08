@@ -1807,9 +1807,8 @@
                                         alt="" class="object-cover w-52 h-20">
                                 </div>
                                 <div class="flex justify-between">
-                                    <p class="text-black text-lg font-medium tracking-tightest">Cover Debu Alat
-                                        Pemotong</p>
-                                    <p class="text-neutral-400 text-lg font-medium tracking-tightest">4” & 8”</p>
+                                    <p class="text-black text-lg font-medium tracking-tightest">Grinding plates</p>
+                                    <p class="text-neutral-400 text-lg font-medium tracking-tightest">Hitam</p>
                                 </div>
                             </div>
 

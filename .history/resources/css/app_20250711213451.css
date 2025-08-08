@@ -21,7 +21,3 @@
     --spacing-y: 30px;
     --spacing-x: 60px;
 }
-
-.swiper-slide {
-    width: 289px !important; /* Sesuai ukuran card yang kamu mau */
-}

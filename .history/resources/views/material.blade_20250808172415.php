@@ -1593,12 +1593,12 @@
 
                             {{-- card 1 --}}
                             <div class="swiper-slide bg-white w-[289px] sm:w-[250px] md:w-[289px] flex-shrink-0">
-                                <div class="bg-stone-50 flex justify-center items-center h-72">
+                                <div class="bg-red-400 flex justify-center items-center h-72">
                                     <img src="{{ asset('images/material/mata-gerinda/img-content-pcd-material.webp') }}"
                                         alt="" class="object-cover w-60 h-40">
                                 </div>
                                 <div class="">
-                                    <p class="text-black text-lg font-medium tracking-tightest">PCD <span
+                                    <p class="text-black text-lg font-medium tracking-tightest">PCD<span
                                             class="text-neutral-400">(untuk mesin)</span> </p>
                                 </div>
                             </div>
@@ -1606,213 +1606,62 @@
                             {{-- card 2 --}}
                             <div class="swiper-slide bg-white w-[289px] sm:w-[250px] md:w-[289px] flex-shrink-0">
                                 <div class="bg-stone-50 flex justify-center items-center h-72">
-                                    <img src="{{ asset('images/material/mata-gerinda/img-content-pcd-split-material.webp') }}"
-                                        alt="" class="object-cover w-60 h-40">
+                                    <img src="{{ asset('images/material/mata-gerinda/img-content-super-red-4-material.webp') }}"
+                                        alt="" class="object-cover w-40 h-40">
                                 </div>
-                                <div class="">
-                                    <p class="text-black text-lg font-medium tracking-tightest">PCD Split</p>
+                                <div class="flex justify-between">
+                                    <p class="text-black text-lg font-medium tracking-tightest">Super Red</p>
+                                    <p class="text-neutral-400 text-lg font-medium tracking-tightest">4”</p>
                                 </div>
                             </div>
 
                             {{-- card 3 --}}
                             <div class="swiper-slide bg-white w-[289px] sm:w-[250px] md:w-[289px] flex-shrink-0">
                                 <div class="bg-stone-50 flex justify-center items-center h-72">
-                                    <img src="{{ asset('images/material/mata-gerinda/img-content-pcd-cup-wheel-4-red-material.webp') }}"
+                                    <img src="{{ asset('images/material/mata-gerinda/img-content-turbo-a-4-material.webp') }}"
                                         alt="" class="object-cover w-40 h-40">
                                 </div>
                                 <div class="flex justify-between">
-                                    <p class="text-black text-lg font-medium tracking-tightest">PCD Cup Wheel</p>
+                                    <p class="text-black text-lg font-medium tracking-tightest">Turbo A</p>
                                     <p class="text-neutral-400 text-lg font-medium tracking-tightest">4”</p>
-                                </div>
-                                <div>
-                                    <p class="text-neutral-400 text-lg font-medium tracking-tightest">(Penghilang
-                                        Uretan)</p>
                                 </div>
                             </div>
 
                             {{-- card 4 --}}
                             <div class="swiper-slide bg-white w-[289px] sm:w-[250px] md:w-[289px] flex-shrink-0">
                                 <div class="bg-stone-50 flex justify-center items-center h-72">
-                                    <img src="{{ asset('images/material/mata-gerinda/img-content-pcd-cup-wheel-7-orange-material.webp') }}"
+                                    <img src="{{ asset('images/material/mata-gerinda/img-content-turbo-b-4-material.webp') }}"
                                         alt="" class="object-cover w-40 h-40">
                                 </div>
                                 <div class="flex justify-between">
-                                    <p class="text-black text-lg font-medium tracking-tightest">PCD Cup Wheel</p>
-                                    <p class="text-neutral-400 text-lg font-medium tracking-tightest">7”</p>
-                                </div>
-                                <div>
-                                    <p class="text-neutral-400 text-lg font-medium tracking-tightest">(Penghilang
-                                        Uretan)</p>
-                                </div>
-                            </div>
-
-                            {{-- card 5 --}}
-                            <div class="swiper-slide bg-white w-[289px] sm:w-[250px] md:w-[289px] flex-shrink-0">
-                                <div class="bg-stone-50 flex justify-center items-center h-72">
-                                    <img src="{{ asset('images/material/mata-gerinda/img-content-pcd-cup-wheel-4-blue-material.webp') }}"
-                                        alt="" class="object-cover w-40 h-40">
-                                </div>
-                                <div class="flex justify-between">
-                                    <p class="text-black text-lg font-medium tracking-tightest">PCD Cup Wheel</p>
+                                    <p class="text-black text-lg font-medium tracking-tightest">Turbo B</p>
                                     <p class="text-neutral-400 text-lg font-medium tracking-tightest">4”</p>
                                 </div>
-                                <div>
-                                    <p class="text-neutral-400 text-lg font-medium tracking-tightest">(Penghilang
-                                        Epoxy)</p>
-                                </div>
-                            </div>
-
-                            {{-- card 6 --}}
-                            <div class="swiper-slide bg-white w-[289px] sm:w-[250px] md:w-[289px] flex-shrink-0">
-                                <div class="bg-stone-50 flex justify-center items-center h-72">
-                                    <img src="{{ asset('images/material/mata-gerinda/img-content-pcd-cup-wheel-7-blue-material.webp') }}"
-                                        alt="" class="object-cover w-40 h-40">
-                                </div>
-                                <div class="flex justify-between">
-                                    <p class="text-black text-lg font-medium tracking-tightest">PCD Cup Wheel</p>
-                                    <p class="text-neutral-400 text-lg font-medium tracking-tightest">7”</p>
-                                </div>
-                                <div>
-                                    <p class="text-neutral-400 text-lg font-medium tracking-tightest">(Penghilang
-                                        Epoxy)</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div id="swiper-5" class="mt-12.5">
-                    <div class="mb-5">
-                        <p class="text-black text-2xl font-medium leading-7 tracking-tightest">Segmented PCD grinding
-                            plates
-                        </p>
-                    </div>
-                    <div class="swiper swiper5">
-                        <div class="swiper-wrapper">
-
-                            {{-- card 1 --}}
-                            <div class="swiper-slide bg-white w-[289px] sm:w-[250px] md:w-[289px] flex-shrink-0">
-                                <div class="bg-stone-50 flex justify-center items-center h-72">
-                                    <img src="{{ asset('images/material/mata-gerinda/img-content-holder-pcd-segmen-material.webp') }}"
-                                        alt="" class="object-cover w-40 h-40">
-                                </div>
-                                <div class="">
-                                    <p class="text-black text-lg font-medium tracking-tightest">Holder PCD Segmen</p>
-
-                                </div>
-                            </div>
-
-                            {{-- card 2 --}}
-                            <div class="swiper-slide bg-white w-[289px] sm:w-[250px] md:w-[289px] flex-shrink-0">
-                                <div class="bg-stone-50 flex justify-center items-center h-72">
-                                    <img src="{{ asset('images/material/mata-gerinda/img-content-grinding-plates-hitam-material.webp') }}"
-                                        alt="" class="object-cover w-28 h-20">
-                                </div>
-                                <div class="flex justify-between">
-                                    <p class="text-black text-lg font-medium tracking-tightest">Grinding plates</p>
-                                    <p class="text-neutral-400 text-lg font-medium tracking-tightest">Hitam</p>
-                                </div>
-                            </div>
-
-                            {{-- card 3 --}}
-                            <div class="swiper-slide bg-white w-[289px] sm:w-[250px] md:w-[289px] flex-shrink-0">
-                                <div class="bg-stone-50 flex justify-center items-center h-72">
-                                    <img src="{{ asset('images/material/mata-gerinda/img-content-grinding-plates-merah-material.webp') }}"
-                                        alt="" class="object-cover w-28 h-20">
-                                </div>
-                                <div class="flex justify-between">
-                                    <p class="text-black text-lg font-medium tracking-tightest">Grinding plates</p>
-                                    <p class="text-neutral-400 text-lg font-medium tracking-tightest">Merah</p>
-                                </div>
-                            </div>
-
-                            {{-- card 4 --}}
-                            <div class="swiper-slide bg-white w-[289px] sm:w-[250px] md:w-[289px] flex-shrink-0">
-                                <div class="bg-stone-50 flex justify-center items-center h-72">
-                                    <img src="{{ asset('images/material/mata-gerinda/img-content-grinding-plates-biru-material.webp') }}"
-                                        alt="" class="object-cover w-28 h-20">
-                                </div>
-                                <div class="flex justify-between">
-                                    <p class="text-black text-lg font-medium tracking-tightest">Grinding plates</p>
-                                    <p class="text-neutral-400 text-lg font-medium tracking-tightest">Biru</p>
-                                </div>
                             </div>
 
                             {{-- card 5 --}}
                             <div class="swiper-slide bg-white w-[289px] sm:w-[250px] md:w-[289px] flex-shrink-0">
                                 <div class="bg-stone-50 flex justify-center items-center h-72">
-                                    <img src="{{ asset('images/material/mata-gerinda/img-content-grinding-plates-oranye-material.webp') }}"
-                                        alt="" class="object-cover w-28 h-20">
+                                    <img src="{{ asset('images/material/mata-gerinda/img-content-astra-7-red-material.webp') }}"
+                                        alt="" class="object-cover w-40 h-40">
                                 </div>
                                 <div class="flex justify-between">
-                                    <p class="text-black text-lg font-medium tracking-tightest">Grinding plates</p>
-                                    <p class="text-neutral-400 text-lg font-medium tracking-tightest">Oranye</p>
+                                    <p class="text-black text-lg font-medium tracking-tightest">Astra</p>
+                                    <p class="text-neutral-400 text-lg font-medium tracking-tightest">7”</p>
                                 </div>
                             </div>
 
                             {{-- card 6 --}}
                             <div class="swiper-slide bg-white w-[289px] sm:w-[250px] md:w-[289px] flex-shrink-0">
                                 <div class="bg-stone-50 flex justify-center items-center h-72">
-                                    <img src="{{ asset('images/material/mata-gerinda/img-content-grinding-plates-putih-material.webp') }}"
-                                        alt="" class="object-cover w-28 h-20">
+                                    <img src="{{ asset('images/material/mata-gerinda/img-content-astra-7-gray-material.webp') }}"
+                                        alt="" class="object-cover w-40 h-40">
                                 </div>
                                 <div class="flex justify-between">
-                                    <p class="text-black text-lg font-medium tracking-tightest">Grinding plates</p>
-                                    <p class="text-neutral-400 text-lg font-medium tracking-tightest">Putih</p>
+                                    <p class="text-black text-lg font-medium tracking-tightest">Astra</p>
+                                    <p class="text-neutral-400 text-lg font-medium tracking-tightest">7”</p>
                                 </div>
                             </div>
-
-                            {{-- card 7 --}}
-                            <div class="swiper-slide bg-white w-[289px] sm:w-[250px] md:w-[289px] flex-shrink-0">
-                                <div class="bg-stone-50 flex justify-center items-center h-72">
-                                    <img src="{{ asset('images/material/mata-gerinda/img-content-diamond-grinding-segment-material.webp') }}"
-                                        alt="" class="object-cover w-28 h-20">
-                                </div>
-                                <div class="">
-                                    <p class="text-black text-lg font-medium tracking-tightest">Diamond Grinding
-                                        Segment</p>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div id="swiper-6" class="mt-12.5">
-                    <div class="mb-5">
-                        <p class="text-black text-2xl font-medium leading-7 tracking-tightest">Cover debu
-                        </p>
-                    </div>
-                    <div class="swiper swiper6">
-                        <div class="swiper-wrapper">
-
-
-
-                            {{-- card 1 --}}
-                            <div class="swiper-slide bg-white w-[289px] sm:w-[250px] md:w-[289px] flex-shrink-0">
-                                <div class="bg-stone-50 flex justify-center items-center h-72">
-                                    <img src="{{ asset('images/material/mata-gerinda/img-content-cover-debu-7-4-material.webp') }}"
-                                        alt="" class="object-cover w-64 h-32">
-                                </div>
-                                <div class="flex justify-between">
-                                    <p class="text-black text-lg font-medium tracking-tightest">Cover Debu</p>
-                                    <p class="text-neutral-400 text-lg font-medium tracking-tightest">7” & 4”</p>
-                                </div>
-                            </div>
-
-                            {{-- card 2 --}}
-                            <div class="swiper-slide bg-white w-[289px] sm:w-[250px] md:w-[289px] flex-shrink-0">
-                                <div class="bg-stone-50 flex justify-center items-center h-72">
-                                    <img src="{{ asset('images/material/mata-gerinda/img-content-cover-debu-alat-pemotong-4-8-material.webp') }}"
-                                        alt="" class="object-cover w-52 h-20">
-                                </div>
-                                <div class="flex justify-between">
-                                    <p class="text-black text-lg font-medium tracking-tightest">Cover Debu Alat
-                                        Pemotong</p>
-                                    <p class="text-neutral-400 text-lg font-medium tracking-tightest">4” & 8”</p>
-                                </div>
-                            </div>
-
                         </div>
                     </div>
                 </div>
