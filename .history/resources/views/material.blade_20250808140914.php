@@ -724,7 +724,7 @@
                         <div class="relative h-40 2xl:h-56 rounded-t-[20px] px-5 py-7.5 overflow-hidden">
                             <!-- Background image -->
                             <div class="absolute inset-0 bg-cover bg-center"
-                                style="background-image: url('{{ asset('images/material/komoproof/img-bp-200-material.webp') }}');">
+                                style="background-image: url('{{ asset('images/material/komoproof/img-ub-200-material.webp') }}');">
                             </div>
                             <!-- Overlay hitam 50% -->
                             <div class="absolute inset-0 bg-black/50"></div>
@@ -732,7 +732,7 @@
                             <!-- another content -->
                             <div class="relative">
                                 <div class="w-28 2xl:w-36 h-28 2xl:h-36">
-                                    <img src="{{ asset('images/material/komoproof/img-content-bp-200-material.webp') }}"
+                                    <img src="{{ asset('images/material/komoproof/img-content-ub-200-material.webp') }}"
                                         class="object-cover w-full h-full" alt="">
                                 </div>
                             </div>
@@ -742,28 +742,30 @@
                         <div class="py-4 px-5 h-[471px]">
                             <div class="">
                                 <h5 class="text-xl font-bold tracking-tight leading-loose text-black">
-                                    ONECOAT BITUMEN WATERPROOF
+                                    EPOXY COATING
                                 </h5>
                             </div>
                             <div class="mb-1.5">
                                 <p class="text-lg font-normal tracking-tightest leading-relaxed text-black">
-                                    Kemasan : 17 Kg
+                                    Kemasan : 20 Kg
                                 </p>
                             </div>
                             <div class="mb-1.5">
                                 <h2 class="text-3xl font-semibold tracking-tightest leading-10 text-black">
-                                    BP - 200
+                                    EC - 3000
                                 </h2>
                             </div>
                             <div>
                                 <ul
                                     class="list-disc pl-5 text-zinc-500 text-lg font-normal leading-7 tracking-tighter">
-                                    <li>Bangunan atau Apartemen</li>
-                                    <li>Parkir mobil</li>
-                                    <li>Struktur yang membutuhkan lapisan pelindung tahan air dan elastis</li>
-                                    <li>Warna - Coklat Tua</li>
-                                    <li>Rasio Mixing - 1 Komponen</li>
-                                    <li>Jumlah Teoritis (1 mm) - 1.5 kg/m²</li>
+                                    <li>Pelapisan akhir tahun benturan, bahan kimia, dan goresan</li>
+                                    <li>Pilihan warna bebas, kuat, dan tahan lama</li>
+                                    <li>Untuk lantai area parkir, gudang, pom bensin, dsb</li>
+                                    <li>Warna - Custom</li>
+                                    <li>Rasio Mixing - 4 : 1</li>
+                                    <li>Potlife - 2 jam</li>
+                                    <li>Kering sentuh (30°) - 2 jam</li>
+                                    <li>Jumlah Teoritis (150μm) - 0.25 kg/m²</li>
                                 </ul>
                             </div>
                         </div>
@@ -773,7 +775,7 @@
                         <div class="relative h-40 2xl:h-56 rounded-t-[20px] px-5 py-7.5 overflow-hidden">
                             <!-- Background image -->
                             <div class="absolute inset-0 bg-cover bg-center"
-                                style="background-image: url('{{ asset('images/material/komoproof/img-ap-200-material.webp') }}');">
+                                style="background-image: url('{{ asset('images/material/komoproof/img-up-100-material.webp') }}');">
                             </div>
                             <!-- Overlay hitam 50% -->
                             <div class="absolute inset-0 bg-black/50"></div>
@@ -781,7 +783,7 @@
                             <!-- another content -->
                             <div class="relative">
                                 <div class="w-28 2xl:w-36 h-28 2xl:h-36">
-                                    <img src="{{ asset('images/material/komoproof/img-content-ap-200-material.webp') }}"
+                                    <img src="{{ asset('images/material/komoproof/img-content-up-100-material.webp') }}"
                                         class="object-cover w-full h-full" alt="">
                                 </div>
                             </div>
@@ -791,32 +793,86 @@
                         <div class="py-4 px-5 h-[471px]">
                             <div class="">
                                 <h5 class="text-xl font-bold tracking-tight leading-loose text-black">
-                                    HIGH ELASTICITY ACRYLIC
+                                    EPOXY COATING
                                 </h5>
                             </div>
                             <div class="mb-1.5">
                                 <p class="text-lg font-normal tracking-tightest leading-relaxed text-black">
-                                    Kemasan : 18 Kg
+                                    Kemasan : 20 Kg
                                 </p>
                             </div>
                             <div class="mb-1.5">
                                 <h2 class="text-3xl font-semibold tracking-tightest leading-10 text-black">
-                                    AP - 200
+                                    EC - 3000
                                 </h2>
                             </div>
                             <div>
                                 <ul
                                     class="list-disc pl-5 text-zinc-500 text-lg font-normal leading-7 tracking-tighter">
-                                    <li>Lantai dan Dinding Beton</li>
-                                    <li>Dinding bata merah</li>
-                                    <li>Atap Baja dan Struktur Baja</li>
-                                    <li>Warna - Hijau & Abu-abu</li>
-                                    <li>Rasio Mixing - 1 komponen</li>
-                                    <li>Jumlah Teoritis (1 mm) - 2.0 kg/m²</li>
+                                    <li>Pelapisan akhir tahun benturan, bahan kimia, dan goresan</li>
+                                    <li>Pilihan warna bebas, kuat, dan tahan lama</li>
+                                    <li>Untuk lantai area parkir, gudang, pom bensin, dsb</li>
+                                    <li>Warna - Custom</li>
+                                    <li>Rasio Mixing - 4 : 1</li>
+                                    <li>Potlife - 2 jam</li>
+                                    <li>Kering sentuh (30°) - 2 jam</li>
+                                    <li>Jumlah Teoritis (150μm) - 0.25 kg/m²</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
+                    <div class="bg-stone-50 w-full md:flex-1 rounded-[20px] shadow-sm overflow-hidden">
+                        <!-- Gambar sebagai background -->
+                        <div class="relative h-40 2xl:h-56 rounded-t-[20px] px-5 py-7.5 overflow-hidden">
+                            <!-- Background image -->
+                            <div class="absolute inset-0 bg-cover bg-center"
+                                style="background-image: url('{{ asset('images/material/komoproof/img-up-100-material.webp') }}');">
+                            </div>
+                            <!-- Overlay hitam 50% -->
+                            <div class="absolute inset-0 bg-black/50"></div>
+
+                            <!-- another content -->
+                            <div class="relative">
+                                <div class="w-28 2xl:w-36 h-28 2xl:h-36">
+                                    <img src="{{ asset('images/material/komoproof/img-content-up-100-material.webp') }}"
+                                        class="object-cover w-full h-full" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Konten -->
+                        <div class="py-4 px-5 h-[471px]">
+                            <div class="">
+                                <h5 class="text-xl font-bold tracking-tight leading-loose text-black">
+                                    EPOXY COATING
+                                </h5>
+                            </div>
+                            <div class="mb-1.5">
+                                <p class="text-lg font-normal tracking-tightest leading-relaxed text-black">
+                                    Kemasan : 20 Kg
+                                </p>
+                            </div>
+                            <div class="mb-1.5">
+                                <h2 class="text-3xl font-semibold tracking-tightest leading-10 text-black">
+                                    EC - 3000
+                                </h2>
+                            </div>
+                            <div>
+                                <ul
+                                    class="list-disc pl-5 text-zinc-500 text-lg font-normal leading-7 tracking-tighter">
+                                    <li>Pelapisan akhir tahun benturan, bahan kimia, dan goresan</li>
+                                    <li>Pilihan warna bebas, kuat, dan tahan lama</li>
+                                    <li>Untuk lantai area parkir, gudang, pom bensin, dsb</li>
+                                    <li>Warna - Custom</li>
+                                    <li>Rasio Mixing - 4 : 1</li>
+                                    <li>Potlife - 2 jam</li>
+                                    <li>Kering sentuh (30°) - 2 jam</li>
+                                    <li>Jumlah Teoritis (150μm) - 0.25 kg/m²</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
 
                 {{-- Komowrap --}}
