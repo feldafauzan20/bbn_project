@@ -35,24 +35,10 @@
 
                 <div class="hidden sm:block md:hidden lg:block">
                     <div
-                        class="flex space-x-4 text-white tracking-tighter text-lg bg-black rounded-full gap-2.5 pr-2 pl-7 py-3 relative">
+                        class="flex space-x-4 text-white tracking-tighter text-lg bg-black rounded-full gap-2.5 pr-2 pl-7 py-3">
                         <a href="#" class="block rounded-md hover:text-blue-500 transition duration-500">Home</a>
-
-                        <!-- Company with dropdown -->
-                        <div class="relative group">
-                            <a href="#"
-                                class="block rounded-md hover:text-blue-500 transition duration-500">Company</a>
-
-                            <!-- Dropdown -->
-                            <div
-                                class="absolute left-0 mt-2 w-48 bg-white text-black rounded-lg shadow-lg opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transform translate-y-2 transition-all duration-300 z-50">
-                                <a href="#" class="block px-4 py-2 hover:bg-gray-100">About Us</a>
-                                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Why Choose Us</a>
-                                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Clients</a>
-                                <a href="#" class="block px-4 py-2 hover:bg-gray-100">How We Work</a>
-                            </div>
-                        </div>
-
+                        <a href="#"
+                            class="block rounded-md hover:text-blue-500 transition duration-500">Company</a>
                         <a href="#"
                             class="block rounded-md hover:text-blue-500 transition duration-500">Services</a>
                         <a href="#"
@@ -61,9 +47,8 @@
                             class="block rounded-md hover:text-blue-500 transition duration-500">Material</a>
                         <a href="#"
                             class="block rounded-md hover:text-blue-500 transition duration-500">Contact</a>
-
                         <div class="w-7 h-7 bg-white rounded-full flex items-center justify-center">
-                            <a href="#" class="text-black text-sm"><i class="fa-solid fa-arrow-right"></i></a>
+                            <a href="" class="text-black text-sm"><i class="fa-solid fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
