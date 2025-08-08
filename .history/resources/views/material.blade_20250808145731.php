@@ -909,7 +909,7 @@
                 </div> --}}
 
                 {{-- Mesin dan Perlengkapan --}}
-                {{-- <div
+                <div
                     class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-11.5 md:gap-y-10 lg:gap-y-7 md:gap-x-3.5 lg:gap-x-7">
                     <div id="carousel-ch600" class="relative w-full" data-carousel="static">
                         <!-- Carousel wrapper -->
@@ -1113,7 +1113,7 @@
                                 <div class="h-[714px] bg-stone-50 rounded-2xl">
                                     <div class="h-100 bg-white flex justify-center overflow-hidden px-5 py-4">
                                         <div>
-                                            <img src="{{ asset('images/material/mesin-dan-perlengkapan/img-content-mpg-24g-1-material.webp') }}"
+                                            <img src="{{ asset('images/material/mesin-dan-perlengkapan/img-mpg-24g-1-material.webp') }}"
                                                 class="w-80 h-96 object-cover" alt="Gambar Penyedot Debu">
                                         </div>
                                     </div>
@@ -1140,13 +1140,12 @@
 
                                 </div>
                             </div>
-
                             <!-- Item 2 -->
                             <div class="hidden duration-700 ease-in-out" data-carousel-item>
                                 <div class="h-[714px] bg-stone-50 rounded-2xl">
                                     <div class="h-100 bg-white flex justify-center overflow-hidden px-5 py-4">
                                         <div>
-                                            <img src="{{ asset('images/material/mesin-dan-perlengkapan/img-content-mpg-24g-2-material.webp') }}"
+                                            <img src="{{ asset('images/material/mesin-dan-perlengkapan/img-mpg-24g-2-material.webp') }}"
                                                 class="w-80 h-96 object-cover" alt="Gambar Penyedot Debu">
                                         </div>
                                     </div>
@@ -1171,13 +1170,12 @@
 
                                 </div>
                             </div>
-
                             <!-- Item 3 -->
                             <div class="hidden duration-700 ease-in-out" data-carousel-item>
                                 <div class="h-[714px] bg-stone-50 rounded-2xl">
                                     <div class="h-100 bg-white flex justify-center overflow-hidden px-5 py-4">
                                         <div>
-                                            <img src="{{ asset('images/material/mesin-dan-perlengkapan/img-content-mpg-24g-3-material.webp') }}"
+                                            <img src="{{ asset('images/material/mesin-dan-perlengkapan/img-mpg-24g-3-material.webp') }}"
                                                 class="w-80 h-96 object-cover" alt="Gambar Penyedot Debu">
                                         </div>
                                     </div>
@@ -1202,13 +1200,12 @@
 
                                 </div>
                             </div>
-
                             <!-- Item 4 -->
                             <div class="hidden duration-700 ease-in-out" data-carousel-item>
                                 <div class="h-[714px] bg-stone-50 rounded-2xl">
                                     <div class="h-100 rounded-t-2xl flex justify-center overflow-hidden">
                                         <div class="overflow-hidden">
-                                            <img src="{{ asset('images/material/mesin-dan-perlengkapan/img-content-mpg-24g-4-material.webp') }}"
+                                            <img src="{{ asset('images/material/mesin-dan-perlengkapan/img-mpg-24g-4-material.webp') }}"
                                                 class="w-full h-full object-cover" alt="Gambar Penyedot Debu">
                                         </div>
                                     </div>
@@ -1233,7 +1230,7 @@
                                 <div class="h-[714px] bg-stone-50 rounded-2xl">
                                     <div class="h-100 rounded-t-2xl flex justify-center overflow-hidden">
                                         <div class="overflow-hidden">
-                                            <img src="{{ asset('images/material/mesin-dan-perlengkapan/img-content-mpg-24g-5-material.webp') }}"
+                                            <img src="{{ asset('images/material/mesin-dan-perlengkapan/img-mpg-24g-5-material.webp') }}"
                                                 class="w-full h-full object-cover" alt="Gambar Penyedot Debu">
                                         </div>
                                     </div>
@@ -1277,7 +1274,7 @@
                                 <div class="h-[714px] bg-stone-50 rounded-2xl">
                                     <div class="h-100 bg-white flex justify-center overflow-hidden px-5 py-4">
                                         <div>
-                                            <img src="{{ asset('images/material/mesin-dan-perlengkapan/img-content-mpg-350-1-material.webp') }}"
+                                            <img src="{{ asset('images/material/mesin-dan-perlengkapan/img-mpg-350-1-material.webp') }}"
                                                 class="w-85 h-96 object-cover" alt="Gambar Penyedot Debu">
                                         </div>
                                     </div>
@@ -1305,13 +1302,12 @@
                                 </div>
 
                             </div>
-
                             <!-- Item 2 -->
                             <div class="hidden duration-700 ease-in-out" data-carousel-item>
                                 <div class="h-[714px] bg-stone-50  rounded-2xl">
                                     <div class="h-96 bg-white overflow-hidden px-5 py-4">
                                         <div class="flex justify-center items-center h-full">
-                                            <img src="{{ asset('images/material/mesin-dan-perlengkapan/img-content-mpg-350-2-material.webp') }}"
+                                            <img src="{{ asset('images/material/mesin-dan-perlengkapan/img-mpg-350-2-material.webp') }}"
                                                 class="w-72 h-52 object-cover" alt="Gambar Penyedot Debu">
                                         </div>
                                     </div>
@@ -1330,13 +1326,12 @@
 
                                 </div>
                             </div>
-
                             <!-- Item 3 -->
                             <div class="hidden duration-700 ease-in-out" data-carousel-item>
                                 <div class="h-[714px] bg-stone-50  rounded-2xl">
                                     <div class="h-96 bg-white overflow-hidden px-5 py-4">
                                         <div class="flex justify-center items-center h-full">
-                                            <img src="{{ asset('images/material/mesin-dan-perlengkapan/img-content-mpg-350-3-material.webp') }}"
+                                            <img src="{{ asset('images/material/mesin-dan-perlengkapan/img-mpg-350-3-material.webp') }}"
                                                 class="w-60 h-52 object-cover" alt="Gambar Penyedot Debu">
                                         </div>
                                     </div>
@@ -1367,18 +1362,18 @@
                                 aria-label="Slide 3" data-carousel-slide-to="2"></button>
                         </div>
                     </div>
-                </div> --}}
+                </div>
 
                 {{-- Mata Gerinda --}}
 
 
                 {{-- Perkuatan Beton --}}
-                <div
+                {{-- <div
                     class="grid grid-cols-1 gap-y-12 md:gap-y-7 lg:gap-y-9.5 md:grid-cols-2 md:gap-x-9.5 lg:grid-cols-4">
                     <div class="h-[424px] lg:h-[323px]">
                         <div class="bg-stone-50 h-96 md:h-72 flex items-center justify-center">
                             <div class="w-60 h-24">
-                                <img src="{{ asset('images/material/perkuatan-beton/img-content-hammer-test-material.webp') }}"
+                                <img src="{{ asset('images/material/mesin-dan-perlengkapan/img-hammer-test-material.webp') }}"
                                     class="w-full h-full object-cover" alt="Gambar Hammer test">
                             </div>
                         </div>
@@ -1388,11 +1383,10 @@
                             </p>
                         </div>
                     </div>
-
                     <div class="h-[424px] lg:h-[323px]">
                         <div class="bg-stone-50 h-96 md:h-72 flex items-center justify-center">
                             <div class="w-36 h-36">
-                                <img src="{{ asset('images/material/perkuatan-beton/img-content-profometer-material.webp') }}"
+                                <img src="{{ asset('images/material/mesin-dan-perlengkapan/img-profometer-material.webp') }}"
                                     class="w-full h-full object-cover" alt="Gambar Profometer">
                             </div>
                         </div>
@@ -1402,11 +1396,10 @@
                             </p>
                         </div>
                     </div>
-
                     <div class="h-[424px] lg:h-[323px]">
                         <div class="bg-stone-50 h-96 md:h-72 flex items-center justify-center">
                             <div class="w-36 h-36">
-                                <img src="{{ asset('images/material/perkuatan-beton/img-content-thickness-gauge-material.webp') }}"
+                                <img src="{{ asset('images/material/mesin-dan-perlengkapan/img-thickness-gauge-material.webp') }}"
                                     class="w-full h-full object-cover" alt="Gambar thickness gauge">
                             </div>
                         </div>
@@ -1416,11 +1409,10 @@
                             </p>
                         </div>
                     </div>
-
                     <div class="h-[424px] lg:h-[323px]">
                         <div class="bg-stone-50 h-96 md:h-72 flex items-center justify-center">
                             <div class="w-44 h-36">
-                                <img src="{{ asset('images/material/perkuatan-beton/img-content-upv-undit-material.webp') }}"
+                                <img src="{{ asset('images/material/mesin-dan-perlengkapan/img-upv-undit-material.webp') }}"
                                     class="w-full h-full object-cover" alt="Gambar UPV Undit">
                             </div>
                         </div>
@@ -1430,11 +1422,10 @@
                             </p>
                         </div>
                     </div>
-
                     <div class="h-[424px] lg:h-[323px]">
                         <div class="bg-stone-50 h-96 md:h-72 flex items-center justify-center">
                             <div class="w-16 h-36">
-                                <img src="{{ asset('images/material/perkuatan-beton/img-content-core-drill-material.webp') }}"
+                                <img src="{{ asset('images/material/mesin-dan-perlengkapan/img-core-drill-material.webp') }}"
                                     class="w-full h-full object-cover" alt="Gambar UPV Undit">
                             </div>
                         </div>
@@ -1447,7 +1438,7 @@
                     <div class="h-[424px] lg:h-[323px]">
                         <div class="bg-stone-50 h-96 md:h-72 flex items-center justify-center">
                             <div class="w-20 h-36">
-                                <img src="{{ asset('images/material/perkuatan-beton/img-content-tensile-strength-tester-material.webp') }}"
+                                <img src="{{ asset('images/material/perkuatan-beton/img-tensile-strength-tester-material.webp') }}"
                                     class="w-full h-full object-cover" alt="Gambar  Tensile Strength Tester">
                             </div>
                         </div>
@@ -1460,7 +1451,7 @@
                     <div class="h-[424px] lg:h-[323px]">
                         <div class="bg-stone-50 h-96 md:h-72 flex items-center justify-center">
                             <div class="w-40 h-36">
-                                <img src="{{ asset('images/material/perkuatan-beton/img-content-pull-of-testing-material.webp') }}"
+                                <img src="{{ asset('images/material/perkuatan-beton/img-pull-of-testing-material.webp') }}"
                                     class="w-full h-full object-cover" alt="Gambar Pull Of Testing">
                             </div>
                         </div>
@@ -1470,7 +1461,7 @@
                             </p>
                         </div>
                     </div>
-                </div>
+                </div> --}}
 
 
 
