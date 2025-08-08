@@ -154,7 +154,7 @@
                         <div class="relative h-40 2xl:h-56 rounded-t-[20px] px-5 py-7.5 overflow-hidden">
                             <!-- Background image -->
                             <div class="absolute inset-0 bg-cover bg-center"
-                                style="background-image: url('{{ asset('images/material/komofloor/img-el-2100-material.webp') }}');">
+                                style="background-image: url('{{ asset('images/material/komofloor/img-epoxys-self-leveling-top-coat.webp') }}');">
                             </div>
                             <!-- Overlay hitam 50% -->
                             <div class="absolute inset-0 bg-black/50"></div>
@@ -162,7 +162,7 @@
                             <!-- another content -->
                             <div class="relative">
                                 <div class="w-28 2xl:w-36 h-28 2xl:h-36">
-                                    <img src="{{ asset('images/material/komofloor/img-content-el-2100-material.webp') }}"
+                                    <img src="{{ asset('images/material/komofloor/img-content-epoxys-self-leveling-top-coat-material.webp') }}"
                                         class="object-cover w-full h-full" alt="">
                                 </div>
                             </div>
@@ -205,7 +205,7 @@
                         <div class="relative h-40 2xl:h-56 rounded-t-[20px] px-5 py-7.5 overflow-hidden">
                             <!-- Background image -->
                             <div class="absolute inset-0 bg-cover bg-center"
-                                style="background-image: url('{{ asset('images/material/komofloor/img-etl-2000-material.webp') }}');">
+                                style="background-image: url('{{ asset('images/material/komofloor/img-epoxy-self-leveling-material-2.webp') }}');">
                             </div>
                             <!-- Overlay hitam 50% -->
                             <div class="absolute inset-0 bg-black/50"></div>
@@ -213,7 +213,7 @@
                             <!-- another content -->
                             <div class="relative">
                                 <div class="w-28 2xl:w-36 h-28 2xl:h-36">
-                                    <img src="{{ asset('images/material/komofloor/img-content-etl-2000-material.webp') }}"
+                                    <img src="{{ asset('images/material/komofloor/img-content-epoxy-self-leveling-material-2.webp') }}"
                                         class="object-cover w-full h-full" alt="">
                                 </div>
                             </div>
@@ -256,7 +256,7 @@
                         <div class="relative h-40 2xl:h-56 rounded-t-[20px] px-5 py-7.5 overflow-hidden">
                             <!-- Background image -->
                             <div class="absolute inset-0 bg-cover bg-center"
-                                style="background-image: url('{{ asset('images/material/komofloor/img-ec-3000-material.webp') }}');">
+                                style="background-image: url('{{ asset('images/material/komofloor/img-epoxy-coating-material.webp') }}');">
                             </div>
                             <!-- Overlay hitam 50% -->
                             <div class="absolute inset-0 bg-black/50"></div>
@@ -264,7 +264,7 @@
                             <!-- another content -->
                             <div class="relative">
                                 <div class="w-28 2xl:w-36 h-28 2xl:h-36">
-                                    <img src="{{ asset('images/material/komofloor/img-content-ec-3000-material.webp') }}"
+                                    <img src="{{ asset('images/material/komofloor/img-content-epoxy-coating-material.webp') }}"
                                         class="object-cover w-full h-full" alt="">
                                 </div>
                             </div>
@@ -296,7 +296,7 @@
                                     <li>Warna - Custom</li>
                                     <li>Rasio Mixing - 4 : 1</li>
                                     <li>Potlife - 2 jam</li>
-                                    <li>Kering Sentuh (30°) - 2 jam</li>
+                                    <li>Kering sentuh (30°) - 2 jam</li>
                                     <li>Jumlah Teoritis (150μm) - 0.25 kg/m²</li>
                                 </ul>
                             </div>
@@ -308,7 +308,7 @@
                         <div class="relative h-40 2xl:h-56 rounded-t-[20px] px-5 py-7.5 overflow-hidden">
                             <!-- Background image -->
                             <div class="absolute inset-0 bg-cover bg-center"
-                                style="background-image: url('{{ asset('images/material/komofloor/img-enc-3000-material.webp') }}');">
+                                style="background-image: url('{{ asset('images/material/komofloor/img-epoxy-non-slip-coating-material.webp') }}');">
                             </div>
                             <!-- Overlay hitam 50% -->
                             <div class="absolute inset-0 bg-black/50"></div>
@@ -316,7 +316,7 @@
                             <!-- another content -->
                             <div class="relative">
                                 <div class="w-28 2xl:w-36 h-28 2xl:h-36">
-                                    <img src="{{ asset('images/material/komofloor/img-content-enc-3000-material.webp') }}"
+                                    <img src="{{ asset('images/material/komofloor/img-content-epoxy-coating-material.webp') }}"
                                         class="object-cover w-full h-full" alt="">
                                 </div>
                             </div>
@@ -326,7 +326,7 @@
                         <div class="py-4 px-5 h-[471px]">
                             <div class="">
                                 <h5 class="text-xl font-bold tracking-tight leading-loose text-black">
-                                    EPOXY NON SLIP COATING
+                                    EPOXY COATING
                                 </h5>
                             </div>
                             <div class="mb-1.5">
@@ -336,32 +336,30 @@
                             </div>
                             <div class="mb-1.5">
                                 <h2 class="text-3xl font-semibold tracking-tightest leading-10 text-black">
-                                    ENC - 3000
+                                    EC - 3000
                                 </h2>
                             </div>
                             <div>
                                 <ul
                                     class="list-disc pl-5 text-zinc-500 text-lg font-normal leading-7 tracking-tighter">
-                                    <li>Lantai anti selip mengatasi lantai licin untuk menghindari terjadinya kecelakaan
-                                    </li>
-                                    <li>Kuat dan tahan lama</li>
-                                    <li>Untuk tangga, jembatan penyebrangan, dapur, dsb</li>
+                                    <li>Pelapisan akhir tahun benturan, bahan kimia, dan goresan</li>
+                                    <li>Pilihan warna bebas, kuat, dan tahan lama</li>
+                                    <li>Untuk lantai area parkir, gudang, pom bensin, dsb</li>
                                     <li>Warna - Custom</li>
-                                    <li>Rasio Mixing - 5 : 1</li>
+                                    <li>Rasio Mixing - 4 : 1</li>
                                     <li>Potlife - 2 jam</li>
-                                    <li>Kering Sentuh (30°) - 1 jam</li>
-                                    <li>Jumlah Teoritis (150μm) - 0.11 kg/m²</li>
+                                    <li>Kering sentuh (30°) - 2 jam</li>
+                                    <li>Jumlah Teoritis (150μm) - 0.25 kg/m²</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
-
                     <div class="bg-stone-50 w-full md:flex-1 rounded-[20px] shadow-sm overflow-hidden">
                         <!-- Gambar sebagai background -->
                         <div class="relative h-40 2xl:h-56 rounded-t-[20px] px-5 py-7.5 overflow-hidden">
                             <!-- Background image -->
                             <div class="absolute inset-0 bg-cover bg-center"
-                                style="background-image: url('{{ asset('images/material/komofloor/img-ecrm-4000-material.webp') }}');">
+                                style="background-image: url('{{ asset('images/material/komofloor/img-epoxy-non-slip-coating-material.webp') }}');">
                             </div>
                             <!-- Overlay hitam 50% -->
                             <div class="absolute inset-0 bg-black/50"></div>
@@ -369,7 +367,7 @@
                             <!-- another content -->
                             <div class="relative">
                                 <div class="w-28 2xl:w-36 h-28 2xl:h-36">
-                                    <img src="{{ asset('images/material/komofloor/img-content-ecrm-4000-material.webp') }}"
+                                    <img src="{{ asset('images/material/komofloor/img-content-epoxy-coating-material.webp') }}"
                                         class="object-cover w-full h-full" alt="">
                                 </div>
                             </div>
@@ -379,30 +377,30 @@
                         <div class="py-4 px-5 h-[471px]">
                             <div class="">
                                 <h5 class="text-xl font-bold tracking-tight leading-loose text-black">
-                                    EPOXY COLOR RESIN MORTAR
+                                    EPOXY COATING
                                 </h5>
                             </div>
                             <div class="mb-1.5">
                                 <p class="text-lg font-normal tracking-tightest leading-relaxed text-black">
-                                    Kemasan : 18 Kg
+                                    Kemasan : 20 Kg
                                 </p>
                             </div>
                             <div class="mb-1.5">
                                 <h2 class="text-3xl font-semibold tracking-tightest leading-10 text-black">
-                                    ECRM - 4000
+                                    EC - 3000
                                 </h2>
                             </div>
                             <div>
                                 <ul
                                     class="list-disc pl-5 text-zinc-500 text-lg font-normal leading-7 tracking-tighter">
-                                    <li>Pelapisan akhir tahan benturan, ketahanan aus</li>
-                                    <li>Tahan terhadap, zat kimia, tahan air dan pelarut</li>
+                                    <li>Pelapisan akhir tahun benturan, bahan kimia, dan goresan</li>
+                                    <li>Pilihan warna bebas, kuat, dan tahan lama</li>
                                     <li>Untuk lantai area parkir, gudang, pom bensin, dsb</li>
                                     <li>Warna - Custom</li>
-                                    <li>Rasio Mixing - 5 : 1</li>
-                                    <li>Potlife - 1 jam</li>
-                                    <li>Kering sentuh (30°) - 8 jam</li>
-                                    <li>Jumlah Teoritis (5 mm) - 1.9kg/m²</li>
+                                    <li>Rasio Mixing - 4 : 1</li>
+                                    <li>Potlife - 2 jam</li>
+                                    <li>Kering sentuh (30°) - 2 jam</li>
+                                    <li>Jumlah Teoritis (150μm) - 0.25 kg/m²</li>
                                 </ul>
                             </div>
                         </div>
@@ -412,7 +410,7 @@
                         <div class="relative h-40 2xl:h-56 rounded-t-[20px] px-5 py-7.5 overflow-hidden">
                             <!-- Background image -->
                             <div class="absolute inset-0 bg-cover bg-center"
-                                style="background-image: url('{{ asset('images/material/komofloor/img-etrm-4000-material.webp') }}');">
+                                style="background-image: url('{{ asset('images/material/komofloor/img-epoxy-non-slip-coating-material.webp') }}');">
                             </div>
                             <!-- Overlay hitam 50% -->
                             <div class="absolute inset-0 bg-black/50"></div>
@@ -420,7 +418,7 @@
                             <!-- another content -->
                             <div class="relative">
                                 <div class="w-28 2xl:w-36 h-28 2xl:h-36">
-                                    <img src="{{ asset('images/material/komofloor/img-content-etrm-4000-material.webp') }}"
+                                    <img src="{{ asset('images/material/komofloor/img-content-epoxy-coating-material.webp') }}"
                                         class="object-cover w-full h-full" alt="">
                                 </div>
                             </div>
@@ -430,35 +428,34 @@
                         <div class="py-4 px-5 h-[471px]">
                             <div class="">
                                 <h5 class="text-xl font-bold tracking-tight leading-loose text-black">
-                                    EPOXY TRANSPARANT RESIN MORTAR
+                                    EPOXY COATING
                                 </h5>
                             </div>
                             <div class="mb-1.5">
                                 <p class="text-lg font-normal tracking-tightest leading-relaxed text-black">
-                                    Kemasan : 16 Kg
+                                    Kemasan : 20 Kg
                                 </p>
                             </div>
                             <div class="mb-1.5">
                                 <h2 class="text-3xl font-semibold tracking-tightest leading-10 text-black">
-                                    ETRM - 4000
+                                    EC - 3000
                                 </h2>
                             </div>
                             <div>
                                 <ul
                                     class="list-disc pl-5 text-zinc-500 text-lg font-normal leading-7 tracking-tighter">
-                                    <li>Pelapis akhir tahan benturan dan abrasi</li>
-                                    <li>Daya Rekat Kuat dan Tahan lama</li>
+                                    <li>Pelapisan akhir tahun benturan, bahan kimia, dan goresan</li>
+                                    <li>Pilihan warna bebas, kuat, dan tahan lama</li>
                                     <li>Untuk lantai area parkir, gudang, pom bensin, dsb</li>
-                                    <li>Warna - Transparant</li>
-                                    <li>Rasio Mixing - 3 : 1</li>
-                                    <li>Potlife - 1 jam</li>
-                                    <li>Kering Sentuh (30°) - 8 jam</li>
-                                    <li>Jumlah Teoritis (1000μm) - 1.35kg/m²</li>
+                                    <li>Warna - Custom</li>
+                                    <li>Rasio Mixing - 4 : 1</li>
+                                    <li>Potlife - 2 jam</li>
+                                    <li>Kering sentuh (30°) - 2 jam</li>
+                                    <li>Jumlah Teoritis (150μm) - 0.25 kg/m²</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
-
 
                 </div>
 

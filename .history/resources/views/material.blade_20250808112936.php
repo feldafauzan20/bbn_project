@@ -256,7 +256,7 @@
                         <div class="relative h-40 2xl:h-56 rounded-t-[20px] px-5 py-7.5 overflow-hidden">
                             <!-- Background image -->
                             <div class="absolute inset-0 bg-cover bg-center"
-                                style="background-image: url('{{ asset('images/material/komofloor/img-ec-3000-material.webp') }}');">
+                                style="background-image: url('{{ asset('images/material/komofloor/img-enc-3000-material.webp') }}');">
                             </div>
                             <!-- Overlay hitam 50% -->
                             <div class="absolute inset-0 bg-black/50"></div>
@@ -264,7 +264,7 @@
                             <!-- another content -->
                             <div class="relative">
                                 <div class="w-28 2xl:w-36 h-28 2xl:h-36">
-                                    <img src="{{ asset('images/material/komofloor/img-content-ec-3000-material.webp') }}"
+                                    <img src="{{ asset('images/material/komofloor/img-content-enc-3000-material.webp') }}"
                                         class="object-cover w-full h-full" alt="">
                                 </div>
                             </div>
@@ -274,7 +274,7 @@
                         <div class="py-4 px-5 h-[471px]">
                             <div class="">
                                 <h5 class="text-xl font-bold tracking-tight leading-loose text-black">
-                                    EPOXY COATING
+                                    EPOXY NON SLIP COATING
                                 </h5>
                             </div>
                             <div class="mb-1.5">
@@ -284,25 +284,25 @@
                             </div>
                             <div class="mb-1.5">
                                 <h2 class="text-3xl font-semibold tracking-tightest leading-10 text-black">
-                                    EC - 3000
+                                    ENC - 3000
                                 </h2>
                             </div>
                             <div>
                                 <ul
                                     class="list-disc pl-5 text-zinc-500 text-lg font-normal leading-7 tracking-tighter">
-                                    <li>Pelapisan akhir tahun benturan, bahan kimia, dan goresan</li>
-                                    <li>Pilihan warna bebas, kuat, dan tahan lama</li>
-                                    <li>Untuk lantai area parkir, gudang, pom bensin, dsb</li>
+                                    <li>Lantai anti selip mengatasi lantai licin untuk menghindari terjadinya kecelakaan
+                                    </li>
+                                    <li>Kuat dan tahan lama</li>
+                                    <li>Untuk tangga, jembatan penyebrangan, dapur, dsb</li>
                                     <li>Warna - Custom</li>
-                                    <li>Rasio Mixing - 4 : 1</li>
+                                    <li>Rasio Mixing - 5 : 1</li>
                                     <li>Potlife - 2 jam</li>
-                                    <li>Kering Sentuh (30°) - 2 jam</li>
-                                    <li>Jumlah Teoritis (150μm) - 0.25 kg/m²</li>
+                                    <li>Kering Sentuh (30°) - 1 jam</li>
+                                    <li>Jumlah Teoritis (150μm) - 0.11 kg/m²</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
-
                     <div class="bg-stone-50 w-full md:flex-1 rounded-[20px] shadow-sm overflow-hidden">
                         <!-- Gambar sebagai background -->
                         <div class="relative h-40 2xl:h-56 rounded-t-[20px] px-5 py-7.5 overflow-hidden">
