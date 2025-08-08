@@ -96,14 +96,14 @@ gsap.from("#contact-us-section", {
 
 // gsap end
 
-// Product Filters and Cards - FINAL VERSION (dengan Perkuatan Struktur)
+// Product Filters and Cards
 document.addEventListener('DOMContentLoaded', function () {
     // === KONFIGURASI & ELEMEN DOM ===
     const filtersContainer = document.getElementById('product-filters-container');
     const defaultContainer = document.getElementById('product-cards-container');
     const machinesContainer = document.getElementById('machines-cards-container');
     const komowrapContainer = document.getElementById('komowrap-cards-container');
-    const reinforcementContainer = document.getElementById('reinforcement-cards-container'); // Kontainer baru
+    const reinforcementContainer = document.getElementById('reinforcement-cards-container');
 
     const filtersApiUrl = 'http://127.0.0.1:8000/api/content/products/filters';
     const productsApiUrl = 'http://127.0.0.1:8000/api/content/products';
@@ -116,7 +116,6 @@ document.addEventListener('DOMContentLoaded', function () {
         // Gabungkan semua kontainer yang mungkin ada
         const allContainers = [defaultContainer, machinesContainer, komowrapContainer, reinforcementContainer].filter(Boolean);
 
-        // Kosongkan dan sembunyikan semua kontainer
         allContainers.forEach(container => {
             container.innerHTML = '';
             container.style.display = 'none';
@@ -130,11 +129,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
         const category = products[0].category;
 
-        // Pilih fungsi render yang sesuai
         if (category === 'Mesin dan Perlengkapan') {
             renderMachinesAsCarousel(products);
         } else if (category === 'Perkuatan Struktur') {
-            renderReinforcement(products); // Panggil fungsi render baru
+            renderReinforcement(products);
         } else {
             renderDefaultProducts(products);
         }
@@ -149,24 +147,25 @@ document.addEventListener('DOMContentLoaded', function () {
      */
     function renderReinforcement(products) {
         if (!reinforcementContainer) return;
-        reinforcementContainer.style.display = 'grid'; // Tampilkan kontainer perkuatan struktur
+        reinforcementContainer.style.display = 'grid';
 
         products.forEach(product => {
-            const cardHtml = `
-                <div class="h-[424px] lg:h-[323px]">
-                    <div class="bg-stone-50 h-96 md:h-72 flex items-center justify-center rounded-lg shadow-sm">
-                        <div class="w-auto h-auto max-w-[200px] max-h-[150px]">
+        const cardHtml = `
+                    <div class="h-[424px] lg:h-[323px]">
+                        <div class="bg-stone-50 h-96 md:h-72 flex items-center justify-center rounded-lg shadow-sm">
+                            
                             <img src="/${product.image}"
-                                 class="w-full h-full object-contain" alt="${product.name}">
+                                class="max-w-[250px] max-h-[200px] object-contain" 
+                                alt="${product.name}">
+                                
+                        </div>
+                        <div class="mt-4">
+                            <p class="text-black text-lg text-center font-medium leading-relaxed tracking-tighter">
+                                ${product.name}
+                            </p>
                         </div>
                     </div>
-                    <div class="mt-4">
-                        <p class="text-black text-lg text-center font-medium leading-relaxed tracking-tighter">
-                            ${product.name}
-                        </p>
-                    </div>
-                </div>
-            `;
+                `;
             reinforcementContainer.innerHTML += cardHtml;
         });
     }
@@ -231,13 +230,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
         products.forEach(product => {
             let cardHtml = '';
-            // Hapus 'Perkuatan Struktur' dari daftar ini
             const simpleCategories = ['Material Komowrap', 'Mata Gerinda'];
             if (simpleCategories.includes(product.category)) {
                 cardHtml = `
                     <div class="bg-stone-50 w-full md:w-96 lg:w-full md:flex-1 rounded-[20px] shadow-sm overflow-hidden">
                         <div class="h-96 flex justify-center items-center rounded-t-[20px] overflow-hidden">
-                            <img src="/${product.image}" class="object-cover w-full h-full" alt="${product.name}">
+                            <img src="/${product.image}" class="object-cover w-90 h-90" alt="${product.name}">
                         </div>
                         <div class="py-4 px-5 h-24 md:h-28">
                             <p class="text-lg md:text-xl font-normal tracking-tight leading-relaxed text-black">${product.name}</p>

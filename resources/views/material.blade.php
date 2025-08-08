@@ -46,17 +46,14 @@
                 <div id="product-cards-container"
                     class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-x-3 lg:gap-x-6.5 gap-y-4 md:gap-y-5 lg:gap-y-6.5">
                 </div>
-
                 {{-- KONTENER BARU KHUSUS UNTUK MESIN (Carousel) --}}
                 <div id="machines-cards-container"
                     class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-11.5 md:gap-y-10 lg:gap-y-7 md:gap-x-3.5 lg:gap-x-7">
                 </div>
-                {{-- KONTENER BARU KHUSUS UNTUK PERKUATAN STRUKTUR --}}
+                {{-- PERKUATAN STRUKTUR --}}
                 <div id="reinforcement-cards-container"
                     class="grid grid-cols-1 gap-y-12 md:gap-y-7 lg:gap-y-9.5 md:grid-cols-2 md:gap-x-9.5 lg:grid-cols-4">
                 </div>
-            </div>
-
                 {{-- Mata Gerinda --}}
 
             </div>
