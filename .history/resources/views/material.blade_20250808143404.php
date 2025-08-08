@@ -856,7 +856,7 @@
 
                             <div class="">
                                 <div class="w-full h-full">
-                                    <img src="{{ asset('images/material/komowrap/img-content-n-300-material.webp') }}"
+                                    <img src="{{ asset('images/material/komowrap/img-n-300-material.webp') }}"
                                         class="object-cover w-full h-full " alt="N-300 Material">
                                 </div>
                             </div>
@@ -885,7 +885,7 @@
 
                             <div class="">
                                 <div class="w-60 h-56">
-                                    <img src="{{ asset('images/material/komowrap/img-content-cfr-200-material.webp') }}"
+                                    <img src="{{ asset('images/material/komowrap/img-cfr-200-material.webp') }}"
                                         class="object-cover w-full h-full " alt="CFR - 200 Material">
                                 </div>
                             </div>
