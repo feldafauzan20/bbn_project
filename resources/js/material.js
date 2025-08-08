@@ -142,7 +142,8 @@ gsap.from("#contact-us-section", {
 
 // gsap end
 
-// Product Filters and Cards
+// Product Filters and Cards with Mata Gerinda Integration
+// Product Filters and Cards with Mata Gerinda Integration
 document.addEventListener('DOMContentLoaded', function () {
     // === KONFIGURASI & ELEMEN DOM ===
     const filtersContainer = document.getElementById('product-filters-container');
@@ -150,6 +151,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const machinesContainer = document.getElementById('machines-cards-container');
     const komowrapContainer = document.getElementById('komowrap-cards-container');
     const reinforcementContainer = document.getElementById('reinforcement-cards-container');
+    const mataGerindaContainer = document.getElementById('mata-gerinda-container');
 
     const filtersApiUrl = 'http://127.0.0.1:8000/api/content/products/filters';
     const productsApiUrl = 'http://127.0.0.1:8000/api/content/products';
@@ -160,7 +162,13 @@ document.addEventListener('DOMContentLoaded', function () {
      */
     function displayProducts(products) {
         // Gabungkan semua kontainer yang mungkin ada
-        const allContainers = [defaultContainer, machinesContainer, komowrapContainer, reinforcementContainer].filter(Boolean);
+        const allContainers = [
+            defaultContainer, 
+            machinesContainer, 
+            komowrapContainer, 
+            reinforcementContainer,
+            mataGerindaContainer
+        ].filter(Boolean);
 
         allContainers.forEach(container => {
             container.innerHTML = '';
@@ -179,6 +187,8 @@ document.addEventListener('DOMContentLoaded', function () {
             renderMachinesAsCarousel(products);
         } else if (category === 'Perkuatan Struktur') {
             renderReinforcement(products);
+        } else if (category === 'Mata Gerinda') {
+            renderMataGerinda(products);
         } else {
             renderDefaultProducts(products);
         }
@@ -189,6 +199,353 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     /**
+     * Render untuk kategori 'Mata Gerinda' dengan multiple swipers.
+     */
+    function renderMataGerinda(products) {
+        if (!mataGerindaContainer) return;
+        mataGerindaContainer.style.display = 'block';
+
+        // Debug log for products data
+        console.log('=== Mata Gerinda Products Data ===');
+        products.forEach((product, index) => {
+            console.log(`Product ${index + 1}:`, {
+                id: product.id,
+                name: product.name,
+                description: product.description,
+                sub_category: product.sub_category
+            });
+        });
+        console.log('===================================');
+
+        // Group products by subcategory
+        const groupedProducts = groupMataGerindaProducts(products);
+        
+        // Add missing Cover Debu category if not present in data
+        if (!groupedProducts['Cover debu']) {
+            groupedProducts['Cover debu'] = [
+                {
+                    id: 'cover-debu-1',
+                    name: 'Cover Debu',
+                    image: 'images/material/mata-gerinda/img-content-cover-debu-7-4-material.webp',
+                    description: '7" & 4"'
+                },
+                {
+                    id: 'cover-debu-2', 
+                    name: 'Cover Debu Alat Pemotong',
+                    image: 'images/material/mata-gerinda/img-content-cover-debu-alat-pemotong-4-8-material.webp',
+                    description: '4" & 8"'
+                }
+            ];
+        }
+        
+        let containerHtml = '';
+
+        // Define the order of categories to match your original template
+        const categoryOrder = [
+            'Untuk beton medium',
+            'Untuk beton keras (Menghilangkan Lapisan Epoxy, Coating, Rekatan dan Coaltar)',
+            'Untuk beton halus',
+            'PCD',
+            'Segmented PCD grinding plates',
+            'Cover debu'
+        ];
+
+        // Render each category in the specified order
+        categoryOrder.forEach((subcategory, index) => {
+            if (groupedProducts[subcategory] && groupedProducts[subcategory].length > 0) {
+                const swiperClass = `swiper${index + 1}`;
+                const swiperId = `swiper-${index + 1}`;
+                
+                containerHtml += `
+                    <div id="${swiperId}" class="${index > 0 ? 'mt-12.5' : ''}">
+                        <div class="mb-5">
+                            <p class="text-black text-2xl font-medium leading-7 tracking-tightest">${subcategory}</p>
+                        </div>
+                        <div class="swiper ${swiperClass}">
+                            <div class="swiper-wrapper">
+                                ${renderMataGerindaCards(groupedProducts[subcategory])}
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }
+        });
+
+        mataGerindaContainer.innerHTML = containerHtml;
+        
+        // Initialize swipers (count actual rendered categories)
+        const renderedCategories = categoryOrder.filter(cat => 
+            groupedProducts[cat] && groupedProducts[cat].length > 0
+        );
+        initializeMataGerindaSwipers(renderedCategories.length);
+    }
+
+    /**
+     * Group Mata Gerinda products by subcategory.
+     */
+    function groupMataGerindaProducts(products) {
+        const groups = {};
+        
+        products.forEach(product => {
+            let subcategory = 'Lainnya'; // Default subcategory
+            
+            // Use sub_category from JSON if available
+            if (product.sub_category) {
+                subcategory = product.sub_category;
+                // Add description for "Untuk beton keras"
+                if (subcategory === 'Untuk beton keras') {
+                    subcategory = 'Untuk beton keras (Menghilangkan Lapisan Epoxy, Coating, Rekatan dan Coaltar)';
+                }
+            } else {
+                // Fallback: determine from product name and description
+                const name = product.name.toLowerCase();
+                const description = product.description?.toLowerCase() || '';
+                
+                if (name.includes('pcd')) {
+                    if (name.includes('grinding plates') || name.includes('holder') || name.includes('diamond grinding')) {
+                        subcategory = 'Segmented PCD grinding plates';
+                    } else {
+                        subcategory = 'PCD';
+                    }
+                } else if (name.includes('cover') && name.includes('debu')) {
+                    subcategory = 'Cover debu';
+                } else if (description.includes('keras') || name.includes('mega') || name.includes('ultra')) {
+                    subcategory = 'Untuk beton keras (Menghilangkan Lapisan Epoxy, Coating, Rekatan dan Coaltar)';
+                } else if (description.includes('halus') || name.includes('gold')) {
+                    subcategory = 'Untuk beton halus';
+                } else {
+                    subcategory = 'Untuk beton medium';
+                }
+            }
+            
+            if (!groups[subcategory]) {
+                groups[subcategory] = [];
+            }
+            groups[subcategory].push(product);
+        });
+        
+        return groups;
+    }
+
+    /**
+     * Render cards for Mata Gerinda products.
+     */
+    function renderMataGerindaCards(products) {
+        console.log('=== Rendering Mata Gerinda Cards ===');
+        console.log('Total products:', products.length);
+        
+        return products.map(product => {
+            const size = extractSize(product);
+            const additionalInfo = extractAdditionalInfo(product);
+            
+            console.log(`Card: ${product.name}`);
+            console.log(`- Size: "${size}"`);
+            console.log(`- Additional Info: "${additionalInfo}"`);
+            console.log(`- Description: "${product.description}"`);
+            console.log('---');
+            
+            // Extract main title (remove parentheses content)
+            const mainTitle = product.name.replace(/\s*\([^)]*\)/, '');
+            
+            return `
+                <div class="swiper-slide bg-white w-[289px] sm:w-[250px] md:w-[289px] flex-shrink-0">
+                    <div class="bg-stone-50 flex justify-center items-center h-72">
+                        <img src="/${product.image}" 
+                             alt="${product.name}" 
+                             class="object-cover ${getImageSize(product)}">
+                    </div>
+                    <div class="flex justify-between items-start">
+                        <p class="text-black text-lg font-medium tracking-tightest flex-1 pr-2">${mainTitle}</p>
+                        ${size ? `<p class="text-neutral-400 text-lg font-medium tracking-tightest flex-shrink-0">${size}</p>` : ''}
+                    </div>
+                    ${additionalInfo ? `
+                        <div class="mt-1">
+                            <p class="text-neutral-400 text-lg font-medium tracking-tightest">${additionalInfo}</p>
+                        </div>
+                    ` : ''}
+                </div>
+            `;
+        }).join('');
+    }
+
+    /**
+     * Extract size information from product - Enhanced version with fallback
+     */
+    function extractSize(product) {
+        console.log('Extracting size for product:', product.name, 'Description:', product.description); // Debug log
+        
+        // Manual fallback for specific products if needed
+        const manualSizes = {
+            'pcd-cup-wheel-3': '4"',
+            'pcd-cup-wheel-4': '7"',
+            // Add more manual mappings as needed
+        };
+        
+        if (manualSizes[product.id]) {
+            console.log('Using manual size mapping for:', product.id, '->', manualSizes[product.id]);
+            return manualSizes[product.id];
+        }
+        
+        // First check description for size (like "4"", "7"")
+        if (product.description) {
+            const descriptionMatch = product.description.match(/(\d+["'])/);
+            if (descriptionMatch) {
+                console.log('Size found in description:', descriptionMatch[1]); // Debug log
+                return descriptionMatch[1];
+            }
+            
+            // Also check for patterns like "4 inch", "7 inch"
+            const inchMatch = product.description.match(/(\d+)\s*inch/i);
+            if (inchMatch) {
+                console.log('Size found (inch) in description:', inchMatch[1] + '"'); // Debug log
+                return inchMatch[1] + '"';
+            }
+            
+            // Check for just numbers in description (assume inches)
+            const numberMatch = product.description.match(/^(\d+)$/);
+            if (numberMatch) {
+                console.log('Size found (number only) in description:', numberMatch[1] + '"'); // Debug log
+                return numberMatch[1] + '"';
+            }
+        }
+        
+        // Check if size is in details
+        if (product.details && product.details.length > 0) {
+            const sizeDetail = product.details.find(detail => 
+                detail.key?.toLowerCase().includes('size') || 
+                detail.key?.toLowerCase().includes('ukuran') ||
+                detail.key?.toLowerCase().includes('diameter')
+            );
+            if (sizeDetail) {
+                console.log('Size found in details:', sizeDetail.value); // Debug log
+                return sizeDetail.value;
+            }
+        }
+        
+        // Check in name for size patterns like 4", 7"
+        const nameMatch = product.name.match(/(\d+["']?)/);
+        if (nameMatch) {
+            const size = nameMatch[1] + (nameMatch[1].includes('"') ? '' : '"');
+            console.log('Size found in name:', size); // Debug log
+            return size;
+        }
+        
+        // Check in image filename for size hints
+        if (product.image) {
+            const imageMatch = product.image.match(/[_-](\d+)[_-]/);
+            if (imageMatch) {
+                const size = imageMatch[1] + '"';
+                console.log('Size found in image filename:', size); // Debug log
+                return size;
+            }
+        }
+        
+        console.log('No size found for product:', product.name); // Debug log
+        return null;
+    }
+
+    /**
+     * Extract additional info like color or special purpose - Enhanced version
+     */
+    function extractAdditionalInfo(product) {
+        const name = product.name.toLowerCase();
+        const description = product.description?.toLowerCase() || '';
+        
+        console.log('Extracting additional info for:', product.name, 'Description:', product.description); // Debug log
+        
+        // Check for specific purposes in product name (prioritize these over colors)
+        if (name.includes('penghilang uretan') || name.includes('uretan')) {
+            return '(Penghilang Uretan)';
+        }
+        if (name.includes('penghilang epoxy') || name.includes('epoxy')) {
+            return '(Penghilang Epoxy)';
+        }
+        if (name.includes('untuk mesin') || description.includes('mesin')) {
+            return '(untuk mesin)';
+        }
+        
+        // Check for grit numbers (like #30, #40, etc.)
+        const gritMatch = name.match(/#(\d+)/);
+        if (gritMatch) {
+            return `#${gritMatch[1]}`;
+        }
+        
+        // Only show color info if the color is NOT already in the product name
+        const colors = ['hitam', 'merah', 'biru', 'oranye', 'putih', 'gray', 'red', 'blue', 'black', 'orange', 'white', 'super red'];
+        
+        // Check if any color is already in the name
+        const colorInName = colors.some(color => name.includes(color));
+        
+        if (!colorInName) {
+            // Only check for colors in description if no color in name
+            for (const color of colors) {
+                if (description.includes(color)) {
+                    return color.charAt(0).toUpperCase() + color.slice(1);
+                }
+            }
+        }
+        
+        console.log('No additional info found for:', product.name); // Debug log
+        return null;
+    }
+
+    /**
+     * Get appropriate image size class based on product type.
+     */
+    function getImageSize(product) {
+        const name = product.name.toLowerCase();
+        
+        if (name.includes('pcd') && !name.includes('cup wheel')) {
+            return 'w-40 h-40'; // Wider for PCD plates
+        }
+        if (name.includes('cover debu')) {
+            if (name.includes('alat pemotong')) {
+                return 'w-52 h-20'; // Specific for cutting tool covers
+            }
+            return 'w-64 h-32'; // Regular dust covers
+        }
+        if (name.includes('grinding plates') || name.includes('segment')) {
+            return 'w-28 h-20'; // Smaller for grinding plates
+        }
+        
+        return 'w-40 h-40'; // Default size
+    }
+
+    /**
+     * Initialize Swiper instances for Mata Gerinda.
+     */
+    function initializeMataGerindaSwipers(count) {
+        // Wait for DOM to be ready
+        setTimeout(() => {
+            for (let i = 1; i <= count; i++) {
+                try {
+                    new Swiper(`.swiper${i}`, {
+                        slidesPerView: 'auto',
+                        spaceBetween: 16,
+                        freeMode: true,
+                        breakpoints: {
+                            640: {
+                                slidesPerView: 2,
+                                spaceBetween: 16,
+                            },
+                            768: {
+                                slidesPerView: 3,
+                                spaceBetween: 20,
+                            },
+                            1024: {
+                                slidesPerView: 4,
+                                spaceBetween: 24,
+                            },
+                        }
+                    });
+                } catch (error) {
+                    console.error(`Error initializing swiper${i}:`, error);
+                }
+            }
+        }, 100);
+    }
+
+    /**
      * Render untuk kategori 'Perkuatan Struktur'.
      */
     function renderReinforcement(products) {
@@ -196,22 +553,20 @@ document.addEventListener('DOMContentLoaded', function () {
         reinforcementContainer.style.display = 'grid';
 
         products.forEach(product => {
-        const cardHtml = `
-                    <div class="h-[424px] lg:h-[323px]">
-                        <div class="bg-stone-50 h-96 md:h-72 flex items-center justify-center rounded-lg shadow-sm">
-                            
-                            <img src="/${product.image}"
-                                class="max-w-[250px] max-h-[200px] object-contain" 
-                                alt="${product.name}">
-                                
-                        </div>
-                        <div class="mt-4">
-                            <p class="text-black text-lg text-center font-medium leading-relaxed tracking-tighter">
-                                ${product.name}
-                            </p>
-                        </div>
+            const cardHtml = `
+                <div class="h-[424px] lg:h-[323px]">
+                    <div class="bg-stone-50 h-96 md:h-72 flex items-center justify-center rounded-lg shadow-sm">
+                        <img src="/${product.image}"
+                            class="max-w-[250px] max-h-[200px] object-contain"
+                            alt="${product.name}">
                     </div>
-                `;
+                    <div class="mt-4">
+                        <p class="text-black text-lg text-center font-medium leading-relaxed tracking-tighter">
+                            ${product.name}
+                        </p>
+                    </div>
+                </div>
+            `;
             reinforcementContainer.innerHTML += cardHtml;
         });
     }
@@ -266,17 +621,17 @@ document.addEventListener('DOMContentLoaded', function () {
     function renderDefaultProducts(products) {
         const category = products[0].category;
         let targetContainer = defaultContainer;
-        
+       
         if (category === 'Material Komowrap' && komowrapContainer) {
             targetContainer = komowrapContainer;
         }
-        
+       
         if (!targetContainer) return;
         targetContainer.style.display = 'grid';
 
         products.forEach(product => {
             let cardHtml = '';
-            const simpleCategories = ['Material Komowrap', 'Mata Gerinda'];
+            const simpleCategories = ['Material Komowrap'];
             if (simpleCategories.includes(product.category)) {
                 cardHtml = `
                     <div class="bg-stone-50 w-full md:w-96 lg:w-full md:flex-1 rounded-[20px] shadow-sm overflow-hidden">
@@ -309,7 +664,7 @@ document.addEventListener('DOMContentLoaded', function () {
             targetContainer.innerHTML += cardHtml;
         });
     }
-    
+   
     // === FUNGSI FETCH DATA & FILTERS ===
     function fetchProducts(category = null) {
         let url = productsApiUrl;
@@ -318,7 +673,7 @@ document.addEventListener('DOMContentLoaded', function () {
             .then(response => response.json())
             .then(data => {
                 let productsArray = [];
-                if (data && Array.isArray(data.products)) { productsArray = data.products; } 
+                if (data && Array.isArray(data.products)) { productsArray = data.products; }
                 else if (Array.isArray(data)) { productsArray = data; }
                 displayProducts(productsArray);
             })
