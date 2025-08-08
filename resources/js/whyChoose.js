@@ -10,10 +10,10 @@ const iconClose = document.getElementById("icon-close");
 
 menuButton.addEventListener("click", () => {
     mobileMenu.classList.toggle("hidden");
+    mobileMenu.classList.toggle("md:hidden");
     iconOpen.classList.toggle("hidden");
     iconClose.classList.toggle("hidden");
 });
-
 // Navbar end
 
 // gsap start

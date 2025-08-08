@@ -11,13 +11,12 @@ const mobileMenu = document.getElementById("mobile-menu");
 const iconOpen = document.getElementById("icon-open");
 const iconClose = document.getElementById("icon-close");
 
-if (menuButton) {
-    menuButton.addEventListener("click", () => {
-        mobileMenu.classList.toggle("hidden");
-        iconOpen.classList.toggle("hidden");
-        iconClose.classList.toggle("hidden");
-    });
-}
+menuButton.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+    mobileMenu.classList.toggle("md:hidden");
+    iconOpen.classList.toggle("hidden");
+    iconClose.classList.toggle("hidden");
+});
 // Navbar end
 
 // Fungsi untuk update indikator
