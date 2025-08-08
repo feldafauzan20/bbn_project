@@ -10,10 +10,10 @@ const iconClose = document.getElementById("icon-close");
 
 menuButton.addEventListener("click", () => {
     mobileMenu.classList.toggle("hidden");
-    mobileMenu.classList.toggle("md:hidden");
     iconOpen.classList.toggle("hidden");
     iconClose.classList.toggle("hidden");
 });
+
 // Navbar end
 
 // gsap start
@@ -27,78 +27,68 @@ window.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-gsap.from("#experiences-section", {
+gsap.from("#consultant-section", {
     y: 60,
+    delay: 1,
     opacity: 0,
-    duration: 1,
+    duration: 1.5,
     scrollTrigger: {
-        trigger: "#experiences-section",
+        trigger: "#consultant-section",
         start: "top 80%",
         toggleActions: "play none none none",
     },
 });
 
-gsap.from("#best-from-us-section", {
+gsap.from("#planner-section", {
     y: 60,
     opacity: 0,
-    duration: 1,
+    duration: 1.5,
     scrollTrigger: {
-        trigger: "#best-from-us-section",
+        trigger: "#planner-section",
         start: "top 80%",
         toggleActions: "play none none none",
     },
 });
 
-gsap.from("#services-section-1", {
+gsap.from("#construction-section", {
     y: 60,
     opacity: 0,
-    duration: 1,
+    duration: 1.5,
     scrollTrigger: {
-        trigger: "#services-section-1",
+        trigger: "#construction-section",
         start: "top 80%",
         toggleActions: "play none none none",
     },
 });
 
-gsap.from("#services-section-2", {
+gsap.from("#final-review-section", {
     y: 60,
     opacity: 0,
-    duration: 1,
+    duration: 1.5,
     scrollTrigger: {
-        trigger: "#services-section-2",
+        trigger: "#final-review-section",
         start: "top 80%",
         toggleActions: "play none none none",
     },
 });
 
-gsap.from("#section-5-about-2", {
+gsap.from("#journal-section", {
     y: 60,
     opacity: 0,
-    duration: 1,
+    duration: 1.5,
     scrollTrigger: {
-        trigger: "#section-5-about-2",
+        trigger: "#journal-section",
         start: "top 80%",
         toggleActions: "play none none none",
     },
 });
 
-gsap.from("#section-6-about", {
+gsap.from("#contact-us-section", {
     y: 60,
     opacity: 0,
-    duration: 1,
+    duration: 1.5,
     scrollTrigger: {
-        trigger: "#section-6-about",
-        start: "top 80%",
-        toggleActions: "play none none none",
-    },
-});
-
-gsap.from("#contact-us-about", {
-    y: 60,
-    opacity: 0,
-    duration: 1,
-    scrollTrigger: {
-        trigger: "#contact-us-about",
+        trigger: "#contact-us-section",
         start: "top 80%",
         toggleActions: "play none none none",
     },

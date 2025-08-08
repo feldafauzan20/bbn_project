@@ -5,7 +5,7 @@
             <!-- Mobile menu button -->
             <div class="absolute inset-y-0 left-0 flex items-center w-full lg:hidden justify-end pr-3">
                 <button id="mobile-menu-button" type="button"
-                    class="relative inline-flex items-center justify-center rounded-md p-2  text-white hover:cursor-pointer hover:text-white focus:outline-none">
+                    class="relative inline-flex items-center justify-center rounded-md p-2  text-black hover:cursor-pointer hover:text-white focus:outline-none">
                     <span class="sr-only">Toggle menu</span>
                     <svg id="icon-open" class="block size-6 text-white" fill="none" viewBox="0 0 24 24"
                         stroke="currentColor">
@@ -27,9 +27,9 @@
             <!-- Logo dan menu desktop -->
             <div class="flex items-center justify-between w-full">
                 <div class="flex pl-3 items-center">
-                    <img id="logo-white" class="h-8 md:h-10" src="{{ asset('images/logo/logo-bbn-white.webp') }}"
-                        alt="Logo">
-                    <img id="logo-blue" class="h-8 md:h-10 hidden" src="{{ asset('images/logo/logo-bbn-biru.webp') }}"
+                    {{-- <img id="logo-white" class="h-8 md:h-10" src="{{ asset('images/logo/logo-bbn-white.webp') }}"
+                            alt="Logo"> --}}
+                    <img id="logo-blue" class="h-8 md:h-10" src="{{ asset('images/logo/logo-bbn-biru.webp') }}"
                         alt="Logo">
                 </div>
 
@@ -61,7 +61,7 @@
     </div>
 
     <!-- Mobile menu -->
-    <div id="mobile-menu" class="hidden md:hidden lg:hidden px-3 pt-6 pb-4 space-y-3 tracking-tighter text-lg">
+    <div id="mobile-menu" class="hidden md:hidden px-3 pt-6 pb-4 space-y-3 tracking-tighter text-lg">
         <a href="#" class="block rounded-md">Home</a>
         <a href="#" class="block rounded-md">Company</a>
         <a href="#" class="block rounded-md">Services</a>

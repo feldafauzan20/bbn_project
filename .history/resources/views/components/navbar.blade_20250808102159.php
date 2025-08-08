@@ -61,7 +61,7 @@
     </div>
 
     <!-- Mobile menu -->
-    <div id="mobile-menu" class="hidden md:hidden lg:hidden px-3 pt-6 pb-4 space-y-3 tracking-tighter text-lg">
+    <div id="mobile-menu" class="hidden md:hidden px-3 pt-6 pb-4 space-y-3 tracking-tighter text-lg">
         <a href="#" class="block rounded-md">Home</a>
         <a href="#" class="block rounded-md">Company</a>
         <a href="#" class="block rounded-md">Services</a>

@@ -12,7 +12,7 @@ const iconClose = document.getElementById("icon-close");
 
 menuButton.addEventListener("click", () => {
     mobileMenu.classList.toggle("hidden");
-    mobileMenu.classList.toggle("md:hidden");
+    // mobileMenu.classList.toggle("md:hidden");
     iconOpen.classList.toggle("hidden");
     iconClose.classList.toggle("hidden");
 });
@@ -116,64 +116,64 @@ gsap.from("#hero-section", {
     delay: 0.2,
 });
 
-gsap.from("#services-section", {
+gsap.from("#card-1-projects", {
     y: 60,
     delay: 1,
     opacity: 0,
     duration: 1.5,
     scrollTrigger: {
-        trigger: "#services-section",
+        trigger: "#card-1-projects",
         start: "top 80%",
         toggleActions: "play none none none",
     },
 });
 
-gsap.from("#big-hero-content-contact-us", {
+gsap.from("#card-2-projects", {
     y: 60,
     delay: 0,
     opacity: 0,
     duration: 1.5,
     scrollTrigger: {
-        trigger: "#big-hero-content-contact-us",
+        trigger: "#card-2-projects",
         start: "top 80%",
         toggleActions: "play none none none",
     },
 });
 
-// gsap.from("#card-5-projects", {
-//     y: 60,
-//     delay: 0,
-//     opacity: 0,
-//     duration: 1.5,
-//     scrollTrigger: {
-//         trigger: "#card-5-projects",
-//         start: "top 80%",
-//         toggleActions: "play none none none",
-//     },
-// });
+gsap.from("#card-5-projects", {
+    y: 60,
+    delay: 0,
+    opacity: 0,
+    duration: 1.5,
+    scrollTrigger: {
+        trigger: "#card-5-projects",
+        start: "top 80%",
+        toggleActions: "play none none none",
+    },
+});
 
-// gsap.from("#card-below", {
-//     y: 60,
-//     delay: 0,
-//     opacity: 0,
-//     duration: 1.5,
-//     scrollTrigger: {
-//         trigger: "#card-below",
-//         start: "top 80%",
-//         toggleActions: "play none none none",
-//     },
-// });
+gsap.from("#card-below", {
+    y: 60,
+    delay: 0,
+    opacity: 0,
+    duration: 1.5,
+    scrollTrigger: {
+        trigger: "#card-below",
+        start: "top 80%",
+        toggleActions: "play none none none",
+    },
+});
 
-// gsap.from("#big-hero-content-projects-grid-clients", {
-//     opacity: 0,
-//     delay: 0.5,
-//     duration: 3,
-//     ease: "power2.out",
-//     scrollTrigger: {
-//         trigger: "#big-hero-content-projects-grid-clients",
-//         start: "top 80%",
-//         toggleActions: "play none none none",
-//     },
-// });
+gsap.from("#big-hero-content-projects-grid-clients", {
+    opacity: 0,
+    delay: 0.5,
+    duration: 3,
+    ease: "power2.out",
+    scrollTrigger: {
+        trigger: "#big-hero-content-projects-grid-clients",
+        start: "top 80%",
+        toggleActions: "play none none none",
+    },
+});
 
 // GSAP animation end

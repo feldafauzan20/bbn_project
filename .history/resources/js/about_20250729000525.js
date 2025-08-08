@@ -10,16 +10,16 @@ const iconClose = document.getElementById("icon-close");
 
 menuButton.addEventListener("click", () => {
     mobileMenu.classList.toggle("hidden");
-    mobileMenu.classList.toggle("md:hidden");
     iconOpen.classList.toggle("hidden");
     iconClose.classList.toggle("hidden");
 });
+
 // Navbar end
 
 // gsap start
 window.addEventListener("DOMContentLoaded", () => {
     // Animasi judul dan deskripsi hero
-    gsap.from("#hero-section", {
+    gsap.from("#section-1-about", {
         y: 50,
         opacity: 0,
         duration: 1,
@@ -27,45 +27,45 @@ window.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-gsap.from("#experiences-section", {
+gsap.from("#section-2-about", {
     y: 60,
     opacity: 0,
     duration: 1,
     scrollTrigger: {
-        trigger: "#experiences-section",
+        trigger: "#section-2-about",
         start: "top 80%",
         toggleActions: "play none none none",
     },
 });
 
-gsap.from("#best-from-us-section", {
+gsap.from("#section-3-about", {
     y: 60,
     opacity: 0,
     duration: 1,
     scrollTrigger: {
-        trigger: "#best-from-us-section",
+        trigger: "#section-3-about",
         start: "top 80%",
         toggleActions: "play none none none",
     },
 });
 
-gsap.from("#services-section-1", {
+gsap.from("#section-4-about", {
     y: 60,
     opacity: 0,
     duration: 1,
     scrollTrigger: {
-        trigger: "#services-section-1",
+        trigger: "#section-4-about",
         start: "top 80%",
         toggleActions: "play none none none",
     },
 });
 
-gsap.from("#services-section-2", {
+gsap.from("#section-5-about-1", {
     y: 60,
     opacity: 0,
     duration: 1,
     scrollTrigger: {
-        trigger: "#services-section-2",
+        trigger: "#section-5-about-1",
         start: "top 80%",
         toggleActions: "play none none none",
     },
