@@ -1,13 +1,13 @@
-<nav id="navbar" class="fixed top-0 left-0 w-full z-50 ">
+<nav class="fixed top-0 bg-white left-0 w-full z-50 ">
     <div class="max-w-[1500px] lg:mx-36 2xl:mx-61">
         <div class="relative flex py-6 items-center justify-between md:px-3 lg:px-0">
 
             <!-- Mobile menu button -->
             <div class="absolute inset-y-0 left-0 flex items-center w-full lg:hidden justify-end pr-3">
                 <button id="mobile-menu-button" type="button"
-                    class="relative inline-flex items-center justify-center rounded-md p-2  text-white hover:cursor-pointer hover:text-white focus:outline-none">
+                    class="relative inline-flex items-center justify-center rounded-md p-2  text-black hover:cursor-pointer hover:text-black focus:outline-none">
                     <span class="sr-only">Toggle menu</span>
-                    <svg id="icon-open" class="block size-6 text-white" fill="none" viewBox="0 0 24 24"
+                    <svg id="icon-open" class="block size-6 text-black" fill="none" viewBox="0 0 24 24"
                         stroke="currentColor">
                         <!-- Bar atas -->
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6h18" />
@@ -27,32 +27,16 @@
             <!-- Logo dan menu desktop -->
             <div class="flex items-center justify-between w-full">
                 <div class="flex pl-3 items-center">
-                    <img id="logo-white" class="h-8 md:h-10" src="{{ asset('images/logo/logo-bbn-white.webp') }}"
-                        alt="Logo">
-                    <img id="logo-blue" class="h-8 md:h-10 hidden" src="{{ asset('images/logo/logo-bbn-biru.webp') }}"
+                    <img id="logo-blue" class="h-8 md:h-10" src="{{ asset('images/logo/logo-bbn-biru.webp') }}"
                         alt="Logo">
                 </div>
 
                 <div class="hidden sm:block md:hidden lg:block">
                     <div
-                        class="flex space-x-4 text-white tracking-tighter text-lg bg-black rounded-full gap-2.5 pr-2 pl-7 py-3 relative">
+                        class="flex space-x-4 text-white tracking-tighter text-lg bg-black rounded-full gap-2.5 pr-2 pl-7 py-3">
                         <a href="#" class="block rounded-md hover:text-blue-500 transition duration-500">Home</a>
-
-                        <!-- Company with dropdown -->
-                        <div class="relative group">
-                            <a href="#"
-                                class="block rounded-md hover:text-blue-500 transition duration-500">Company</a>
-
-                            <!-- Dropdown -->
-                            <div
-                                class="absolute left-0 mt-2 w-48 bg-white text-black rounded-lg shadow-lg opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transform translate-y-2 transition-all duration-300 z-50">
-                                <a href="#" class="block px-4 py-2 hover:bg-gray-100">About Us</a>
-                                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Why Choose Us</a>
-                                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Clients</a>
-                                <a href="#" class="block px-4 py-2 hover:bg-gray-100">How We Work</a>
-                            </div>
-                        </div>
-
+                        <a href="#"
+                            class="block rounded-md hover:text-blue-500 transition duration-500">Company</a>
                         <a href="#"
                             class="block rounded-md hover:text-blue-500 transition duration-500">Services</a>
                         <a href="#"
@@ -61,15 +45,14 @@
                             class="block rounded-md hover:text-blue-500 transition duration-500">Material</a>
                         <a href="#"
                             class="block rounded-md hover:text-blue-500 transition duration-500">Contact</a>
-
                         <div class="w-7 h-7 bg-white rounded-full flex items-center justify-center">
-                            <a href="#" class="text-black text-sm"><i class="fa-solid fa-arrow-right"></i></a>
+                            <a href="" class="text-black text-sm"><i class="fa-solid fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
                 <div class="hidden md:hidden lg:block" id="whatsapp-chat-md-to-lg">
                     <a href="#"
-                        class="block text-white w-fit font-semibold border-b pb-2 hover:text-blue-500 transition duration-500 hover:border-b-blue-500 border-b-white">CHAT
+                        class="block text-black w-fit font-semibold border-b pb-2 hover:text-blue-500 transition duration-500 hover:border-b-blue-500 border-b-black">CHAT
                         ON
                         WHATSAPP</a>
                 </div>
