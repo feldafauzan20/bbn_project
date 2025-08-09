@@ -11,5 +11,7 @@ class Service extends Model
 
     protected $fillable = [
         'testimonial',
+         'nama',
+        'jabatan',
     ];
 }

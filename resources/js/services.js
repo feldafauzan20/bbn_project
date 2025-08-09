@@ -1,7 +1,6 @@
-
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { Carousel } from "flowbite"; 
+import { Carousel } from "flowbite";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -11,34 +10,319 @@ const mobileMenu = document.getElementById("mobile-menu");
 const iconOpen = document.getElementById("icon-open");
 const iconClose = document.getElementById("icon-close");
 
-menuButton.addEventListener("click", () => {
-    mobileMenu.classList.toggle("hidden");
-    mobileMenu.classList.toggle("md:hidden");
-    iconOpen.classList.toggle("hidden");
-    iconClose.classList.toggle("hidden");
-});
+if (menuButton && mobileMenu) {
+    menuButton.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+        iconOpen.classList.toggle("hidden");
+        iconClose.classList.toggle("hidden");
+    });
+}
 // Navbar end
 
-// Fungsi untuk update indikator
-let currentPosition = 0;
-function updateVisibleIndicators(activeIndex) {
+// Testimonial API Integration using Services endpoint
+let testimonialCarousel = null;
+let testimonialsData = [];
+
+async function loadTestimonials() {
+    try {
+        const response = await fetch('/api/content/services');
+        const services = await response.json();
+        
+        // Filter services that have testimonial data
+        testimonialsData = services.filter(service => 
+            service.testimonial && 
+            service.nama && 
+            service.jabatan &&
+            service.testimonial.trim() !== '' &&
+            service.nama.trim() !== '' &&
+            service.jabatan.trim() !== ''
+        );
+        
+        if (testimonialsData && testimonialsData.length > 0) {
+            renderTestimonials(testimonialsData);
+            initializeCarousel(testimonialsData);
+        } else {
+            // No testimonials found, use static content
+            showStaticContent();
+        }
+    } catch (error) {
+        console.error('Error loading testimonials:', error);
+        // Fallback to existing static content if API fails
+        showStaticContent();
+    }
+}
+
+function renderTestimonials(testimonials) {
+    const carouselContainer = document.querySelector('#my-carousel .testimonial-content');
+    const indicatorsContainer = document.querySelector('#my-carousel .testimonial-indicators');
+    const loadingElement = document.getElementById('testimonial-loading');
+    
+    if (!carouselContainer || !indicatorsContainer) return;
+    
+    // Hide loading
+    if (loadingElement) {
+        loadingElement.style.display = 'none';
+    }
+    
+    // Show carousel containers
+    carouselContainer.style.display = 'block';
+    indicatorsContainer.style.display = 'flex';
+    
+    // Clear existing content
+    carouselContainer.innerHTML = '';
+    indicatorsContainer.innerHTML = '';
+    
+    // Render testimonial items
+    testimonials.forEach((testimonial, index) => {
+        // Create testimonial slide - hanya yang pertama yang visible
+        const slideDiv = document.createElement('div');
+        slideDiv.className = index === 0 ? 
+            'duration-700 ease-in-out block' : 
+            'duration-700 ease-in-out hidden';
+        slideDiv.id = `carousel-item-${index + 1}`;
+        
+        slideDiv.innerHTML = `
+            <h2 class="text-black text-4xl lg:text-6xl lg:leading-16 font-semibold tracking-tightest leading-10">
+                "${testimonial.testimonial}"
+            </h2>
+        `;
+        
+        carouselContainer.appendChild(slideDiv);
+        
+        // Create indicator yang bisa diklik
+        const indicatorDiv = document.createElement('div');
+        const isVisibleOnMobile = index < 2;
+        const baseClasses = 'gap-y-2.5 pt-8 md:pt-13 border-t-1 w-1/2 indicator-item cursor-pointer transition-all duration-300';
+        
+        // Set classes berdasarkan visibility dan active state
+        if (index === 0) {
+            // Active indicator
+            indicatorDiv.className = isVisibleOnMobile ? 
+                `${baseClasses} border-t-2 border-black block lg:block` : 
+                `${baseClasses} border-t-2 border-black hidden lg:block`;
+        } else {
+            // Inactive indicators
+            indicatorDiv.className = isVisibleOnMobile ? 
+                `${baseClasses} border-black/60 block lg:block hover:border-black/80` : 
+                `${baseClasses} border-black/60 hidden lg:block hover:border-black/80`;
+        }
+        
+        indicatorDiv.id = `carousel-indicator-${index + 1}`;
+        indicatorDiv.setAttribute('aria-label', `Slide ${index + 1}`);
+        indicatorDiv.setAttribute('data-position', index);
+        
+        indicatorDiv.innerHTML = `
+            <div>
+                <h2 class="text-black text-lg font-semibold leading-relaxed tracking-tightest">
+                    ${testimonial.nama}
+                </h2>
+            </div>
+            <div>
+                <h3 class="text-black text-lg font-normal leading-relaxed tracking-tight">
+                    ${testimonial.jabatan}
+                </h3>
+            </div>
+        `;
+        
+        // Add click event untuk manual navigation
+        indicatorDiv.addEventListener('click', () => {
+            if (testimonialCarousel) {
+                testimonialCarousel.slideTo(index);
+            }
+        });
+        
+        indicatorsContainer.appendChild(indicatorDiv);
+    });
+}
+
+function showStaticContent() {
+    const loadingElement = document.getElementById('testimonial-loading');
+    const staticContent = document.getElementById('static-testimonials');
+    
+    if (loadingElement) {
+        loadingElement.style.display = 'none';
+    }
+    
+    if (staticContent) {
+        staticContent.style.display = 'block';
+        initializeStaticCarousel();
+    }
+}
+
+function initializeCarousel(testimonials) {
+    const carouselElement = document.getElementById("my-carousel");
+    
+    if (!carouselElement) return;
+    
+    // Destroy existing carousel if it exists
+    if (testimonialCarousel) {
+        try {
+            testimonialCarousel.destroy();
+        } catch (error) {
+            console.log('Error destroying carousel:', error);
+        }
+    }
+    
+    // Build items array dynamically
+    const items = testimonials.map((_, index) => ({
+        position: index,
+        el: document.getElementById(`carousel-item-${index + 1}`),
+    })).filter(item => item.el); // Filter out null elements
+    
+    // Build indicators array dynamically
+    const indicators = testimonials.map((_, index) => ({
+        position: index,
+        el: document.getElementById(`carousel-indicator-${index + 1}`),
+    })).filter(item => item.el);
+    
+    if (items.length === 0) return;
+    
+    const options = {
+        defaultPosition: 0,
+        interval: 5000, // 5 detik auto slide
+        indicators: {
+            activeClasses: "border-t-2 border-black",
+            inactiveClasses: "border-t-1 border-black/60",
+            items: indicators,
+        },
+        onChange: (carousel) => {
+            const currentPosition = carousel._activeItem?.position ?? 0;
+            updateVisibleIndicators(currentPosition);
+            updateActiveIndicator(currentPosition);
+        },
+    };
+    
+    const instanceOptions = {
+        id: "my-carousel",
+        override: true,
+    };
+    
+    try {
+        testimonialCarousel = new Carousel(carouselElement, items, options, instanceOptions);
+        testimonialCarousel.cycle();
+        
+        // Initial setup
+        updateVisibleIndicators(0);
+        updateActiveIndicator(0);
+    } catch (error) {
+        console.error('Error initializing carousel:', error);
+    }
+}
+
+function updateActiveIndicator(activeIndex) {
     const allIndicators = document.querySelectorAll(".indicator-item");
     allIndicators.forEach((el, index) => {
-        el.classList.remove("flex", "hidden");
-
-        if (window.innerWidth < 1024) {
-            if (index === activeIndex || index === activeIndex + 1) {
-                el.classList.add("flex");
-            } else {
-                el.classList.add("hidden");
-            }
+        if (index === activeIndex) {
+            // Active indicator
+            el.classList.remove("border-t-1", "border-black/60");
+            el.classList.add("border-t-2", "border-black");
         } else {
-            el.classList.add("flex");
+            // Inactive indicators
+            el.classList.remove("border-t-2", "border-black");
+            el.classList.add("border-t-1", "border-black/60");
         }
     });
 }
 
-// GSAP animation start
+function updateVisibleIndicators(activeIndex) {
+    const allIndicators = document.querySelectorAll(".indicator-item");
+    allIndicators.forEach((el, index) => {
+        el.classList.remove("flex", "hidden", "block");
+
+        // Untuk layar kecil/md: tampilkan hanya aktif dan setelahnya (max 2)
+        if (window.innerWidth < 1024) {
+            if (index === activeIndex || index === activeIndex + 1) {
+                el.classList.add("block");
+            } else {
+                el.classList.add("hidden");
+            }
+        } else {
+            // Untuk layar besar: tampilkan semua
+            el.classList.add("block");
+        }
+    });
+}
+
+function initializeStaticCarousel() {
+    // Fallback initialization for static content
+    const carouselElement = document.getElementById("my-carousel");
+    
+    const items = [
+        {
+            position: 0,
+            el: document.getElementById("static-carousel-item-1"),
+        },
+        {
+            position: 1,
+            el: document.getElementById("static-carousel-item-2"),
+        },
+        {
+            position: 2,
+            el: document.getElementById("static-carousel-item-3"),
+        },
+        {
+            position: 3,
+            el: document.getElementById("static-carousel-item-4"),
+        },
+    ].filter(item => item.el);
+    
+    const indicators = [
+        {
+            position: 0,
+            el: document.getElementById("static-carousel-indicator-1"),
+        },
+        {
+            position: 1,
+            el: document.getElementById("static-carousel-indicator-2"),
+        },
+        {
+            position: 2,
+            el: document.getElementById("static-carousel-indicator-3"),
+        },
+        {
+            position: 3,
+            el: document.getElementById("static-carousel-indicator-4"),
+        },
+    ].filter(item => item.el);
+    
+    if (items.length === 0) return;
+    
+    const options = {
+        defaultPosition: 0,
+        interval: 3000,
+        indicators: {
+            activeClasses: "border-t-2 border-black",
+            inactiveClasses: "border-t-1 border-black/60",
+            items: indicators,
+        },
+        onChange: (carousel) => {
+            const currentPosition = carousel._activeItem?.position ?? 0;
+            updateVisibleIndicators(currentPosition);
+        },
+    };
+    
+    const instanceOptions = {
+        id: "my-carousel",
+        override: true,
+    };
+    
+    testimonialCarousel = new Carousel(carouselElement, items, options, instanceOptions);
+    testimonialCarousel.cycle();
+    
+    updateVisibleIndicators(0);
+}
+
+// Initialize testimonials when DOM is loaded
+document.addEventListener('DOMContentLoaded', function() {
+    loadTestimonials();
+});
+
+window.addEventListener("resize", () => {
+    const currentPosition = testimonialCarousel?._activeItem?.position ?? 0;
+    updateVisibleIndicators(currentPosition);
+});
+
+// GSAP animation start (aktifkan bila dibutuhkan)
 gsap.from("#hero-section", {
     y: 50,
     opacity: 0,
@@ -69,98 +353,5 @@ gsap.from("#big-hero-content-contact-us", {
         toggleActions: "play none none none",
     },
 });
+
 // GSAP animation end
-
-// --- Carousel start ---
-document.addEventListener('DOMContentLoaded', function() {
-    const apiUrl = 'http://127.0.0.1:8000/api/content/services';
-    const carouselContainer = document.getElementById('testimonial-carousel-container');
-    const myCarouselElement = document.getElementById('my-carousel');
-
-    if (!carouselContainer || !myCarouselElement) {
-        console.error('Elemen #testimonial-carousel-container atau #my-carousel tidak ditemukan.');
-        return;
-    }
-
-    fetch(apiUrl)
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Gagal mengambil data dari API.');
-            }
-            return response.json();
-        })
-        .then(services => {
-            if (services.length > 0) {
-                let itemsForCarousel = [];
-                let indicatorsForCarousel = [];
-
-                services.forEach((service, index) => {
-                    // Membuat item testimonial secara dinamis
-                    const carouselItem = document.createElement('div');
-                    carouselItem.classList.add('hidden', 'duration-700', 'ease-in-out');
-                    carouselItem.id = `carousel-item-${index + 1}`;
-                    carouselItem.innerHTML = `
-                        <h2 class="text-black text-4xl lg:text-6xl lg:leading-16 font-semibold tracking-tightest leading-10">
-                            “${service.testimonial}”
-                        </h2>
-                    `;
-                    carouselContainer.appendChild(carouselItem);
-                    
-                    itemsForCarousel.push({
-                        position: index,
-                        el: carouselItem,
-                    });
-                    
-                    // Membuat indikator secara dinamis
-                    const indicatorButton = document.createElement('button');
-                    indicatorButton.type = 'button';
-                    indicatorButton.className = 'indicator-item'; // Tambahkan kelas untuk custom CSS
-                    indicatorsForCarousel.push({
-                        position: index,
-                        el: indicatorButton,
-                    });
-                });
-                
-                // --- Kode Inisialisasi Carousel yang Dipindahkan ke Sini ---
-                // Pastikan elemen indikator dibuat di HTML terlebih dahulu
-                const indicatorsContainer = document.querySelector('[data-carousel-indicators]');
-
-                const options = {
-                    defaultPosition: 0,
-                    interval: 3000,
-                    indicators: {
-                        activeClasses: "border-t-2 border-black",
-                        inactiveClasses: "border-t-0 border-black/60 bg-transparent",
-                        items: indicatorsForCarousel, // Gunakan indikator yang dibuat dinamis
-                    },
-                    onChange: (carousel) => {
-                        currentPosition = carousel._activeItem?.position ?? 0;
-                        updateVisibleIndicators(currentPosition);
-                    },
-                };
-                
-                const instanceOptions = {
-                    id: "my-carousel",
-                    override: true,
-                };
-                
-                const carousel = new Carousel(myCarouselElement, itemsForCarousel, options, instanceOptions);
-                carousel.cycle();
-
-                // Panggil fungsi setelah semua elemen dibuat dan carousel diinisialisasi
-                updateVisibleIndicators(currentPosition);
-
-                window.addEventListener("resize", () => {
-                    updateVisibleIndicators(currentPosition);
-                });
-                
-            } else {
-                carouselContainer.innerHTML = '<p>Tidak ada testimonial yang tersedia.</p>';
-            }
-        })
-        .catch(error => {
-            console.error('Error:', error);
-            carouselContainer.innerHTML = '<p>Gagal memuat testimonial.</p>';
-        });
-});
-// --- Carousel end ---

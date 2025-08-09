@@ -203,77 +203,31 @@
 
 
     {{-- TESTIMONIAL START --}}
-    <section>
-        <div class="mx-5 lg:mx-36 2xl:mx-61 mb-12.5 lg:mb-24 max-w-[1500px]">
-            <div class="">
-                <p class="text-sky-700 text-lg font-semibold leading-relaxed tracking-tightest">
-                    Testimonials
-                </p>
+<section>
+    <div class="mx-5 lg:mx-36 2xl:mx-61 mb-12.5 lg:mb-24 max-w-[1500px]">
+        <div class="">
+            <p class="text-sky-700 text-lg font-semibold leading-relaxed tracking-tightest">
+                Testimonials
+            </p>
+        </div>
+        <div id="my-carousel" class="relative w-full">
+            <!-- Loading State -->
+            <div id="testimonial-loading" class="my-8 md:my-13 relative h-75 md:h-44 lg:h-64 flex items-center justify-center">
+                <div class="flex flex-col items-center">
+                    <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-sky-700"></div>
+                    <p class="mt-4 text-gray-600">Loading testimonials...</p>
+                </div>
             </div>
-            <div id="my-carousel" class="relative w-full">
-                
-            <div id="testimonial-carousel-container" class="my-8 md:my-13 relative h-75 md:h-44 lg:h-64 overflow-hidden">
-                </div>
 
-                {{-- Indicators --}}
-                <div class="flex md:w-full ">
-                    <div class="block lg:block gap-y-2.5 pt-8 md:pt-13 border-t-1 border-black/60 w-1/2"
-                        id="carousel-indicator-1" aria-label="Slide 1">
-                        <div>
-                            <h2 class="text-black text-lg font-semibold leading-relaxed tracking-tightest">
-                                Jane Doe
-                            </h2>
-                        </div>
-                        <div>
-                            <h3 class="text-black text-lg font-normal leading-relaxed tracking-tight">
-                                CEO of Brand Ipsum
-                            </h3>
-                        </div>
-                    </div>
-                    <div class="block lg:block gap-y-2.5 pt-8 md:pt-13 border-t-1 border-black/60 w-1/2"
-                        aria-current="false" id="carousel-indicator-2" aria-label="Slide 1">
-                        <div>
-                            <h2 class="text-black text-lg font-semibold leading-relaxed tracking-tightest">
-                                Jane Doe 2
-                            </h2>
-                        </div>
-                        <div>
-                            <h3 class="text-black text-lg font-normal leading-relaxed tracking-tight">
-                                CEO of Brand Ipsum
-                            </h3>
-                        </div>
-                    </div>
-                    <div class="hidden lg:block gap-y-2.5 pt-8 md:pt-13 border-t-1 border-black/60 w-1/2"
-                        aria-current="false" id="carousel-indicator-3" aria-label="Slide 1">
-                        <div>
-                            <h2 class="text-black text-lg font-semibold leading-relaxed tracking-tightest">
-                                Jane Doe 3
-                            </h2>
-                        </div>
-                        <div>
-                            <h3 class="text-black text-lg font-normal leading-relaxed tracking-tight">
-                                CEO of Brand Ipsum
-                            </h3>
-                        </div>
-                    </div>
-                    <div class="hidden lg:block gap-y-2.5 pt-8 md:pt-13 border-t-1 border-black/60 w-1/2"
-                        aria-current="false" id="carousel-indicator-4" aria-label="Slide 1">
-                        <div>
-                            <h2 class="text-black text-lg font-semibold leading-relaxed tracking-tightest">
-                                Jane Doe 4
-                            </h2>
-                        </div>
-                        <div>
-                            <h3 class="text-black text-lg font-normal leading-relaxed tracking-tight">
-                                CEO of Brand Ipsum
-                            </h3>
-                        </div>
-                    </div>
-                </div>
+            <div class="testimonial-content my-8 md:my-13 relative h-75 md:h-44 lg:h-64 overflow-hidden" style="display: none;">
+            </div>
+
+            <div class="testimonial-indicators flex md:w-full" style="display: none;">
             </div>
         </div>
-    </section>
-    {{-- TESTIMONIAL END --}}
+    </div>
+</section>
+{{-- TESTIMONIAL END --}}
 
     {{-- CLIENTS START --}}
     <div class="mx-5 mb-12.5 lg:mb-24 lg:mx-36 2xl:mx-61 max-w-[1500px]" id="big-hero-content-projects-grid-clients">
