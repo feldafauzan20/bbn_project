@@ -9,7 +9,7 @@
 
     {{-- HERO START --}}
     <section class="bg-stone-50">
-        <div class="pt-24 md:pt-32 mx-5 lg:mx-36 2xl:mx-61" id="hero-section">
+        <div class="pt-24 md:pt-32 mx-5 lg:mx-36 2xl:mx-61 max-w-[1500px]" id="hero-section">
             <div class="mb-8 md:mb-7 lg:mb-11">
                 <h2 class="text-center text-black text-5xl lg:text-8xl font-semibold tracking-tightest">
                     Mengapa Kami Menjadi Mitra Konstruksi yang Tepat
@@ -37,7 +37,7 @@
 
     {{-- EXPERIENCES START --}}
     <section>
-        <div class="mt-45 md:mt-37 lg:mt-78 mx-5 lg:mx-36 2xl:mx-61" id="experiences-section">
+        <div class="mt-45 md:mt-37 lg:mt-78 mx-5 lg:mx-36 2xl:mx-61 max-w-[1500px]" id="experiences-section">
             <div class="mb-5 md:mb-7 w-96 lg:w-140 ">
                 <h2 class="text-black text-4xl lg:text-6xl md:leading-10 font-semibold tracking-tightest">
                     Pengalaman yang Teruji
@@ -104,7 +104,7 @@
 
     {{-- BEST FROM US START --}}
     <section id="best-from-us-section">
-        <div class="mx-5 mb-20 lg:mx-36 2xl:mx-61 mt-11 md:mt-17 lg:mt-34 md:mb-17 lg:mb-36">
+        <div class="mx-5 mb-20 lg:mx-36 2xl:mx-61 mt-11 md:mt-17 lg:mt-34 md:mb-17 lg:mb-36 max-w-[1500px]">
             <div class="lg:flex lg:justify-between lg:mb-15.5">
                 <div class="w-full md:w-145 lg:w-250 md:mx-auto md:mb-9.5 lg:mb-0">
                     <h2
@@ -134,7 +134,7 @@
             </div>
             <!-- Overlay gradient -->
             <div class="absolute inset-0 bg-black/70"></div>
-            <div class="relative mx-5 lg:mx-36 2xl:mx-61 " id="services-section-1">
+            <div class="relative mx-5 lg:mx-36 2xl:mx-61 max-w-[1500px]" id="services-section-1">
                 <div class=" pt-10.5 md:pt-28.5 lg:pt-43 lg:w-230 lg:mx-auto">
                     <h2
                         class="text-white text-4xl md:text-5xl lg:text-6xl font-semibold leading-10 lg:leading-[62.40px] text-center tracking-tightest">
@@ -212,7 +212,7 @@
                 </div>
             </div>
             <hr class="relative outline-1 text-white/80 my-17 md:my-19 lg:my-43">
-            <div class=" lg:relative lg:flex lg:pb-43 lg:mx-36 2xl:mx-61 mx-5 lg:gap-x-80" id="services-section-2">
+            <div class=" lg:relative lg:flex lg:pb-43 lg:mx-36 2xl:mx-61 mx-5 lg:gap-x-80 max-w-[1500px]" id="services-section-2">
 
                 <div class="relative mb-15 md:mb-9 lg:mb-0">
                     <div class="w-60 md:w-72">
@@ -250,7 +250,7 @@
     {{-- SERVICES END --}}
 
     {{-- FOOTER START --}}
-    <section class="lg:mx-36 2xl:mx-61 mx-5 ">
+    <section class="lg:mx-36 2xl:mx-61 mx-5 max-w-[1500px]">
 
         <x-footer-component />
     </section>

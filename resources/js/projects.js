@@ -198,63 +198,84 @@ document.addEventListener('DOMContentLoaded', function() {
 // --- Carousel end ---
 
 // --- Projects Gallery Start ---
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const apiUrl = 'http://127.0.0.1:8000/api/content/projects-gallery';
+    const gridContainer = document.querySelector('.grid.grid-cols-1.md\\:grid-cols-2');
+    const paginationContainer = document.getElementById('pagination-container');
 
-    // Fungsi untuk memotong teks dan menambahkan elipsis
     function truncateText(text, maxLength) {
         if (!text) return '';
-        if (text.length > maxLength) {
-            return text.substring(0, maxLength) + '...';
-        }
-        return text;
+        return text.length > maxLength ? text.substring(0, maxLength) + '...' : text;
     }
-    
-    fetch(apiUrl)
+
+    function loadProjects(url = apiUrl) {
+    fetch(url)
         .then(response => {
-            if (!response.ok) {
-                throw new Error('Gagal mengambil data dari API.');
-            }
+            if (!response.ok) throw new Error('Gagal mengambil data dari API.');
             return response.json();
         })
         .then(projects => {
-            if (projects.length > 0) {
-                for (let i = 0; i < 6; i++) {
-                    const card = document.getElementById(`card-${i + 1}-projects`);
-                    const project = projects[i];
+            const data = projects.data || [];
+            
+            // Hapus isi kartu lama
+            const cards = gridContainer.querySelectorAll('[id^="card-"]');
+            cards.forEach(card => card.style.display = 'none');
 
-                    if (!card || !project) {
-                        if (card) card.style.display = 'none';
-                        continue;
+            if (data.length > 0) {
+                data.forEach((project, index) => {
+                    const card = document.getElementById(`card-${index + 1}-projects`);
+                    if (card) {
+                        card.style.display = 'flex';
+                        const img = card.querySelector('img');
+                        const title = card.querySelector('h5');
+                        const desc = card.querySelector('p');
+                        const link = card.querySelector('a');
+
+                        if (img) {
+                            img.src = `/storage/${project.foto_head}`;
+                            img.alt = project.judul;
+                        }
+                        if (title) title.textContent = project.judul;
+                        if (desc) desc.textContent = truncateText(project.desc_lengkap, 180);
+                        if (link) link.href = `/projects/${project.id}`;
                     }
-
-                    const img = card.querySelector('img');
-                    const title = card.querySelector('h5');
-                    const desc = card.querySelector('p');
-                    const link = card.querySelector('a');
-
-                    if (img) img.src = `/storage/${project.foto_head}`;
-                    if (img) img.alt = project.judul;
-                    if (title) title.textContent = project.judul;
-                    
-                    // Baris ini yang diubah: Memotong deskripsi menjadi 180 karakter
-                    if (desc) desc.textContent = truncateText(project.desc_lengkap, 180);
-                    
-                    if (link) link.href = `/projects/${project.id}`;
-                }
+                });
             } else {
-                const container = document.querySelector('.grid.grid-cols-1.md\\:grid-cols-2');
-                if (container) {
-                    container.innerHTML = '<p class="text-center text-gray-500 col-span-full">Tidak ada proyek yang tersedia.</p>';
-                }
+                gridContainer.innerHTML = '<p class="text-center text-gray-500 col-span-full">Tidak ada proyek yang tersedia.</p>';
             }
+
+            // Render pagination
+            renderPagination(projects.links);
+
+            // ⬅ Scroll langsung ke posisi gridContainer tanpa smooth
+            document.documentElement.style.scrollBehavior = 'auto';
+            gridContainer.scrollIntoView({ behavior: 'auto', block: 'start' });
+            document.documentElement.style.scrollBehavior = '';
         })
         .catch(error => {
             console.error('Error fetching project gallery:', error);
-            const container = document.querySelector('.grid.grid-cols-1.md\\:grid-cols-2');
-            if (container) {
-                container.innerHTML = '<p class="text-center text-red-500 col-span-full">Gagal memuat proyek.</p>';
-            }
+            gridContainer.innerHTML = '<p class="text-center text-red-500 col-span-full">Gagal memuat proyek.</p>';
         });
+}
+
+
+
+    function renderPagination(links) {
+        paginationContainer.innerHTML = '';
+        links.forEach(link => {
+            const button = document.createElement('button');
+            button.innerHTML = link.label;
+            button.className = `px-3 py-1 border ${link.active ? 'bg-blue-500 text-white' : 'bg-white text-black'}`;
+            button.disabled = link.url === null;
+            if (link.url) {
+                button.addEventListener('click', () => loadProjects(link.url));
+            }
+            paginationContainer.appendChild(button);
+        });
+    }
+
+    // Load pertama kali
+    loadProjects();
 });
+
 // --- Projects Gallery End ---

@@ -194,9 +194,13 @@
                 </div>
             </div>
         </div>
+        <div id="pagination-container" class="mt-10 flex gap-2 justify-center"></div>
+
     </div>
 </section>
 {{-- PROJECTS END --}}
+
+
 
     {{-- TESTIMONIAL START --}}
     <section>

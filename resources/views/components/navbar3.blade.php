@@ -36,34 +36,34 @@
                 <div class="hidden sm:block md:hidden lg:block">
                     <div
                         class="flex space-x-4 text-white tracking-tighter text-lg bg-black rounded-full gap-2.5 pr-2 pl-7 py-3 relative">
-                        <a href="#" class="block rounded-md hover:text-blue-500 transition duration-500">Home</a>
+                        <a href="/" class="block rounded-md hover:text-blue-500 transition duration-500">Home</a>
 
                         <!-- Company with dropdown -->
-                        <div class="relative group">
-                            <a href="#"
-                                class="block rounded-md hover:text-blue-500 transition duration-500">Company</a>
+                        <div class="relative group pb-1">
+                            <p 
+                                class="block rounded-md hover:text-blue-500 transition duration-500 hover:cursor-pointer">Company</p>
 
                             <!-- Dropdown -->
-                            <div
-                                class="absolute left-0 mt-2 w-48 bg-white text-black rounded-lg shadow-lg opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transform translate-y-2 transition-all duration-300 z-50">
-                                <a href="#" class="block px-4 py-2 hover:bg-gray-100">About Us</a>
-                                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Why Choose Us</a>
-                                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Clients</a>
-                                <a href="#" class="block px-4 py-2 hover:bg-gray-100">How We Work</a>
-                            </div>
+                           <div
+                                class="absolute left-0 top-full w-48 bg-white text-black rounded-lg shadow-lg opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto group-hover:translate-y-0 transform translate-y-2 transition-all duration-300 z-50">
+                                <a href="/about" class="block px-4 py-2 hover:bg-gray-100 rounded-t-lg">About Us</a>
+                                <a href="/why-choose-us" class="block px-4 py-2 hover:bg-gray-100">Why Choose Us</a>
+                                <a href="/clients" class="block px-4 py-2 hover:bg-gray-100">Clients</a>
+                                <a href="/works" class="block px-4 py-2 hover:bg-gray-100 rounded-b-lg">How We Work</a>
+                            </div> 
                         </div>
 
-                        <a href="#"
+                        <a href="/services"
                             class="block rounded-md hover:text-blue-500 transition duration-500">Services</a>
-                        <a href="#"
+                        <a href="/projects"
                             class="block rounded-md hover:text-blue-500 transition duration-500">Projects</a>
-                        <a href="#"
+                        <a href="/material"
                             class="block rounded-md hover:text-blue-500 transition duration-500">Material</a>
-                        <a href="#"
+                        <a href="/contact-form"
                             class="block rounded-md hover:text-blue-500 transition duration-500">Contact</a>
 
                         <div class="w-7 h-7 bg-white rounded-full flex items-center justify-center">
-                            <a href="#" class="text-black text-sm"><i class="fa-solid fa-arrow-right"></i></a>
+                            <a href="/contact-form" class="text-black text-sm"><i class="fa-solid fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -79,17 +79,17 @@
 
     <!-- Mobile menu -->
     <div id="mobile-menu" class="hidden md:hidden px-3 pt-6 pb-4 space-y-3 tracking-tighter text-lg">
-        <a href="#" class="block rounded-md">Home</a>
-        <a href="#" class="block rounded-md">About Us</a>
-        <a href="#" class="block rounded-md">Why Choose Us</a>
-        <a href="#" class="block rounded-md">Clients</a>
-        <a href="#" class="block rounded-md">How We Work</a>
-        <a href="#" class="block rounded-md">Services</a>
-        <a href="#" class="block rounded-md">Projects</a>
-        <a href="#" class="block rounded-md">Material</a>
-        <a href="#" class="block rounded-md">Contact</a>
+        <a href="/" class="block rounded-md">Home</a>
+        <a href="/about" class="block rounded-md">About Us</a>
+        <a href="/why-choose-us" class="block rounded-md">Why Choose Us</a>
+        <a href="/clients" class="block rounded-md">Clients</a>
+        <a href="/works" class="block rounded-md">How We Work</a>
+        <a href="/services" class="block rounded-md">Services</a>
+        <a href="/projects" class="block rounded-md">Projects</a>
+        <a href="/material" class="block rounded-md">Material</a>
+        <a href="/contact-form" class="block rounded-md">Contact</a>
         <a href="#"
-            class="block text-black w-fit mt-4 font-semibold border-b pb-2 hover:text-blue-500 transition duration-500 hover:border-b-blue-500 border-b-black">CHAT
+            class="block text-black w-fit mt-4 font-bold border-b pb-2 hover:text-blue-500 transition duration-500 hover:border-b-blue-500 border-b-black">CHAT
             ON
             WHATSAPP</a>
     </div>

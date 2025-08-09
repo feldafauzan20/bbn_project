@@ -78,16 +78,16 @@ class ContentController extends Controller
         }
         return response()->json($data);
     }
-    
+
     /**
      * Mengambil 3 proyek untuk ditampilkan di footer.
      */
- public function getFeaturedProjects()
+    public function getFeaturedProjects()
     {
         $data = Project::where('is_featured', true)
-                       ->select('id', 'foto_head', 'judul') 
-                       ->take(3)
-                       ->get();
+            ->select('id', 'foto_head', 'judul')
+            ->take(3)
+            ->get();
 
         return response()->json($data);
     }
@@ -97,14 +97,8 @@ class ContentController extends Controller
      */
     public function getProjectGallery()
     {
-        $data = Project::all()->map(function ($project) {
-            return [
-                'id' => $project->id,
-                'foto_head' => $project->foto_head,
-                'judul' => $project->judul,
-                'desc_lengkap' => $project->desc_lengkap,
-            ];
-        });
+        $data = Project::select('id', 'foto_head', 'judul', 'desc_lengkap')
+            ->paginate(6); // 6 item per halaman
 
         return response()->json($data);
     }

@@ -9,7 +9,7 @@
 
     {{-- HERO START --}}
     <section class="bg-stone-50">
-        <div class="mx-5 lg:mx-36 2xl:mx-61 pt-22 md:pt-36 pb-20 lg:pb-44.5" id="hero-section">
+        <div class="mx-5 lg:mx-36 2xl:mx-61 pt-22 md:pt-36 pb-20 lg:pb-44.5 max-w-[1500px]" id="hero-section">
             <div class="w-80 md:w-96 lg:w-190  mx-auto">
                 <h2
                     class="text-black text-5xl lg:text-8xl text-center tracking-tightest font-semibold leading-[49.92px] lg:leading-[100px]">
@@ -28,7 +28,7 @@
 
     {{-- CLIENTS START --}}
     <section>
-        <div class="mt-22 md:mt-20 mx-5 md:mx-10 lg:mx-36 2xl:mx-61 mb-15 md:mb-20 lg:mb-21" id="clients-section">
+        <div class="mt-22 md:mt-20 mx-5 md:mx-10 lg:mx-36 2xl:mx-61 mb-15 md:mb-20 lg:mb-21 max-w-[1500px]" id="clients-section">
             <div
                 class="grid grid-cols-2 lg:grid-cols-3 gap-x-9 md:gap-x-12 lg:gap-x-14 gap-y-12 md:gap-y-8.5 lg:gap-y-9">
 
@@ -100,13 +100,13 @@
     {{-- CLIENTS END --}}
 
     {{-- CONTACT COMPONENT START --}}
-    <section class="mx-5 md:mx-10 lg:mx-36 2xl:mx-61">
+    <section class="mx-5 md:mx-10 lg:mx-36 2xl:mx-61 max-w-[1500px]">
         <x-contact-us-card />
     </section>
     {{-- CONTACT COMPONENT END --}}
 
     {{-- FOOTER COMPONENT START --}}
-    <section class="mx-5 md:mx-10 lg:mx-36 2xl:mx-61 mt-20.5 md:mt-18 lg:mt-22">
+    <section class="mx-5 md:mx-10 lg:mx-36 2xl:mx-61 mt-20.5 md:mt-18 lg:mt-22 max-w-[1500px]">
 
         <x-footer-component />
     </section>

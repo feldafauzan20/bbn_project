@@ -80,7 +80,7 @@
 
     {{-- SECTION 3 START --}}
     <section>
-        <div class="mx-5 my-20 lg:mx-36 2xl:mx-61 md:my-12 lg:my-0 lg:mb-25 relative lg:flex lg:gap-x-18"
+        <div class="mx-5 my-20 lg:mx-36 2xl:mx-61 md:my-12 lg:my-0 lg:mb-25 relative lg:flex lg:gap-x-18 max-w-[1500px]"
             id="section-3-about">
             <div class="relative z-10 mb-8 md:mb-5 md:py-5 lg:py-21 lg:flex-1">
 
@@ -122,7 +122,7 @@
 
     {{-- SECTION 4 START --}}
     <section>
-        <div class="mx-5 my-20 lg:mx-36 2xl:mx-61 md:my-12 lg:my-0 lg:mb-31 relative lg:flex lg:flex-row-reverse lg:gap-x-18"
+        <div class="mx-5 my-20 lg:mx-36 2xl:mx-61 md:my-12 lg:my-0 lg:mb-31 relative lg:flex lg:flex-row-reverse lg:gap-x-18 max-w-[1500px]"
             id="section-4-about">
             <div class="relative z-10 mb-8 md:mb-5 md:py-5 lg:py-21 lg:flex-1">
 
@@ -169,7 +169,7 @@
             </div>
             <!-- Overlay gradient -->
             <div class="absolute inset-0 bg-slate-950/90"></div>
-            <div class="relative mx-5 py-15 md:py-0 lg:mx-36 2xl:mx-61" id="section-5-about-1">
+            <div class="relative mx-5 py-15 md:py-0 lg:mx-36 2xl:mx-61 max-w-[1500px]" id="section-5-about-1">
                 <div
                     class="text-center lg:text-left w-75 md:w-159 lg:w-140 mx-auto lg:mx-0 md:px-7 lg:px-0 md:pt-12 lg:pt-27.5">
                     <p class="text-white text-3xl tracking-tighter font-semibold leading-9">Dalam bidang perkuatan
@@ -187,7 +187,7 @@
                             untuk
                             selalu memberikan solusi perkutan struktur yang efisien, dan inovatif</p>
                     </div>
-                    <div class=" flex justify-center lg:justify-start">
+                    <div class=" flex justify-center lg:items-center">
                         <a href=""
                             class="text-center text-lg box-border font-semibold block w-fit rounded-full bg-white hover:bg-blue-600 transition duration-500 hover:text-white text-black py-7.5 px-15 md:px-17 whitespace-nowrap">
                             Kerja sama dan mitra
@@ -196,7 +196,7 @@
                 </div>
             </div>
             <hr class="relative outline-1 text-white/80 my-12 md:my-17 lg:my-19.5">
-            <div class="flex justify-center relative lg:mx-36 2xl:mx-61" id="section-5-about-2">
+            <div class="flex justify-center relative lg:mx-36 2xl:mx-61 max-w-[1500px]" id="section-5-about-2">
                 <div class="mx-5 pb-15 md:pb-11 w-80 relative md:w-full lg:pb-27.5">
                     <div class="grid grid-cols-1 md:grid-cols-2 space-y-7 md:space-x-7 md:space-y-0">
                         <div class="rounded-[20px] overflow-hidden">
@@ -216,7 +216,7 @@
 
 {{-- SECTION 6 START --}}
 <section>
-    <div class="mx-5 lg:mx-36 2xl:mx-61 mt-11 md:mt-20 lg:mt-30.5 md:mb-20 lg:mb-8" id="section-6-about">
+    <div class="mx-5 lg:mx-36 2xl:mx-61 mt-11 md:mt-20 lg:mt-30.5 md:mb-20 lg:mb-8 max-w-[1500px]" id="section-6-about">
         <div class="w-full md:w-110 lg:w-200 md:mx-auto mb-15 md:mb-9.5">
             <h2
                 class="text-black text-5xl lg:text-6xl font-semibold tracking-tightest lg:tracking-tighter text-center leading-10 md:leading-13">
@@ -228,7 +228,7 @@
         
         <div id="featured-projects-container" class="flex flex-wrap space-y-7 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-x-7 md:gap-y-5 md:space-y-0">
             {{-- Kartu besar yang tidak diubah --}}
-            <div class="hidden md:block lg:hidden md:col-span-2">
+            {{-- <div class="hidden md:block lg:hidden md:col-span-2">
                 <div class="pt-14 md:pt-0 lg:pt-25 pb-20 md:pb-0 lg:pb-20" id="big-hero-content-contact-us">
                     <div class="rounded-3xl overflow-hidden p-6 lg:py-16 lg:px-14 h-full mx-5 md:mx-0 lg:mx-36 2xl:mx-61 bg-cover bg-center flex flex-col lg:flex-row justify-between"
                         style="background-image: url('{{ asset('images/welcome/img-building-from-bottom-welcome.webp') }}');">
@@ -246,7 +246,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> --}}
             
         </div>
     </div>
@@ -255,11 +255,11 @@
 {{-- SECTION 6 END --}}
 
     {{-- CONTACT US START --}}
-    <div class="md:hidden lg:block">
+    <div class="">
 
         <section>
             <div class="pt-14 lg:pt-0 pb-20 md:pb-8 lg:pb-20" id="contact-us-about">
-                <div class="rounded-3xl overflow-hidden p-6 lg:py-16 lg:px-14 h-full mx-5 md:mx-9 lg:mx-36 2xl:mx-61 bg-cover bg-center flex flex-col lg:flex-row justify-between"
+                <div class="rounded-3xl overflow-hidden p-6 lg:py-16 lg:px-14 h-full mx-5 lg:mx-36 2xl:mx-61 bg-cover bg-center flex flex-col lg:flex-row justify-between  max-w-[1500px]"
                     style="background-image: url('{{ asset('images/welcome/img-building-from-bottom-welcome.webp') }}');">
                     <div class="tracking-tightest w-5/6 md:w-3/5">
                         <h2 class="text-white text-4xl lg:text-6xl font-semibold">Contact us if you have additional
@@ -280,7 +280,7 @@
     {{-- FOOTER START --}}
     <footer>
         <div>
-            <div class="mx-5 lg:mx-36 lg:flex lg:justify-between 2xl:mx-61 tracking-tightest h-full">
+            <div class="mx-5 lg:mx-36 lg:flex lg:justify-between 2xl:mx-61 tracking-tightest h-full max-w-[1500px]">
                 <div class="mb-5 lg:mb-0 lg:mr-72 lg:w-[250px]">
                     <p class="text-neutral-400 text-lg font-medium">(Let’s collaborate)</p>
                 </div>

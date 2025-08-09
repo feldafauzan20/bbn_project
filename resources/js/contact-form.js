@@ -15,8 +15,9 @@ const whatsappLink = whatsappChat?.querySelector("a");
 
 menuButton.addEventListener("click", () => {
     mobileMenu.classList.toggle("hidden");
+    mobileMenu.classList.toggle("md:hidden");
     iconOpen.classList.toggle("hidden");
-    iconClose.classList.toggle("hidden");
+    iconClose.classList.toggle("hidden");;
 
     // Jika menu terbuka, navbar putih & icon hitam
     if (!mobileMenu.classList.contains("hidden")) {

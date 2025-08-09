@@ -134,11 +134,11 @@
     {{-- JOURNAL END --}}
 
     {{-- CONTACT US START --}}
-    <div class="md:hidden lg:block ">
+    <div class="">
 
         <section>
             <div class="lg:pt-0 " id="contact-us-section">
-                <div class="rounded-3xl overflow-hidden p-6 lg:py-16 lg:px-14 h-full mx-5 md:mx-9 lg:mx-36 2xl:mx-61 bg-cover bg-center flex flex-col lg:flex-row justify-between max-w-[1500px]"
+                <div class="rounded-3xl overflow-hidden p-6 lg:py-16 lg:px-14 h-full mx-5 lg:mx-36 2xl:mx-61 bg-cover bg-center flex flex-col lg:flex-row justify-between max-w-[1500px]"
                     style="background-image: url('{{ asset('images/welcome/img-building-from-bottom-welcome.webp') }}');">
                     <div class="tracking-tightest w-5/6 md:w-3/5">
                         <h2 class="text-white text-4xl lg:text-6xl font-semibold">Contact us if you have additional

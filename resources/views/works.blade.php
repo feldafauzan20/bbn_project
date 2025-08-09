@@ -9,7 +9,7 @@
 
     {{-- HERO START --}}
     <section class="lg:flex lg:gap-x-12" id="hero-section">
-        <div class="mx-5 lg:mx-0 lg:ml-36 2xl:ml-61 pt-40 ">
+        <div class="mx-5 lg:mx-0 lg:ml-36 2xl:ml-61 pt-40 max-w-[1500px]">
             <div>
                 <p class="text-sky-700 text-lg font-semibold tracking-tightest leading-relaxed">Cara Kami Bekerja</p>
             </div>
@@ -35,7 +35,7 @@
 
     {{-- CONSULTANT START --}}
     <section class="bg-stone-50">
-        <div class="mx-5 lg:mx-36 2xl:mx-61 py-20 lg:py-0 lg:pt-33.5 lg:pb-28.5 lg:flex lg:flex-row-reverse lg:items-center lg:gap-x-16"
+        <div class="mx-5 lg:mx-36 2xl:mx-61 py-20 lg:py-0 lg:pt-33.5 lg:pb-28.5 lg:flex lg:flex-row-reverse lg:items-center lg:gap-x-16 max-w-[1500px]"
             id="consultant-section">
 
             <!-- BAGIAN TEKS -->
@@ -86,7 +86,7 @@
 
     {{-- PLANNER START --}}
     <section>
-        <div class="mx-5 lg:mx-36 2xl:mx-61 py-20 lg:py-0 lg:pt-33.5 lg:pb-28.5 lg:flex  lg:items-center lg:gap-x-16"
+        <div class="mx-5 lg:mx-36 2xl:mx-61 py-20 lg:py-0 lg:pt-33.5 lg:pb-28.5 lg:flex max-w-[1500px] lg:items-center lg:gap-x-16"
             id="planner-section">
 
             <!-- BAGIAN TEKS -->
@@ -136,7 +136,7 @@
 
     {{-- CONSTRUCTION AND IMPLEMENTATION START --}}
     <section class="bg-stone-50">
-        <div class="mx-5 lg:mx-36 2xl:mx-61 py-20 lg:py-0 lg:pt-33.5 lg:pb-28.5 lg:flex lg:flex-row-reverse lg:items-center lg:gap-x-16"
+        <div class="mx-5 lg:mx-36 2xl:mx-61 py-20 lg:py-0 lg:pt-33.5 lg:pb-28.5 lg:flex lg:flex-row-reverse lg:items-center lg:gap-x-16 max-w-[1500px]"
             id="construction-section">
 
             <!-- BAGIAN TEKS -->
@@ -186,7 +186,7 @@
 
     {{-- FINAL REVIEW AND HANDOVER START --}}
     <section>
-        <div class="mx-5 lg:mx-36 2xl:mx-61 py-20 lg:py-0 lg:pt-33.5 lg:pb-0 lg:flex  lg:items-center lg:gap-x-16"
+        <div class="mx-5 lg:mx-36 2xl:mx-61 py-20 lg:py-0 lg:pt-33.5 lg:pb-0 lg:flex  lg:items-center lg:gap-x-16 max-w-[1500px]"
             id="final-review-section">
 
             <!-- BAGIAN TEKS -->
@@ -236,7 +236,7 @@
 
     {{-- OUR JOURNAL START --}}
     <section>
-        <div class="mx-5 mb-10.5 lg:mx-36 2xl:mx-61 md:mt-20 lg:mt-29 md:mb-20 lg:mb-8" id="journal-section">
+        <div class="mx-5 mb-10.5 lg:mx-36 2xl:mx-61 md:mt-20 lg:mt-29 md:mb-20 lg:mb-8 max-w-[1500px]" id="journal-section">
             <div class="w-full md:w-110 lg:w-200 md:mx-auto mb-15 md:mb-9.5">
                 <h2
                     class="text-black text-5xl lg:text-6xl font-semibold tracking-tightest lg:tracking-tighter text-center leading-10 md:leading-13">
@@ -253,11 +253,11 @@
     {{-- OUR JOURNAL END --}}
 
     {{-- CONTACT US START --}}
-    <div class="md:hidden lg:block">
+    <div class="" >
 
         <section>
-            <div class="pt-14 lg:pt-0" id="contact-us-section">
-                <div class="rounded-3xl overflow-hidden p-6 lg:py-16 lg:px-14 h-full mx-5 md:mx-9 lg:mx-36 2xl:mx-61 bg-cover bg-center flex flex-col lg:flex-row justify-between"
+            <div class="pt-14 lg:pt-0 " id="contact-us-section">
+                <div class="rounded-3xl overflow-hidden p-6 lg:py-16 lg:px-14 h-full mx-5 lg:mx-36 2xl:mx-61 bg-cover bg-center flex flex-col lg:flex-row justify-between max-w-[1500px]"
                     style="background-image: url('{{ asset('images/welcome/img-building-from-bottom-welcome.webp') }}');">
                     <div class="tracking-tightest w-5/6 md:w-3/5">
                         <h2 class="text-white text-4xl lg:text-6xl font-semibold">Contact us if you have additional
@@ -276,7 +276,7 @@
     {{-- CONTACT US END --}}
 
     {{-- FOOTER COMPONENT START --}}
-    <section class="mx-5 lg:mx-36 2xl:mx-61 mt-20.5 md:mt-20 lg:mt-26">
+    <section class="mx-5 lg:mx-36 2xl:mx-61 mt-20.5 md:mt-20 lg:mt-26 max-w-[1500px]">
         <x-footer-component />
     </section>
     {{-- FOOTER COMPONENT END --}}

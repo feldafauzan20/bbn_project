@@ -17,7 +17,7 @@
             <!-- Overlay gradient -->
             <div class="absolute inset-0 bg-gradient-to-b from-black/0 to-black/50"></div>
             <!-- Konten lain di sini jika perlu -->
-            <div class="relative h-fit w-full text-white">
+            <div class="relative h-fit w-full  text-white">
                 <div id="big-hero-content-1" class=" pt-44 text-center flex flex-col items-center w-full mx-auto">
                     <div class="md:block md:mx-24 lg:max-w-4xl w-96 md:w-150 lg:w-200">
                         <h1 class="text-6xl md:text-7xl lg:text-8xl font-semibold tracking-tightest text-white ">
@@ -59,7 +59,7 @@
                 </div>
             </div>
 
-            <div class="relative mx-10 md:mx-9 lg:mx-36 2xl:mx-61 flex flex-wrap justify-center items-stretch gap-4 mt-8"
+            <div class="relative mx-10 md:mx-9 lg:mx-36 2xl:mx-61 flex flex-wrap justify-center items-stretch gap-4 mt-8 max-w-[1500px]"
                 id="big-hero-content-4">
                 <!-- Card 1 -->
                 <div
@@ -127,7 +127,7 @@
     <section class="relative mt-11 md:mt-11 lg:z-20 lg:-mt-32">
         <div class="" id="middle-section">
 
-            <div class="relative mx-10 md:mx-9 h-96 md:h-72 lg:mx-36 2xl:mx-61 rounded-2xl bg-cover bg-center bg-no-repeat mb-15.5 overflow-hidden lg:h-120"
+            <div class="relative mx-10 md:mx-9 h-96 md:h-72 lg:mx-36 2xl:mx-61 rounded-2xl bg-cover bg-center bg-no-repeat mb-15.5 overflow-hidden lg:h-120  max-w-[1500px]"
                 style="background-image: url('/images/welcome/img-house-welcome.webp');">
                 <!-- Overlay -->
                 <div class="absolute inset-0 bg-black/60 rounded-2xl"></div>
@@ -161,7 +161,7 @@
     {{-- ABOUT US START --}}
     <section class="md:mt-22.5 lg:mt-0">
         <div class="md:mt-22.5  lg:flex lg:box-border lg:gap-x-2" id="about-us">
-            <div class="mx-5 md:mx-9 md:pt-15 lg:w-3/5 md:mr-10 lg:pt-36 lg:ml-36 2xl:ml-61 lg:mr-0 lg:mx-0 lg:pb-44">
+            <div class="mx-5 md:mx-9 md:pt-15 lg:w-3/5 md:mr-10 lg:pt-36 lg:ml-36 2xl:ml-61 lg:mr-0 lg:mx-0 lg:pb-44 max-w-[1500px]">
                 <div class="mr-24 mb-10.5 w-80 md:w-120 lg:w-150 lg:mr-0 2xl:w-150">
                     <p class="text-4xl lg:text-5xl font-semibold tracking-tightest">At the heart of
                         our approach is a
@@ -208,7 +208,7 @@
             </div>
             <!-- Overlay gradient -->
             <div class="absolute inset-0 bg-slate-950/90"></div>
-            <div class="relative h-full mx-5 md:mx-9 pt-8  lg:mx-36 2xl:mx-61 lg:py-21">
+            <div class="relative h-full mx-5 md:mx-9 pt-8  lg:mx-36 2xl:mx-61 lg:py-21 max-w-[1500px]">
                 <div class="tracking-tightest w-full  lg:flex lg:flex-row-reverse" id="big-hero-content-projects">
                     <div class="lg:w-1/2 lg:flex lg:items-center lg:ml-14">
                         <div>
@@ -243,7 +243,7 @@
                 </div>
             </div>
             <hr class="relative outline-1 text-white/80 mb-16">
-            <div class="mx-5 md:mx-9  mb-13 md:mb-8 lg:mb-25 lg:mx-36 2xl:mx-61 relative">
+            <div class="mx-5 md:mx-9  mb-13 md:mb-8 lg:mb-25 lg:mx-36 2xl:mx-61 relative max-w-[1500px]">
                 <div
                     class="hidden lg:text-center lg:tracking-tightest lg:text-white lg:flex lg:flex-col lg:items-center lg:mb-20">
                     <div class="lg:w-[1040px]" id="big-hero-content-projects-h2">
@@ -319,13 +319,13 @@
     {{-- PROJECT AND CLIENT END --}}
 
     {{-- CONTACT US COMPONENT START --}}
-    <section class="mx-5 md:mx-9 lg:mx-36 2xl:mx-61">
+    <section class="mx-5 md:mx-9 lg:mx-36 2xl:mx-61 max-w-[1500px]">
         <x-contact-us-card />
     </section>
     {{-- CONTACT US COMPONENT END --}}
 
     {{-- FOOTER COMPONENT START --}}
-    <section class="mx-5 md:mx-9 lg:mx-36  2xl:mx-61 mt-20.5 md:mt-8 lg:mt-20.5">
+    <section class="mx-5 md:mx-9 lg:mx-36  2xl:mx-61 mt-20.5 md:mt-8 lg:mt-20.5 max-w-[1500px]">
         <x-footer-component />
     </section>
     {{-- FOOTER COMPONENT END --}}
